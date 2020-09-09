@@ -1,31 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width-width, initial-scale=1">
-    <title>Hello!</title>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Картины по номерам</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
-<body style="background-color: #ffffff;">
-    <div class="container-fluid">
-        <div class="row" style="margin-left: 45px; margin-top: 29px;">
-            <div class="col-lg d-none d-md-block">
-                <img src="img/logo.svg" width="107px;" height="107px;">
-                <img src="img/logo-text.svg" style="padding-left: 47px;" width="390px;" height="72px;">
+<body>
+	<header class="main-header">
+		<div class="upper-header">
+			<img src="images/src/logo.svg">
+			<img src="images/src/logo-text.svg">
+			<button type="button">ЗАКАЗАТЬ ЗВОНОК</button>
+			<p class="phone-number">+234 (76) 343 58 78</p>
+
+			<ul class="nav-social">
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg" alt="whatsapp link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/telegram.svg" alt="telegram link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/vk.svg" alt="vk link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
+			</ul>
+
+			<a href="#"><img src="images/src/cart-order.svg"></a>
+		</div>
+
+		<div>
+			<nav>
+				<ul class="main-nav">
+					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
+					<li class="main-nav-item"><a href="#">АРТ-ТЕРАПИЯ</a></li>
+					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО СТРАЗАМ</a></li>
+					<li class="main-nav-item"><a href="#">ВЫШИВКА</a></li>
+					<li class="main-nav-item"><a href="#">ПАЗЛЫ</a></li>
+					<li class="main-nav-item"><a href="#">МАСТЕР-КЛАССЫ</a></li>
+					<li class="main-nav-item"><a href="#">ЕЩЕ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+<main>
+    <!-- секция слайд-шоу -->
+    <section>
+
+    </section>
+
+    <!-- секция категорий -->
+    <section class="section-catalog">
+        <div class="bg-image"></div>
+        <img class="bg-image" src="images/src/section-catalog-img.png" height="378px">
+        <p>ВЫБЕРЕТЕ СЕБЕ</p>
+        <br>
+        <p>ЗАНЯТИЕ ПО ДУШЕ</p>
+
+        <!-- здесь блоки категорий -->
+        <ul>
+            <li><a href="#"><p>Картины<br>по номерам</p></a></li>
+        </ul>
+
+        <div><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
+    </section>
+
+    <!-- секция промо материала -->
+    <section>
+        <div><img src="images/src/site-images/promo1.png" width="691px" height="474px"></div>
+        <h3><p>Раскрась<br>свою жизнь</p></h3>
+        <div>
+            <p>
+                Хотите рисовать, стать настоящим художником, создателем прекрасных картин, и готовы потратить на это занятие время? 
+            </p>
+            <br>
+            <p>
+                Тогда вам подойдет набор для живописи на холсте. Вы получите истинное удовольствие от погружения в процесс творчества, а такая картина станет изюминкой интерьера, привлекающей внимание всех ваших гостей.
+            </p>
+        </div>
+    </section>
+
+    <!-- секция создания картины по фото -->
+    <section>
+        <h3><p>Создание картины<br>по фото</p></h3>
+
+        <ul>
+            <li>Вы загружаете нам любое изображение,<br>включая фотографию.</li>
+            <li>Наши дизайнеры изготавливают бесплатный эскиз<br>Вашей картины и согласовывают его с Вами.</li>
+            <li>Изготавливаем набор для рисования, в который входит:<br>3 кисти, картина по номерам на натуральном холсте с подрамником, инструкция и все необходимые краски.</li>
+            <li>Отправляем Вам (доставка по всей России).</li>
+            <li>Рисуете индивидуальную картину по Вашей фотографии или любому изображению!</li>
+        </ul>
+
+        <h3>Калькулятор стоимости картины:</h3>
+        <form class="calc" method="post" action="#">
+            <fieldset>
+                <legend>Ориентация и размеры:</legend>
+                <input type="radio" name="ver-hor" value="vertical" id="ver">
+                <select name="" id="">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                  </select>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <!-- нижнее меню-->
+    <div>
+        <div>
+            <img src="images/src/logo.svg">
+			<img src="images/src/logo-text.svg">
+        </div>
+
+        <div>
+            <div>
+                <ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Арт-терапия</a></li>
+					<li><a href="#">Картины по фото</a></li>
+					<li><a href="#">Картины стразами</a></li>
+					<li><a href="#">Пазлы по фото</a></li>
+					<li><a href="#">Картины по дереву</a></li>
+                    <li><a href="#">Мандалы</a></li>
+                    <li><a href="#">Вышивка</a></li>
+                    <li><a href="#">Алмазная мозайка</a></li>
+				</ul>
             </div>
-            <div class="col-sm d-md-none">
-                <div class="d-flex justify-content-center">
-                    <img src="img/logo-text-small.svg" style="padding-left: 47px;" width="390px;" height="41px;">
-                </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">Доп товары</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Сервис</a></li>
+                    <li><a href="#">Мастер-классы</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Галерея готовых работ</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                    <li><a href="#">Наши преимущества</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background: rgba(217, 179, 138, 0.2); height: 82px;">
-        
+
+    <!-- нижнее меню с информацие-->
+    <div>
+        <p>+234 (76) 343 58 78</p>
+
+        <ul>
+            <li><a href="#"><img src="images/src/social/whatsapp.svg"></a></li>
+            <li><a href="#"><img src="images/src/social/telegram.svg"></a></li>
+            <li><a href="#"><img src="images/src/social/vk.svg"></a></li>
+            <li><a href="#"><img src="images/src/social/insta.svg"></a></li>
+        </ul>
+
+        <a href="#"><u>Политика конфиденциальности</u></a>
     </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
 </body>
 </html>
+

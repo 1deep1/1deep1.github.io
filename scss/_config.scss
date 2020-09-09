@@ -1,0 +1,89 @@
+// USER VARIABLES SECTION
+
+$accent: orange; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #333; // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$MuseoSans500: Museo Sans Cyrl-500, sans-serif;
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@font-face {
+	font-family: "Days";
+	src:url("../fonts/days.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/days.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museo Sans Cyrl-300";
+	src:url("../fonts/MuseoSansCyrl-300.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museo Sans Cyrl-500";
+	src:url("../fonts/MuseoSansCyrl-500.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Museo Sans Cyrl-700";
+	src:url("../fonts/MuseoSansCyrl-700.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $MuseoSans500;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+ 
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
