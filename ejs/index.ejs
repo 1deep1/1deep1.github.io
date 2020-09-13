@@ -8,38 +8,38 @@
 
     <!-- секция категорий -->
     <section class="section-catalog">
-        <div class="bg-image"></div>
         <img class="bg-image" src="images/src/section-catalog-img.png" height="378px">
-        <p>ВЫБЕРЕТЕ СЕБЕ</p>
-        <br>
-        <p>ЗАНЯТИЕ ПО ДУШЕ</p>
+        <div class="sec-container">
+        <p class="section-text">Выберите себе<br><span>занятие по душе</span></p>
 
         <!-- здесь блоки категорий -->
-        <ul>
-            <li><a href="#"><p>Картины<br>по номерам</p></a></li>
+        <ul class="block-nav-container">
+            <li class="block-nav-item"><img src="images/src/menu/menu1.png"><a href="#">Картины<br>по номерам</a></li>
+            <li class="block-nav-item-big1"><img src="images/src/menu/menu2_big.png"><a href="#">Арт-терапия</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu3.png"><a href="#">Картины<br>по стразам</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu4.png"><a href="#">Вышивка<br>по фото</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu5.png"><a href="#">Картины<br>по фото<br>по дереву</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu6.png"><a href="#">Пазлы по<br>фотографии</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu7.png"><a href="#">Картины<br>по номерам<br>по фото</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu8.png"><a href="#">Мандалы</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu9.png"><a href="#">Мастер<br>классы</a></li>
+            <li class="block-nav-item-big2"><img src="images/src/menu/menu10_big.png"><a href="#">Алмазная мозайка</a></li>
         </ul>
 
-        <div><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
+        <a href="#" class="btn-make-order">ОФОРМИТЬ ЗАКАЗ</a>
+        </div>
     </section>
 
     <!-- секция промо материала -->
-    <section>
-        <div><img src="images/src/site-images/promo1.png" width="691px" height="474px"></div>
-        <h3><p>Раскрась<br>свою жизнь</p></h3>
-        <div>
-            <p>
-                Хотите рисовать, стать настоящим художником, создателем прекрасных картин, и готовы потратить на это занятие время? 
-            </p>
-            <br>
-            <p>
-                Тогда вам подойдет набор для живописи на холсте. Вы получите истинное удовольствие от погружения в процесс творчества, а такая картина станет изюминкой интерьера, привлекающей внимание всех ваших гостей.
-            </p>
-        </div>
+    <section class="section-promo">
+            
     </section>
 
     <!-- секция создания картины по фото -->
     <section>
-        <h3><p>Создание картины<br>по фото</p></h3>
+        <form class="calc" method="post" action="#">
+
+        <h3>Создание картины<br>по фото</h3>
 
         <ul>
             <li>Вы загружаете нам любое изображение,<br>включая фотографию.</li>
@@ -50,15 +50,71 @@
         </ul>
 
         <h3>Калькулятор стоимости картины:</h3>
-        <form class="calc" method="post" action="#">
+
+        <div class="calc-container">
+            <div class="сalc-block">
             <fieldset>
                 <legend>Ориентация и размеры:</legend>
-                <input type="radio" name="ver-hor" value="vertical" id="ver">
-                <select name="" id="">
-                    <option>Пункт 1</option>
+                <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
+                <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
+                <br>
+                <select name="size" id="sel-size">
+                    <option>30x30 см</option>
                     <option>Пункт 2</option>
-                  </select>
+                    <option>Пункт 3</option>
+                </select>
             </fieldset>
+            <fieldset>
+                <span>Мольберт</span>
+                <br>
+                <select name="molbert" id="sel-molbert">
+                    <option>Без мольберта</option>
+                </select>
+                <br>
+                <span>Акриловый лак</span>
+                <br>
+                <select name="ackril-lak" id="sel-lak">
+                    <option>Без лака</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Количество цветов:</legend>
+                <input type="radio" name="num-color" value="to30" id="30"><span>До 30</span>
+                <br>
+                <input type="radio" name="num-color" value="to50" id="50"><span>До 50</span>
+            </fieldset>
+            <fieldset>
+                <legend>Рамка:</legend>
+                <input type="radio" name="border" value="without" id="without"><span>Без ленты</span>
+                <br>
+                <input type="radio" name="border" value="colorful" id="colorful"><span>Цветная лента</span>
+            </fieldset>
+            <fieldset>
+                <legend>Упаковка:</legend>
+                <input type="radio" name="box" value="classic-box" id="classic"><span>Классическая</span>
+                <br>
+                <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
+            </fieldset>
+            <fieldset>
+                <legend>Количество цветов:</legend>
+                <input type="radio" name="" value="" id=""><span>До 30</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>До 50</span>
+            </fieldset>
+            <fieldset>
+                <legend>Рамка:</legend>
+                <input type="radio" name="" value="" id=""><span>Без ленты</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>Цветная лента</span>
+            </fieldset>
+            <fieldset>
+                <legend>Упаковка:</legend>
+                <input type="radio" name="" value="" id=""><span>Классическая</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>В подарок</span>
+            </fieldset>
+            </div>
+        </div>
         </form>
     </section>
 </main>
