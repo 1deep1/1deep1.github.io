@@ -63,7 +63,11 @@ button:hover {
 
 .menu-btn {
     display: none;
-    background: url(../images/src/menu-btn.svg) no-repeat 0px 1px;
+    background: url('../images/src/menu-btn.svg') no-repeat 0 7px;
+}
+
+.menu-text {
+    color: white;
 }
 
 .upper-header {
@@ -78,6 +82,7 @@ button:hover {
     min-height: 160px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 40px;
 
     font-family: "Days";
     font-weight: normal;
@@ -98,6 +103,7 @@ button:hover {
     
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 
     font-family: "Museo Sans Cyrl-700";
     list-style: none;
