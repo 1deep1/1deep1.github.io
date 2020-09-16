@@ -115,7 +115,38 @@ textarea {
     border-radius: 10px;
 }
 
-.feedback input{
+.send-btn {
+    padding: 10.5px 40px;
+}
+
+.consent-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 15px;
+}
+
+.consent-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+.consent-text a {
+    all: unset;
+    text-decoration-line: underline;
+    color: #F28484;
+}
+.consent-text a:hover {
+    cursor: pointer;
+}
+
+.form-input{
     width: 360px;
     height: 40px;
     border: 1px solid #979494;
@@ -141,6 +172,17 @@ textarea {
 
 .form-lable span {
     color: #EE6565;
+}
+
+.feedback-check {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid #F28484;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    margin-right: 10px;
 }
 
 @media only screen and (max-width : 890px) {

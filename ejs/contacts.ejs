@@ -69,20 +69,25 @@
                 <form class="feedback" method="post" action="#" id="feedback">
                     <p>
                         <label class="form-lable" for="user-name">Ваше имя <span>*</span></label><br>
-                        <input id="user-name" type="text" name="user-name" placeholder="Петр Иванов">
+                        <input class="form-input" id="user-name" type="text" name="user-name" placeholder="Петр Иванов">
                     </p>
                     <p>
                         <label class="form-lable" for="user-email">Email <span>*</span></label><br>
-                        <input id="user-email" type="email" name="user-email" placeholder="petr.ivanov@gmail.com">
+                        <input class="form-input" id="user-email" type="email" name="user-email" placeholder="petr.ivanov@gmail.com">
                     </p>
                     <p>
                         <label class="form-lable" for="user-phone">Телефон</label><br>
-                        <input id="user-phone" type="tel" name="user-phone" placeholder="+79266543232">
+                        <input class="form-input" id="user-phone" type="tel" name="user-phone" placeholder="+79266543232">
                     </p>
                     <p>
                         <label class="form-lable" for="user-message">Ваше сообщение <span>*</span></label><br>
                         <textarea id="user-message" name="comment" form="feedback"></textarea>
                     </p>
+                    <div class="consent-box">
+                        <input class="feedback-check" type="checkbox" id="consent" name="consent">
+                    <label class="form-lable" for="consent"><p class="consent-text">Подверждаю свое согласие с<br><a href="#">Политикой обработки данных</a></p></label>
+                    </div>
+                    <button type="submit" class="page-shopbtn send-btn">Отправить</button>
                 </form>
             </div>
             <div class="contacts-item">
