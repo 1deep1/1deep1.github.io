@@ -95,6 +95,7 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     #logo-small {
         display: block;
+        width: 307px;
     }
     #logo-text {
         display: none;
@@ -112,8 +113,8 @@
         margin-top: 5px;
     }
     .upper-header {
-        min-height: 45px;
-        padding: 0 20px;
+        min-height: 60px;
+        padding: 0 1px;
     }
     .block-nav-container {
         grid-template-columns: repeat(auto-fit,minmax(120px,2fr));
@@ -131,7 +132,7 @@
         line-height: 12px;
     }
     .footer-container {
-        padding: 0 15px;
+        padding: 0 8px;
         min-height: 260px;
     }
     .footer-container2 {
@@ -141,17 +142,17 @@
         padding-right: 0vh;
     }
     .footer-firstnav a{
-        font-size: 8px;
+        font-size: 14px;
     }
     .footer-secondnav a{
-        font-size: 8px;
+        font-size: 14px;
     }
     .btn-make-order {
         padding: 10px 30px;
         font-size: 12px;
     }
     .phone-number-white, .confid-text {
-        font-size: 9px;
+        font-size: 12px;
     }
     .bg-image {
         height: 130px;
@@ -161,6 +162,7 @@
     }
     #logo-footer3 {
         display: block;
+        width: 400px;
     }
     .main-header a {
         color: #fff;
@@ -173,12 +175,13 @@
     .menu-btn img {
         z-index: -1;
         top: 22px;
+        width: 60px;
     }
     .cart {
         padding-left: 10px;
     }
     .cart img {
-        width: 20px;
+        width: 27px;
     }
     .soc-img{
         width: 11px;
