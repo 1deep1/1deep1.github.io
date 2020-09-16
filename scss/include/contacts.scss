@@ -147,7 +147,8 @@ textarea {
 }
 
 .form-input{
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     height: 40px;
     border: 1px solid #979494;
     box-sizing: border-box;
@@ -193,25 +194,47 @@ textarea {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .contacts-h1 {
-        font-size: 18px;
+    .content-container {
+        max-width: 306px;
     }
 
-    .contacts-h2 {
+    .contacts-ico {
+        width: 26px;
+    }
+    
+    .line {
+        width: 160px;
+    }
+
+    .contacts-h1 {
         font-size: 14px;
     }
 
+    .contacts-h2 {
+        font-size: 12px;
+    }
+
     .contacts-maintext {
-        font-size: 13px;
+        font-size: 11px;
         padding-bottom: 18px;
     }
 
     .page-shopbtn {
-        font-size: 12px;
-        padding: 8.5px 13px;
+        font-size: 9px;
+        padding: 7.5px 12px;
+    }
+
+    .contacts-ul li {
+        font-size: 11px;
+    }
+
+    .contacts-ul li img {
+        width: 24px;
     }
 
     .contacts-container {
-        grid-template-columns: repeat(auto-fit,minmax(50px,340px));
+        grid-template-columns: repeat(auto-fit,minmax(10px,165px));
+        column-gap: 26px;
+        row-gap: 39px;
     }
 }

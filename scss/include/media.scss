@@ -95,7 +95,8 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     #logo-small {
         display: block;
-        width: 307px;
+        width: 265px;
+        padding: 0 11px;
     }
     #logo-text {
         display: none;
@@ -107,14 +108,14 @@
         display: none;
     }
     .menu-btn {
-        display: block;
-        min-width: 52px;
-        min-height: 17px;
-        margin-top: 5px;
+        display: inherit;
+        width: 52px;
+        height: 17px;
     }
     .upper-header {
-        min-height: 60px;
-        padding: 0 1px;
+        justify-content: space-between;
+        min-height: 31px;
+        padding: 0 13px;
     }
     .block-nav-container {
         grid-template-columns: repeat(auto-fit,minmax(120px,2fr));
@@ -125,10 +126,10 @@
         left: 20px;
     }
     .section-text {
-        font-size: 15px;
+        font-size: 13px;
     }
     .section-text span{
-        font-size: 25px;
+        font-size: 18px;
         line-height: 12px;
     }
     .footer-container {
@@ -142,17 +143,17 @@
         padding-right: 0vh;
     }
     .footer-firstnav a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .footer-secondnav a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .btn-make-order {
         padding: 10px 30px;
         font-size: 12px;
     }
     .phone-number-white, .confid-text {
-        font-size: 12px;
+        font-size: 8px;
     }
     .bg-image {
         height: 130px;
@@ -167,10 +168,12 @@
     .main-header a {
         color: #fff;
         font-size: 7px;
+        padding-left: 0;
     }
     .menu-btn a {
-        top: 28%;
+        top: 32%;
         right: 10%;
+        font-size: 6px;
     }
     .menu-btn img {
         z-index: -1;
@@ -181,7 +184,7 @@
         padding-left: 10px;
     }
     .cart img {
-        width: 27px;
+        width: 16px;
     }
     .soc-img{
         width: 11px;
