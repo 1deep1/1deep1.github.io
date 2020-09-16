@@ -444,11 +444,27 @@ h1 {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .page-h2 {
-        font-size: 10px;
+        font-size: 17px;
     }
 
     .search-bar-container {
         min-height: 40px;
+    }
+
+    .top-search {
+        flex-flow: row wrap;
+        justify-content: center;
+        max-height: 90px;
+    }
+
+    .search-field {
+        min-width: 300px;
+        min-height: 30px;
+        width: 100%;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 // pic-straz
@@ -558,5 +574,4 @@ h1 {
 
 .straz-bgcontent {
     width: 100%;
-}
 }

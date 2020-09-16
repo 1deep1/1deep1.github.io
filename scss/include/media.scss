@@ -107,9 +107,12 @@
     }
     .menu-btn {
         display: block;
+        min-width: 52px;
+        min-height: 17px;
+        margin-top: 5px;
     }
     .upper-header {
-        min-height: 60px;
+        min-height: 45px;
         padding: 0 20px;
     }
     .block-nav-container {
@@ -164,8 +167,8 @@
         font-size: 7px;
     }
     .menu-btn a {
-        padding-left: 25px;
-        padding-right: 10px;
+        top: 28%;
+        right: 10%;
     }
     .menu-btn img {
         z-index: -1;
@@ -181,7 +184,6 @@
         width: 11px;
         height: 11px;
     }
-
 
     .pagebg-image {
         height: 361px;

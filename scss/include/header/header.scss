@@ -63,11 +63,26 @@ button:hover {
 
 .menu-btn {
     display: none;
-    background: url('../images/src/menu-btn.svg') no-repeat 0 7px;
+    position: relative;
+}
+
+.btn-image {
+    //position: absolute;
+    z-index: -1;
 }
 
 .menu-text {
-    color: white;
+    position: absolute;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6px;
+    line-height: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
 }
 
 .upper-header {

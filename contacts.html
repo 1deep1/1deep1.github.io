@@ -11,7 +11,8 @@
 <body>
 	<header class="main-header">
 		<div class="upper-header">
-			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div>
+			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
+			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
 			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
@@ -50,9 +51,100 @@
 	</header>
 
 <main class="contacts-main">
-    <h1 class="contacts-h1">КОНАТКТЫ</h1>
-    <div class="contacts-container">
-        <div class="contacts-item"></div>
+    <div class="content-container">
+        <h1 class="contacts-h1">КОНАТКТЫ</h1>
+        <div class="contacts-container">
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/phone.png">
+                    <h2 class="contacts-h2">Телефон</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="262px">
+                <p class="contacts-maintext">+234 (76) 343 58 78</p>
+                <button class="page-shopbtn">заказать звонок</button>
+            </div>
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/mail.png">
+                    <h2 class="contacts-h2">Почта</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="296px">
+                <p class="contacts-maintext">Email: brushes-paints@yandex.ru</p>
+                <button class="page-shopbtn">Написать нам</button>
+            </div>
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/soc.png">
+                    <h2 class="contacts-h2">Мы в соц. сетях</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="296px">
+                <div class="contacts-social">
+                    <ul class="contacts-ul">
+                        <li>Instagram: <a href="#"><img src="images/src/social/insta.svg"></a></li>
+                        <li>Telegram: <a href="#"><img src="images/src/social/telegram.svg"></a></li>
+                        <li>Вконтакте: <a href="#"><img src="images/src/social/vk.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/work.png">
+                    <h2 class="contacts-h2">Режим работы</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="413px">
+                <p class="contacts-maintext">
+                    <b>Понедельник - Суббота</b><br>
+                    - Прием заказов: 24/7<br>
+                    - Создание и обработка макетов: 14:00 до 22:00<br>
+                    - Производство картин: 24/7<br>
+                    - Отдел по работе с клиентам: 11:00 до 01:00<br>
+                    - Доставка картин с 14:00 до 22:00<br>
+                </p>
+            </div>
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/list.png">
+                    <h2 class="contacts-h2">Юридическая информация</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="434px">
+                <p class="contacts-maintext"><b>ИП:</b> Шишков Иван Вячеславович<br><b>ИНН:</b> 344408071697</p>
+            </div>
+        </div>
+
+        <div class="contacts-container">
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <h2 class="contacts-h2 form-p">Форма обратной связи</h2>
+                </div>
+                <form class="feedback" method="post" action="#" id="feedback">
+                    <p>
+                        <label class="form-lable" for="user-name">Ваше имя <span>*</span></label><br>
+                        <input id="user-name" type="text" name="user-name" placeholder="Петр Иванов">
+                    </p>
+                    <p>
+                        <label class="form-lable" for="user-email">Email <span>*</span></label><br>
+                        <input id="user-email" type="email" name="user-email" placeholder="petr.ivanov@gmail.com">
+                    </p>
+                    <p>
+                        <label class="form-lable" for="user-phone">Телефон</label><br>
+                        <input id="user-phone" type="tel" name="user-phone" placeholder="+79266543232">
+                    </p>
+                    <p>
+                        <label class="form-lable" for="user-message">Ваше сообщение <span>*</span></label><br>
+                        <textarea id="user-message" name="comment" form="feedback"></textarea>
+                    </p>
+                </form>
+            </div>
+            <div class="contacts-item">
+                <div class="contacts-head">
+                    <img class="contacts-ico" src="images/src/icons/point.png">
+                    <h2 class="contacts-h2">Адрес</h2>
+                </div>
+                <img class="line" src="images/src/icons/line.svg" width="500px">
+                <p class="contacts-maintext">г. Москва<br>м. Водный стадион</p>
+                <img class="line" src="images/src/map.png" width="480px">
+            </div>
+        </div>
     </div>
 </main>
 
