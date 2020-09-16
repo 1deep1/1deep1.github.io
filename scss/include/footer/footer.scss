@@ -7,8 +7,10 @@
     max-width: 1440px;
     min-height: 360px;
     width: 100%;
+
     margin-left: auto;
     margin-right: auto;
+    padding: 0 40px;
 }
 .footer-container2 {
     min-height: 90px;
@@ -86,5 +88,18 @@
     font-size: 19px;
     color: white;
     font-family: 'Days';
-    padding-right: 30px;
+    padding-right: 15px;
+}
+
+.nav-social-footer {
+    list-style: none;
+}
+.nav-social-footer-item {
+    display: inline;
+    padding-left: 5px;
+}
+
+
+#logo-footer3 {
+    display: none;
 }

@@ -1,0 +1,312 @@
+h1 {
+    font-family: "Days";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #303030;
+    text-align: left;
+    margin-block-end: 1.2em;
+}
+
+.btnpage {
+    display: flex;
+    margin-top: 7%;
+}
+
+.btn-page-link {
+    display: inline-block;
+    font-family: Days;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    background-color: #f95050;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-page-link:hover {
+    color: #E5E5E5;
+    background-color: #D24343;
+    cursor: pointer;
+}
+
+.page-desctext {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-bottom: 8%;
+}
+
+.page-headcontainer {
+    width: 100%;
+    position: relative;
+}
+
+.page-headertext {
+    position: absolute;
+    top: 26%;
+    left: 6%;
+}
+
+.pagebg-image {
+    width: 100%;
+    height: 861px;
+    z-index: -1;
+}
+
+.page-shopsec {
+    margin-top: 2.5%;
+    margin-bottom: 4%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-shopcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 420px));
+    grid-auto-flow: dense;
+    column-gap: 45px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.page-shopitem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.fast-view {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 97.8%;
+    text-align: center;
+    top: 35%;
+    height: 10%;
+    background: rgba(130, 107, 98, 0.79);
+}
+.fast-view a {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+
+    width: 100%;
+
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+
+.page-shopimg:hover .fast-view{
+    display: flex;
+}
+
+.page-shopimg img {
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.page-shoptitle a {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-decoration: none;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+.page-shoptitle a:hover {
+    text-decoration: underline;
+}
+
+.page-shoptext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    margin-top: 5%;
+}
+
+.page-shopprice {
+    font-family: 'Museo Sans Cyrl-700';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+@media only screen and (max-width : 930px) {
+    .pagebg-image {
+        height: 561px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .page-shopcontainer {
+        grid-template-columns: repeat(auto-fit,minmax(100px,320px));
+    }
+    .pagebg-image {
+        height: 361px;
+    }
+    .page-desctext {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .btn-page-link {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+// add-products
+
+.top-search {
+    width: 100%;
+    max-height: 45px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+// pic-straz
+
+.straz-container {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 624px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.straz-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(660px, 2fr));
+    grid-auto-flow: dense;
+    list-style: none;
+
+    position: relative;
+}
+
+.straz-slideblock {
+    position: relative;
+
+    z-index: -1;
+
+    top: 0%;
+    right: 0%;
+
+    //min-width: 710px;
+    //min-height: 624px;
+
+    background-color: #826B62;
+}
+
+.straz-promoblock {
+    position: relative;
+    top: 60%;
+    left: 11%;
+
+    //min-width: 690px;
+    //min-height: 105px;
+
+    padding: 30px 0 30px 70px;
+
+    background-color: #826B62;
+}
+
+.straz-pic {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.straz-left {
+    position: relative;
+}
+
+.straz-h1 {
+    position: absolute;
+    top: 0%;
+}
+
+.straz-text {
+    position: absolute;
+    top: 17%;
+
+    font-family: "Museo Sans Cyrl-500";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.straz-text2 {
+    top: 32%;
+}
+
+.straz-text-bold {
+    position: absolute;
+    top: 43%;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.straz-content {
+    width: 100%;
+    max-width: 1440px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.straz-bgcontent {
+    width: 100%;
+}

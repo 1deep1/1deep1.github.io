@@ -11,10 +11,10 @@
 <body>
 	<header class="main-header">
 		<div class="upper-header">
-			<div class="menu-btn">МЕНЮ</div>
-			<img src="images/src/logo.svg" id="logo">
-			<img src="images/src/logo-text.svg" id="logo-text">
-			<img src="images/src/logo-small.svg" id="logo-small">
+			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div>
+			<a href="/"><img src="images/src/logo.svg" id="logo"></a>
+			<a href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
+			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
 			<button type="button">ЗАКАЗАТЬ ЗВОНОК</button>
 			<p class="phone-number-black">+234 (76) 343 58 78</p>
 
@@ -25,7 +25,7 @@
 				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
 			</ul>
 
-			<a href="#"><img src="images/src/cart-order.svg"></a>
+			<a href="#" class="cart"><img src="images/src/cart-order.svg"></a>
 		</div>
 
 		<div>
@@ -33,12 +33,16 @@
 				<div class="navigation">
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
-					<li class="main-nav-item more-ico2"><a href="include/art-therapy.ejs">АРТ-ТЕРАПИЯ</a></li>
-					<li class="main-nav-item more-ico3"><a href="#">КАРТИНЫ ПО СТРАЗАМ</a></li>
+					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
+					<li class="main-nav-item more-ico3"><a href="pic-straz.html">КАРТИНЫ ПО СТРАЗАМ</a></li>
 					<li class="main-nav-item"><a href="#">ВЫШИВКА</a></li>
 					<li class="main-nav-item"><a href="#">ПАЗЛЫ</a></li>
 					<li class="main-nav-item"><a href="#">МАСТЕР-КЛАССЫ</a></li>
-					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a></li>
+					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a>
+						<ul>
+							<li><a href="add-products.html">ДОП ТОВАРЫ</a></li>
+						</ul>
+					</li>
 				</ul>
 				</div>
 			</nav>
@@ -46,7 +50,19 @@
 	</header>
 <main>
     <!-- секция слайд-шоу -->
-    <section>
+    <section class="section-slide">
+        <img class="wave2" src="images/src/wave2.svg">
+        <div class="index-headertext">
+            <img src="images/src/logo-big.svg">
+            <p>Индивидуальное изготовление картин по номерам<br>по любой фотографии с неповторимым уровнем сервиса.<br><span>Раскрась свою жизнь!</span>
+            </p>
+        </div>
+        <div class="index-promoblock">
+            <img src="images/src/wave.svg"><span>Быстрота исполнения</span>
+            <img src="images/src/wave.svg"><span>Красивая упаковка</span><br>
+            <span>Отличное соотношение цена\качетво</span><img src="images/src/wave.svg">
+        </div>
+        <div class="index-slideblock"></div>
     </section>
 
     <!-- секция категорий -->
@@ -58,15 +74,15 @@
         <!-- здесь блоки категорий -->
         <ul class="block-nav-container">
             <li class="block-nav-item"><img src="images/src/menu/menu1.png"><a href="#">Картины<br>по номерам</a></li>
-            <li class="block-nav-item-big1"><img src="images/src/menu/menu2_big.png"><a href="#">Арт-терапия</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu3.png"><a href="#">Картины<br>по стразам</a></li>
+            <li class="block-nav-item block-nav-item-big1"><img src="images/src/menu/menu2_big.png"><a href="#">Арт-терапия</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu3.png"><a href="pic-straz.html">Картины<br>по стразам</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu4.png"><a href="#">Вышивка<br>по фото</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu5.png"><a href="#">Картины<br>по фото<br>по дереву</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu6.png"><a href="#">Пазлы по<br>фотографии</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu7.png"><a href="#">Картины<br>по номерам<br>по фото</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu8.png"><a href="#">Мандалы</a></li>
             <li class="block-nav-item"><img src="images/src/menu/menu9.png"><a href="#">Мастер<br>классы</a></li>
-            <li class="block-nav-item-big2"><img src="images/src/menu/menu10_big.png"><a href="#">Алмазная мозайка</a></li>
+            <li class="block-nav-item block-nav-item-big2"><img src="images/src/menu/menu10_big.png"><a href="#">Алмазная мозайка</a></li>
         </ul>
 
         <div class="btn-make-order-div"><a href="#" class="btn-make-order">ОФОРМИТЬ ЗАКАЗ</a></div>
@@ -75,7 +91,14 @@
 
     <!-- секция промо материала -->
     <section class="section-promo">
-            
+        <div class="promo-block">
+            <img class="promo-image" src="images/src/site-images/promo1.png">
+            <img class="promo-image2" src="images/src/promo-bg.png">
+        </div>
+        <div class="promo-text">
+            <p class="promo-headtext">Раскрась<br>свою жизнь</p>
+            <p class="promo-foottext">Хотите рисовать, стать настоящим<br>художником, создателем прекрасных<br>картин, и готовы потратить на это занятие<br>время?<br><br>Тогда вам подойдет набор для живописи<br>на холсте. Вы получите истинное<br>удовольствие от погружения в процесс<br>творчества, а такая картина станет<br>изюминкой интерьера, привлекающей<br>внимание всех ваших гостей.</p>
+        </div>
     </section>
 
     <!-- секция создания картины по фото -->
@@ -168,7 +191,8 @@
         <div class="footer-container">
             <div class="footer-logos">
                 <img src="images/src/logo.svg" width="107px" id="logo-footer">
-			    <img src="images/src/logo-text-white.svg">
+                <img src="images/src/logo-text-white.svg" id="logo-footer2">
+                <img src="images/src/logo-text-smallwhite.svg" id="logo-footer3">
             </div>
 
             <div class="footer-nav">
@@ -216,11 +240,11 @@
         <div class="footer-container footer-container2">
             <p class="phone-number-white">+234 (76) 343 58 78</p>
 
-            <ul class="nav-social">
-                <li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg"></a></li>
-                <li class="nav-social-item"><a href="#"><img src="images/src/social/telegram.svg"></a></li>
-                <li class="nav-social-item"><a href="#"><img src="images/src/social/vk.svg"></a></li>
-                <li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg"></a></li>
+            <ul class="nav-social-footer">
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/whatsapp.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/telegram.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/vk.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/insta.svg"></a></li>
             </ul>
 
             <a href="#" class="confid-text"><u>Политика конфиденциальности</u></a>
