@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1660px) {
+    .promo-text {
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .promo-image {
+        left: 7%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .promo-text {
+        right: 2%;
+    }
+}
+
 @media only screen and (max-width : 1215px) {
     #logo {
         display: none;
@@ -9,6 +27,13 @@
     }
     .block-nav-container {
         margin: 0 10%;
+    }
+
+    .promo-image {
+        left: 1%;
+    }
+    .promo-text {
+        right: 1%;
     }
 }
 
@@ -90,6 +115,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    .wave2 {
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -109,8 +137,8 @@
     }
     .menu-btn {
         display: inherit;
-        width: 52px;
-        height: 17px;
+        width: 60px;
+        height: 25px;
     }
     .upper-header {
         justify-content: space-between;
@@ -121,9 +149,9 @@
         grid-template-columns: repeat(auto-fit,minmax(120px,2fr));
     }
     .block-nav-item a {
-        font-size: 15px;
-        top: 20px;
-        left: 20px;
+        font-size: 13px;
+        top: 15px;
+        left: 17px;
     }
     .section-text {
         font-size: 13px;
@@ -171,9 +199,9 @@
         padding-left: 0;
     }
     .menu-btn a {
-        top: 32%;
+        top: 35%;
         right: 10%;
-        font-size: 6px;
+        font-size: 7px;
     }
     .menu-btn img {
         z-index: -1;
@@ -205,5 +233,23 @@
 
     .head-link {
         display: none;
+    }
+
+    .block-nav-desctext {
+        top: 36%;
+        left: 12%;
+
+        font-size: 8px;
+    }
+
+    .block-nav-descpoint {
+        top: 47%;
+        left: 13%;
+
+        font-size: 8px;
+    }
+
+    .block-nav-item-big2 a {
+        top: 53px;
     }
 }

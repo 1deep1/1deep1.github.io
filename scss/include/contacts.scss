@@ -9,6 +9,8 @@
     margin-right: auto;
     margin-top: 2%;
     margin-bottom: 2%;
+
+    padding: 0 20px;
 }
 
 .contacts-h1 {
@@ -196,6 +198,7 @@ textarea {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .content-container {
         max-width: 306px;
+        padding: 0 0;
     }
 
     .contacts-ico {
@@ -216,7 +219,9 @@ textarea {
 
     .contacts-maintext {
         font-size: 11px;
-        padding-bottom: 18px;
+        padding-bottom: 6px;
+        
+        line-height: 22px;
     }
 
     .page-shopbtn {
@@ -233,7 +238,7 @@ textarea {
     }
 
     .contacts-container {
-        grid-template-columns: repeat(auto-fit,minmax(10px,165px));
+        grid-template-columns: repeat(auto-fit,minmax(10px,201px));
         column-gap: 26px;
         row-gap: 39px;
     }

@@ -172,22 +172,33 @@ h1 {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .page-shopcontainer {
-        grid-template-columns: repeat(auto-fit,minmax(100px,320px));
+        grid-template-columns: repeat(auto-fit,minmax(100px,194px));
     }
     .pagebg-image {
-        height: 361px;
+        height: 210px;
     }
     .page-desctext {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 15px;
     }
     h1 {
-        font-size: 25px;
+        font-size: 18px;
         line-height: 30px;
+        margin-block-start: 0.67em;
     }
     .btn-page-link {
-        padding: 10px 20px;
-        font-size: 15px;
+        padding: 3px 20px;
+        font-size: 7px;
+    }
+    .page-shoptitle a {
+        font-size: 16px;
+    }
+    .page-shopprice {
+        font-size: 16px;
+    }
+    .page-shopbtn {
+        font-size: 8px;
+        padding: 3.5px 12px;
     }
 }
 
@@ -256,6 +267,48 @@ h1 {
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.search-form {
+    min-height: 60px;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-form input {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    min-width: 100px;
+    min-height: 30px;
+}
+
+.search-form input[type="checkbox" i] {
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.search-form label {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
 }
 
 .product-container {
@@ -464,6 +517,29 @@ h1 {
 
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .page-headertext {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+
+    .search-form {
+        padding: 10px 0px;
+    }
+
+    .search-form label {
+        font-size: 12px;
+    }
+
+    .search-form input {
+        min-height: 26px;
+        max-width: 30px;
+    }
+
+    .search-form input[type=checkbox i] {
+        min-height: 22px;
+        min-width: 22px;
     }
 }
 

@@ -1,0 +1,130 @@
+.pay-h1 {
+    margin-block-end: 1.2em;
+    margin-block-start: 1.2em;
+
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.pay-h2 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    line-height: 75px;
+}
+
+.pay-bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.pay-main {
+    background-image: url('../images/src/site-images/paybg.png');
+    width: 100%;
+}
+
+.pay-container {
+    max-width: 1440px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pay-blocks {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.pay-item {
+    max-width: 660px;
+    min-height: 430px;
+    background: rgba(217,179,138,.2);
+    border-radius: 10px;
+    padding: 0 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 62px;
+}
+
+.third {
+    min-height: 270px;
+}
+
+.pay-item p {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+    padding-bottom: 20px;
+}
+
+.pay-item ul {
+    all: unset;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.pay-item ul li {
+    padding-bottom: 20px;
+}
+
+.pay-small-text{
+    font-size: 14px;
+}
+
+.pay-item ul li::before {
+    content: "⬤";
+    color: #674D43;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.2em;
+}
+
+.pay-list {
+    padding-left: 21px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .pay-h1 {
+        margin-block-end: 0.9em;
+        margin-block-start: 0.9em;
+        font-size: 18px;
+        margin-left: 16px;
+    }
+
+    .pay-h2 {
+        font-size: 16px;
+    }
+
+    .pay-item ul {
+        font-size: 14px;
+    }
+}

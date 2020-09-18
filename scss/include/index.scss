@@ -77,10 +77,53 @@ h3 {
     font-size: 36px;
     text-decoration: none;
 }
+.block-nav-item a:hover {
+    text-decoration: underline;
+}
 .block-nav-item img, .block-nav-item-big1 img, .block-nav-item-big2 img{
     width: 100%;
     height: 100%;
     //object-fit: cover;
+}
+
+.block-nav-desctext {
+    position: absolute;
+    top: 36%;
+    left: 10%;
+
+    font-family: 'Museo Sans Cyrl-700';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.block-nav-descpoint {
+    position: absolute;
+    top: 47%;
+    left: 10%;
+
+    font-family: 'Museo Sans Cyrl-700';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.block-nav-descpoint li::before {
+    content: "\2022";
+    color: #F28484;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .bg-image {
@@ -231,15 +274,11 @@ h3 {
 
 .section-promo {
     width: 100%;
-    //max-width: 1420px;
     min-height: 620px;
     position: relative;
 
     margin-top: 90px;
     margin-bottom: 80px;
-
-    //margin-left: auto;
-    //margin-right: auto;
 }
 
 .promo-block {
@@ -326,4 +365,19 @@ h3 {
 .main-nav-item ul li {
     padding-bottom: 4px;
     border: 0.4px solid black;
+}
+
+.section-order {
+    width: 100%;
+    //max-width: 1420px;
+    
+    margin-top: 90px;
+    margin-bottom: 80px;
+    
+    //margin-left: auto;
+    //margin-right: auto;
+}
+
+.bottom {
+    top: 73%;
 }
