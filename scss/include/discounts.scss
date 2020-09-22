@@ -1,15 +1,272 @@
+.disc-h2 {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
 .discounts-blocks {
     display: flex;
 
     padding: 25px 40px;
+    margin: 90px 0;
+}
+
+.disc-first-block {
+    padding-top: 15px;
 }
 
 .discounts-item {
     width: 100%;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.discounts-item img {
-    width: 100%;
+.disc-pic {
+    margin-top: 60px;
+}
+
+.disc-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 175px;
+    padding-left: 20px;
+}
+
+.disc-left {
+    padding-left: 175px;
+    padding-right: 20px;
+}
+
+.disc-bg {
+    position: absolute;
+    z-index: -1;
+    right: 12%;
+}
+
+.disc-bg2 {
+    left: 12%;
+    right: unset;
+}
+
+.disc-text {
+    text-align: left;
+    max-width: 480px;
+}
+
+.disc-second-text {
+    text-align: right;
+}
+
+.disc-red-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 25px;
+
+    letter-spacing: 0.05em;
+
+    color: #800000;
+}
+
+.disc-main-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.disc-main-text span {
+    color: #F28484;
+}
+
+.main-text-pos {
+    margin-bottom: 20px;
+}
+
+.disc-ul {
+    margin-left: 1.5vw;
+    list-style: none;
+}
+
+.disc-ul li::before {
+    content: "⬤";
+    color: #826B62;
+    display: inline-block;
+    margin-left: -1.2em;
+}
+
+.third-ul li::before {
+    content: unset;
+    display: inline-block;
+    margin-left: -1.2em;
+}
+
+@media only screen and (max-width : 1440px) {
+    .disc-right {
+        padding-right: unset;
+        padding-left: 20px;
+    }
+
+    .disc-left {
+        padding-left: unset;
+        padding-right: 20px;
+    }
+
+    .discounts-item {
+        justify-content: center;
+        margin-left: -55px;
+    }
+
+    .discounts-item2 {
+        margin-left: unset;
+        margin-right: -55px;
+    }
+
+    .disc-bg {
+        right: -1%;
+        width: 67%;
+    }
+
+    .disc-bg2 {
+        left: -1%;
+        width: 67%;
+    }
+
+    .disc-pic {
+        width: 50%;
+    }
+
+    .disc-first-block {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 1440px) {
+    .service-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .disc-h2 {
+        font-size: 1.4vw;
+    }
+
+    .disc-red-text {
+        font-size: 0.9vw;
+    }
+
+    .disc-main-text {
+        font-size: 1.1vw;
+    }
+
+    .disc-ul {
+        font-size: 1.1vw;
+    }
+
+    .disc-first-block {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 1215px) {
+    .discounts-item {
+        margin-left: 6px;
+    }
+    .discounts-blocks {
+        margin: 5vw 0;
+        padding: 20px 16px;
+    }
+
+    .disc-first-block {
+        padding-top: 0px;
+    }
+    
+    .disc-pic2 {
+        margin-top: unset;
+    }
+}
+
+@media only screen and (max-width : 850px) {
+    .disc-h2 {
+        line-height: 15px;
+    }
+
+    .disc-red-text {
+        line-height: 16px;
+    }
+
+    .disc-main-text {
+        line-height: 14px;
+    }
+
+    .disc-pic {
+        margin-top: 15px;
+    }
+
+    .disc-pic2 {
+        margin-right: -39px;
+    }
+
+    .disc-first-block {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .discounts-blocks {
+        padding: 37px 20px;
+        margin-top: 16px;
+    }
+
+    .discounts-item {
+        margin-left: -16px;
+    }
+
+    .disc-pic {
+        width: 56%;
+    }
+
+    .disc-right {
+        padding-left: 12px;
+    }
+
+    .disc-bg {
+        right: 2%;
+        width: 88%;
+    }
+
+    .disc-h2 {
+        line-height: 9px;
+    }
+
+    .disc-red-text {
+        line-height: 4px;
+    }
+
+    .disc-main-text {
+        line-height: 9px;
+    }
+
+    .disc-pic {
+        margin-top: 16px;
+    }
+
+    .disc-first-block {
+        padding-top: 0px;
+    }
 }

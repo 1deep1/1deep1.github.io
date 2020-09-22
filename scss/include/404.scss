@@ -1,0 +1,111 @@
+.bg404 {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    z-index: -1;
+}
+
+.container404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.h1-404 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 367px;
+
+
+    color: #4A413B;
+}
+
+.h2-404 {
+    all: unset;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.btn-page-404 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn-404 {
+    font-size: 36px;
+    line-height: 46px;
+
+    padding: 30px 50px;
+}
+
+@media only screen and (max-width : 1100px) {
+    .h1-404 {
+        font-size: 255px;
+    }
+    
+    .h2-404 {
+        font-size: 30px;
+    }
+
+    .btn-404 {
+        font-size: 25px;
+        padding: 20px 50px;
+    }
+}
+
+@media only screen and (max-width : 890px) {
+    .bg404 {
+        height: unset;
+    }
+    .h1-404 {
+        font-size: 180px;
+        line-height: 220px;
+    }
+    
+    .h2-404 {
+        font-size: 25px;
+    }
+
+    .btn-404 {
+        font-size: 21px;
+        padding: 13px 40px;
+    }
+
+    .btn-page-404 {
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (max-width : 753px) {
+    .h1-404 {
+        font-size: 22vw;
+        line-height: 28vw;
+    }
+    
+    .h2-404 {
+        font-size: 3vw;
+    }
+
+    .btn-404 {
+        font-size: 3vw;
+        padding: 3px 29px;
+    }
+
+    .btn-page-404 {
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+    }
+}
