@@ -26,7 +26,7 @@
 				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
 			</ul>
 
-			<a href="#" class="cart"><img src="images/src/cart-order.svg"></a>
+			<a href="cart.html" class="cart"><img src="images/src/cart-order.svg"></a>
 		</div>
 
 		<div>
@@ -52,31 +52,153 @@
 
 <main>
     <div class="straz-container">
-        <div class="straz-content">
-            <div class="straz-item">
-                <div class="straz-left">
-                    <img class="straz-pic" src="images/src/site-images/straz-pic2.png">
-                    <h1 class="straz-h1">Картины по стразам</h1>
-                    <p class="straz-text">Трудно поверить, но техника создания картин по стразам появилась еще в Древней Греции до нашей эры! Все началось с украшения одежды. Драгоценными камнями и жемчугом девушки выкладывали узоры на рукавах и воротниках, закрепляя их самодельным клеем или воском. Однако тогда это считалось роскошью.</p>
-                    <p class="straz-text straz-text2">Сегодня же заняться алмазной вышивкой может абсолютно каждый!</p>
-                    <p class="straz-text-bold">В нашем магазине Вы можете приобрести картину любого формата и по самым доступным ценам!</p>
-                    <!-- <div class="straz-promoblock">
-                        <img src="images/src/wave.svg"><span>Быстрота исполнения</span>
-                        <img src="images/src/wave.svg"><span>Красивая упаковка</span><br>
-                        <span>Отличное соотношение цена\качетво</span><img src="images/src/wave.svg">
-                    </div> -->
+        <div class="straz-top">
+            <div class="straz-top-left">
+                <h1 class="straz-h1">Картины по стразам</h1>
+                <p class="straz-text">
+                    Трудно поверить, но техника создания картин по стразам появилась еще в Древней Греции до нашей эры! Все началось с украшения одежды. Драгоценными камнями и жемчугом девушки выкладывали узоры на рукавах и воротниках, закрепляя их самодельным клеем или воском. Однако тогда это считалось роскошью.
+                </p>
+                <br>
+                <p class="straz-text">
+                    Сегодня же заняться алмазной вышивкой может абсолютно каждый!
+                </p>
+                <p class="straz-text2">
+                    <b>В нашем магазине Вы можете приобрести картину любого формата и по самым доступным ценам!</b>
+                </p>
+                <div class="straz-promo">
+                    <img src="images/src/wave.svg"><span>Быстрота исполнения</span>
+                    <img src="images/src/wave.svg"><span>Красивая упаковка</span><br>
+                    <span>Отличное соотношение цена\качетво</span><img src="images/src/wave.svg">
                 </div>
             </div>
-            <div class="straz-item">
-                <div class="straz-slideblock">
-                    <img src="images/src/site-images/straz-pic.png">
-                </div>
+            <div class="straz-top-right">
+                <img src="images/src/site-images/straz-pic.png">
             </div>
         </div>
-    </div>
 
-    <div class="straz-content">
-        <img class="straz-bgcontent" src="images/src/site-images/straz-bg.png">
+        <form class="calc" method="post" action="#">
+            <div class="straz-lower">
+                <div class="order-upload straz-upload">
+                    <div class="order-upload-box straz-upload-box">
+                        <img src="images/src/upload-pic.png">
+                        <p>перетащите картинку сюда или</p>
+                        <button class="page-shopbtn">загрузите файл</button>
+                    </div>
+                    <p class="order-upload-text straz-upload-text">
+                        <b>Требования к фото:</b>
+                        <br>
+                        <br>
+                        Расширение файла: bmp, gif, jpeg, jpg, pdf, png, tif, tiff
+                        <br>Размер: от 100 кб до 30 мб
+                        <br>Минимальная ширина и высота: 1000px
+                    </p>
+                </div>
+                <div class="straz-lower-right">
+                    <p>
+                        Вы загружаете нам любое изображение, включая фотографию.<br><br>
+                        Наши дизайнеры изготавливают бесплатный эскиз Вашей картины и согласовывают его с Вами.<br><br>
+                        Отправляем Вам (доставка по всей России).<br><br>
+                        Рисуете индивидуальную картину по Вашей фотографии или любому изображению!<br><br>
+                        В изготавливаемый набор входит:
+                        <br>
+                    </p>
+                    <ul class="straz-list">
+                        <li>полотно-схема с клеевым слоем и условным обозначением</li>
+                        <li>набор соответствующих страз</li>
+                        <li>пинцет (если в комплекте квадратные стразы)</li>
+                        <li>стилус</li>
+                        <li>сухой клей для стилуса</li>
+                        <li>поддон для страз</li>
+                        <li>инструкция</li>
+                    </ul>
+                </div>
+            </div>
+
+        <h3 class="straz-h3">Калькулятор стоимости картины:</h3>
+
+        <div class="calc-container">
+            <div class="сalc-block">
+            <!-- <fieldset>
+                <legend>Ориентация и размеры:</legend>
+                <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
+                <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
+                <br>
+                <select name="size" id="sel-size">
+                    <option>30x30 см</option>
+                    <option>Пункт 2</option>
+                    <option>Пункт 3</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <span>Мольберт</span>
+                <br>
+                <select name="molbert" id="sel-molbert">
+                    <option>Без мольберта</option>
+                </select>
+                <br>
+                <span>Акриловый лак</span>
+                <br>
+                <select name="ackril-lak" id="sel-lak">
+                    <option>Без лака</option>
+                </select>
+            </fieldset> -->
+            <fieldset class="index-filedset">
+                <legend>Количество цветов:</legend>
+                <input type="radio" name="num-color" value="to30" id="30"><span>До 30</span>
+                <br>
+                <input type="radio" name="num-color" value="to50" id="50"><span>До 50</span>
+            </fieldset>
+            <fieldset class="index-filedset">
+                <legend>Рамка:</legend>
+                <input type="radio" name="border" value="without" id="without"><span>Без ленты</span>
+                <br>
+                <input type="radio" name="border" value="colorful" id="colorful"><span>Цветная лента</span>
+            </fieldset>
+            <fieldset class="index-filedset">
+                <legend>Упаковка:</legend>
+                <input type="radio" name="box" value="classic-box" id="classic"><span>Классическая</span>
+                <br>
+                <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
+            </fieldset>
+            <fieldset class="index-filedset">
+                <legend>Количество цветов:</legend>
+                <input type="radio" name="" value="" id=""><span>До 30</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>До 50</span>
+            </fieldset>
+            <fieldset class="index-filedset">
+                <legend>Рамка:</legend>
+                <input type="radio" name="" value="" id=""><span>Без ленты</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>Цветная лента</span>
+            </fieldset>
+            <fieldset class="index-filedset">
+                <legend>Упаковка:</legend>
+                <input type="radio" name="" value="" id=""><span>Классическая</span>
+                <br>
+                <input type="radio" name="" value="" id=""><span>В подарок</span>
+            </fieldset>
+            </div>
+        </div>
+
+        <p class="order-lower-price-t">Итог: <span><b>1990 р.</b></span></p>
+
+        <div class="order-lower">
+            <div class="order-lower-price">
+                <p class="order-lower-p1">Итог:</p>
+                <p class="order-lower-p2">1990 р.</p>
+            </div>
+
+            <button class="order-lower-btn">Добавить еще</button>
+            <button type="submit" class="order-lower-btn">заказать картину</button>
+        </div>
+
+        </form>
+
+        <h3 class="straz-h3">Примеры наших работ:</h3>
+        <div class="straz-works">
+
+        </div>
     </div>
 </main>
 
@@ -108,7 +230,7 @@
                 <div>
                     <ul class="footer-secondnav">
                         <li class="first-item"><a href="add-products.html">Доп товары</a></li>
-                        <li><a href="#">Корзина</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
                         <li><a href="discounts.html">Акции</a></li>
                         <li><a href="service.html">Сервис</a></li>
                         <li><a href="masters.html">Мастер-классы</a></li>
@@ -121,8 +243,8 @@
                         <li class="first-item"><a href="contacts.html">Контакты</a></li>
                         <li><a href="commments.html">Отзывы</a></li>
                         <li><a href="pay-del.html">Доставка и оплата</a></li>
-                        <li><a href="#">Галерея готовых работ</a></li>
-                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a href="gallery.html">Галерея готовых работ</a></li>
+                        <li><a href="loyalty.html">Программа лояльности</a></li>
                         <li><a href="benefits.html">Наши преимущества</a></li>
                     </ul>
                </div>

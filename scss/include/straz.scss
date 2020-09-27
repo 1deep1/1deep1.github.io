@@ -1,0 +1,253 @@
+.straz-container {
+    max-width: 1440px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20.6px;
+}
+
+.straz-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(101px,2fr));
+    grid-row-gap: 55px;
+    grid-auto-flow: dense;
+}
+
+.straz-top-left {
+    background-image: url('../images/src/site-images/straz-pic2.png');
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.straz-h1 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+
+    margin-bottom: 59px;
+}
+
+.straz-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.straz-text2 {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    
+    letter-spacing: 0.05em;
+    
+    color: #000000;
+
+    margin: 46px 0;
+}
+
+.straz-top-right {
+    display: flex;
+    align-items: flex-end;
+    background: #826B62;
+
+    max-height: 624px;
+    height: 100%;
+    margin-bottom: 52px;
+}
+
+.straz-top-right img {
+    width: 78%;
+}
+
+.straz-list {
+    list-style: none;
+}
+
+.straz-list li::before {
+    content: "⬤";
+    color: #F28484;
+    display: inline-block;
+    width: 2em;
+    margin-left: 0;
+}
+
+.straz-promo {
+    background: #826B62;
+    box-shadow: 0px 0px 10px rgba(130, 107, 98, 0.2);
+    padding: 37px;
+}
+
+.straz-promo span {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+
+.straz-lower {
+    background: url('../images/src/site-images/straz-bg.png') no-repeat 30px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.straz-lower-right {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 138%;
+    max-width: 630px;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.straz-upload-text {
+    text-align: left;
+}
+
+.straz-upload {
+    align-items: flex-start;
+}
+
+.straz-upload-box {
+    background: white;
+}
+
+@media only screen and (max-width : 1196px) {
+    .straz-lower {
+        background: none;
+    }
+
+    .straz-lower-right {
+        margin-top: 25px;
+    }
+
+    .straz-top-right img {
+        width: 95%;
+    }
+
+    .straz-promo span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 1196px) {
+    .straz-h1 {
+        font-size: 28px;
+    }
+
+    .straz-text {
+        font-size: 13px;
+    }
+
+    .straz-text2 {
+        font-size: 14px;
+    }
+
+    .straz-promo {
+        padding: 20px;
+    }
+
+    .straz-promo img {
+        width: 6%;
+    }
+}
+
+@media only screen and (max-width : 934px) {
+    .straz-h1 {
+        font-size: 2.4vw;
+        margin-bottom: 3vw;
+    }
+
+    .straz-text {
+        font-size: 1.4vw;
+        line-height: 2vw;
+    }
+
+    .straz-text2 {
+        font-size: 1.5vw;
+        margin: 3vw 0;
+    }
+
+    .straz-promo span {
+        font-size: 1vw;
+    }
+
+    .order-upload-text {
+        font-size: 1.2vw;
+        line-height: 1.6vw;
+    }
+
+    .straz-lower-right {
+        font-size: 1.4vw;
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .straz-container {
+        margin-top: 5px;
+    }
+
+    .straz-top-left {
+        line-height: 7px;
+    }
+
+    .straz-h1 {
+        font-size: 2.4vw;
+        margin-bottom: -3vw;
+        margin-top: -16px;
+    }
+
+    .straz-text2 {
+        line-height: 9px;
+    }
+
+    .straz-promo {
+        display: none;
+    }
+
+    .straz-lower {
+        padding-top: 10px;
+    }
+
+    .straz-lower-right {
+        margin-top: -15px;
+        font-size: 1.9vw;
+    }
+
+    .straz-h3 {
+        font-size: 12px;
+    }
+}

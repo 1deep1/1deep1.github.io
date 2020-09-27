@@ -55,6 +55,15 @@
     .section-promo {
         display: none;
     }
+
+    .order-lower-p1 {
+        padding-right: 2vw;
+    }
+
+    .order-lower-btn {
+        padding: 2.5vw 6.5vw;
+        font-size: 1.5vw;
+    }
 }
 
 @media only screen and (max-width : 985px) {
@@ -91,6 +100,28 @@
     #logo-footer {
         display: none;
     }
+
+    .сalc-block {
+        justify-content: center;
+    }
+
+    .index-filedset {
+        max-width: 368px;
+        width: 100%;
+    }
+
+    .order-lower-btn {
+        padding: 1.5vw 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .order-lower-p1 {
+        font-size: 1.7vw;
+    }
+
+    .order-lower-p2 {
+        font-size: 3vw;
+    }
 }
 
 @media only screen and (max-width : 750px) {
@@ -116,6 +147,18 @@
         justify-content: space-between;
     }
     .wave2 {
+        display: none;
+    }
+
+    .order-wave {
+        justify-content: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .order-wave img {
         display: none;
     }
 }
@@ -250,6 +293,73 @@
     }
 
     .block-nav-item-big2 a {
-        top: 53px;
+        top: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .order-ul {
+        font-size: 8px;
+        line-height: 138%;
+        margin-left: 27px;
+        margin-right: 13px;
+    }
+
+    .order-ul li {
+        padding-bottom: 11px;
+    }
+
+    .order-upload {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    .order-upload-box {
+        padding: 28px 56px;
+        border: 3px dashed #F95050;
+    }
+
+    .order-upload-box img {
+        max-width: 30%;
+    }
+
+    .order-upload-box p {
+        font-size: 8px;
+        line-height: 10px;
+        padding-bottom: 10px;
+        letter-spacing: 0.15em;
+    }
+
+    .order-upload-text {
+        display: none;
+    }
+
+    .order-lower-price {
+        display: none;
+    }
+
+    .order-lower-price-t {
+        display: block;
+        padding-bottom: 29px;
+    }
+
+    .order-lower-btn {
+        padding: 7.5px 5px;
+    }
+
+    .section-order {
+        margin-top: 35px;
+    }
+
+    .сalc-block {
+        display: none;
+    }
+
+    .order-lower-btn {
+        padding: 1.5vw 2.5vw;
+        font-size: 1.5vw;
     }
 }

@@ -1,0 +1,87 @@
+<%- include('include/header.ejs') %>
+
+<main class="service">
+    <div class="service-container">
+        <h1 class="service-h1">Программа лояльности</h1>
+        <div class="loyalty-main">
+            <p class="loyalty-head-text">Преимущества для участников нашей программы лояльности:</p>
+
+            <div class="loyalty-icons">
+                <div class="loyalty-icons-block">
+                    <div class="loyalty-icons-item">
+                        <img src="images/src/loyalty/ico1.png">
+                        <p>Получение постоянной персональной скидки</p>
+                    </div>
+                    <div class="loyalty-icons-item">
+                        <img src="images/src/loyalty/ico2.png">
+                        <p>Бесплатные подарки</p>
+                    </div>
+                </div>
+                <div class="loyalty-icons-block">
+                    <div class="loyalty-icons-item">
+                        <img src="images/src/loyalty/ico3.png">
+                        <p>Накопление баллов на бонусную карту</p>
+                    </div>
+                    <div class="loyalty-icons-item">
+                        <img src="images/src/loyalty/ico4.png">
+                        <p>Поощрение частых покупок</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loyalty-lower">
+                <div class="loyalty-lower-container">
+                    <div class="loyalty-lower-item">
+                        <h2 class="loyalty-h1">Как получить постоянную персональную скидку?</h2>
+                        <div class="loyalty-block">
+                            <img src="images/src/loyalty/ico1.png">
+                            <p>
+                                При оформлении <span>пятого заказа</span> на картину Вы получаете <span>постоянную персональную скидку</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="loyalty-lower-item">
+                        <h2 class="loyalty-h1">Как получить беплатный подарок?</h2>
+                        <div class="loyalty-block">
+                            <img src="images/src/loyalty/ico2.png">
+                            <p>
+                                <span>Каждая десятая картина</span> размером 30X40 идет Вам <span>в ПОДАРОК</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="loyalty-lower-item">
+                        <h2 class="loyalty-h1">Как копятся баллы на бонусную карту?</h2>
+                        <div class="loyalty-block">
+                            <img src="images/src/loyalty/ico3.png">
+                            <div class="third-block-p">
+                                <p><span class="third-block-span">+50</span> баллов за каждую покупку на 2 000 руб.</p>
+                                <p><span class="third-block-span">+10</span> баллов за каждый отзыв о товаре</p>
+                                <p><span class="third-block-span">365</span> дней действуют баллы после начисения</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loyalty-lower-item">
+                        <h2 class="loyalty-h1">Что такое поощрение частых покупок?</h2>
+                        <div class="loyalty-block">
+                            <img src="images/src/loyalty/ico4.png">
+                            <p>
+                                Чем больше будет общая сумма покупок, тем выше скидка.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="loyalty-lower-form">
+                    <p class="loyalty-news-text">
+                        <span><b>Скидка 5% за подписку</b></span> на наши новости
+                    </p>
+                    <form class="email-form" method="post" action="#">
+                        <input type="email" class="form-email-input" id="form-email-input" placeholder="Введите Ваш E-mail">
+                        <button class="email-form-btn" type="submit"><i class="email-form-btn-i"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('include/footer.ejs') %>

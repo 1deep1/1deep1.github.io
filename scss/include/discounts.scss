@@ -219,7 +219,7 @@
     }
 
     .disc-pic2 {
-        margin-right: -39px;
+        margin-right: -6px;
     }
 
     .disc-first-block {
@@ -229,7 +229,7 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .discounts-blocks {
-        padding: 37px 20px;
+        padding: 10px 3px;
         margin-top: 16px;
     }
 
@@ -243,6 +243,7 @@
 
     .disc-right {
         padding-left: 12px;
+        line-height: 10px;
     }
 
     .disc-bg {
@@ -252,18 +253,29 @@
 
     .disc-h2 {
         line-height: 9px;
+        font-size: 1.8vw;
     }
 
     .disc-red-text {
         line-height: 4px;
+        font-size: 1.2vw;
     }
 
     .disc-main-text {
         line-height: 9px;
+        font-size: 1.6vw;
+    }
+
+    .disc-ul {
+        font-size: 1.4vw;
     }
 
     .disc-pic {
         margin-top: 16px;
+    }
+
+    .disc-pic2 {
+        margin-right: -31px;
     }
 
     .disc-first-block {

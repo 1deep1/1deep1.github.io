@@ -1,0 +1,120 @@
+<%- include('include/header.ejs') %>
+
+<main>
+    <div class="cart-container">
+        <div class="cart-top">
+            <h1 class="cart-h1">корзина</h1>
+            <h2 class="cart-h2">Оформление заказа и оплата</h2>
+        </div>
+        <div class="cart-top2">
+            <div class="round">1</div>
+            <img class="cart-line" src="images/src/line-grad.svg">
+            <div class="round round-dis">2</div>
+        </div>
+        <div class="cart-lables">
+            <p class="cart-lable">Описание товара</p>
+            <p class="cart-lable">Количество</p>
+            <p class="cart-lable">Цена за шт.</p>
+            <p class="cart-lable">Сумма</p>
+        </div>
+
+        <div class="cart-list">
+            <div class="cart-line2"></div>
+            <div class="cart-list-item">
+                <div class="cart-list-main">
+                    <div class="cart-list-img">
+                        <img src="images/src/cart/1.jpg">
+                    </div>
+                    <div class="cart-list-desc">
+                        <p class="cart-list-text-small">Картина по номерам</p>
+                        <p class="cart-list-text-big">«пионы в саду»</p>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Размер</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">40x50см</p>
+                        </div>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Сложность</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">40x50см</p>
+                        </div>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Кол-во цветов</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">28</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-price">
+                    <button class="cart-btn">-</button>
+                    <input type="number">
+                    <button class="cart-btn">+</button>
+                </div>
+                <div class="cart-price">
+                    <p>1 190 руб.</p>
+                </div>
+                <div class="cart-price">
+                    <p>1 190 руб.</p>
+                    <button class="trash-btn"><i></i></button>
+                </div>
+            </div>
+            <div class="cart-line2 cart-line-bottom"></div>
+
+            <div class="cart-line2"></div>
+            <div class="cart-list-item">
+                <div class="cart-list-main">
+                    <div class="cart-list-img">
+                        <img src="images/src/cart/2.jpg">
+                    </div>
+                    <div class="cart-list-desc">
+                        <p class="cart-list-text-small">Картина по стразам</p>
+                        <p class="cart-list-text-big">«дЕВУШКА В КРАСНОМ»</p>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Размер</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">40x50см</p>
+                        </div>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Сложность</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">40x50см</p>
+                        </div>
+                        <div class="line-desc">
+                            <p class="line-desc-text">Кол-во цветов</p>
+                            <div class="line-desc-under"></div>
+                            <p class="line-desc-text">18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-price">
+                    <button class="cart-btn">-</button>
+                    <input type="number">
+                    <button class="cart-btn">+</button>
+                </div>
+                <div class="cart-price">
+                    <p>1 690 руб.</p>
+                </div>
+                <div class="cart-price">
+                    <p>1 690 руб.</p>
+                    <button class="trash-btn"><i></i></button>
+                </div>
+            </div>
+            <div class="cart-line2 cart-line-bottom"></div>
+        </div>
+
+        <div class="price-sum">
+            <p>Итог:</p>
+            <p>2 880 руб.</p>
+        </div>
+        <div class="cart-buttons">
+            <button class="cart-btn-other">добавить еще</button>
+            <button class="cart-btn-make">Оформить заказ</button>
+        </div>
+
+        <h1 class="cart-h1 interest-text">Вас может заинтересовать</h1>
+        <div class="interesting">
+        </div>
+    </div>
+</main>
+
+<%- include('include/footer.ejs') %>

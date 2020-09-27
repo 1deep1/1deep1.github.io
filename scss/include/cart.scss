@@ -1,0 +1,510 @@
+.cart-container {
+    max-width: 1312px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 87px;
+}
+
+.cart-h1 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.cart-h2 {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(200, 194, 194, 0.62);
+}
+
+.cart-top2 {
+    display: flex;
+}
+
+.round {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #F95050;
+    border-radius: 50%;
+    line-height: 1.7em;
+    text-align: center;
+    background: #F95050;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.round-dis {
+    color: #444242;
+    background: #AA8888;
+    border: 2px solid #AA8888;
+}
+
+.cart-line {
+    width: 89%;
+}
+
+.cart-lables {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 53% 20% 20% 7%;
+
+    margin-top: 26px;
+    margin-bottom: 9px;
+}
+
+.cart-lable {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.05em;
+
+    color: #474646;
+}
+
+.cart-list {
+    display: flex;
+    flex-flow: column;
+}
+
+.cart-line2 {
+    border-bottom-color: rgb(186, 178, 178);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 100%;
+}
+
+.cart-line-bottom {
+    margin-bottom: 30px;
+}
+
+.cart-list-item {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 48% 18% 19% 15%;
+    margin: 11px 0;
+}
+
+.cart-list-main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.cart-list-img {
+    margin-right: 52px;
+
+    max-width: 296px;
+    width: 100%;
+}
+
+.cart-list-img img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.cart-list-desc {
+    display: flex;
+    flex-flow: column;
+}
+
+.line-desc {
+    display: flex;
+    align-items: flex-end;
+    max-width: 203px;
+    margin-bottom: 16px;
+}
+
+.line-desc-under {
+    border-bottom-color: rgb(186, 178, 178);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 100%;
+}
+
+.cart-list-text-small {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+    margin-top: 24px;
+    margin-bottom: 11px;
+}
+
+.cart-list-text-big {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    margin-bottom: 44px;
+}
+
+.line-desc-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+
+    color: #3F3D3D;
+
+    white-space: nowrap;
+}
+
+.cart-price {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-price p {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    text-align: center;
+}
+
+.cart-btn {
+    all: unset;
+
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #4E4D4D;
+
+    padding: 1px 10px;
+    margin: 2px;
+}
+
+.cart-btn:hover {
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.cart-price input {
+    appearance: none;
+    all: unset;
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    
+    max-width: 30.86px;
+    height: 22.45px;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.05em;
+}
+
+.trash-btn {
+    background: transparent;
+}
+.trash-btn:hover {
+    background: transparent;
+}
+
+.trash-btn i {
+    background-image: url(../images/src/cart/trash.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    border: none;
+    cursor: pointer;
+    padding: 17px;
+    vertical-align: middle;
+}
+
+.price-sum {
+    text-align: right;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 53px 0;
+}
+
+.cart-btn-other {
+    background: white;
+    border: 2px solid #F95050;
+    box-sizing: border-box;
+    padding: 12px 42px;
+    font-size: 18px;
+    color: black;
+}
+
+.cart-btn-other:hover {
+    border: 2px solid #D24343;
+}
+
+.cart-btn-make {
+    font-size: 18px;
+    padding: 12px 27px;
+}
+
+.interest-text {
+    text-transform: unset;
+}
+
+
+@media only screen and (max-width : 1099px) {
+    .cart-list-img {
+        margin-right: 16px;
+    }
+
+    .cart-list-text-small {
+        margin-top: 11px;
+    }
+
+    .cart-line {
+        width: 86%;
+    }
+}
+
+@media only screen and (max-width : 930px) {
+    .cart-line {
+        width: 83%;
+    }
+
+    .cart-price p {
+        font-size: 15px;
+    }
+
+    .trash-btn {
+        width: 25%;
+    }
+
+    .cart-h1 {
+        font-size: 2.5vw;
+    }
+
+    .cart-h2 {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width : 787px) {
+    .cart-list-text-small {
+        margin-top: 5px;
+        font-size: 1vw;
+    }
+
+    .cart-list-text-big {
+        margin-bottom: 28px;
+        font-size: 1.7vw;
+    }
+
+    .line-desc-text {
+        line-height: 9px;
+        font-size: 1.2vw;
+    }
+
+    .cart-price p {
+        font-size: 1.4vw;
+    }
+
+    .trash-btn {
+        width: unset;
+    }
+
+    .cart-line {
+        width: 80%;
+    }
+
+    .round {
+        font-size: 4.5vw;
+    }
+
+    .cart-list-item {
+        grid-template-columns: 48% 22% 13% 18%;
+    }
+
+    .price-sum {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .cart-btn-make {
+        font-size: 2vw;
+        padding: 2vw 5vw;
+    }
+
+    .cart-btn-other {
+        padding: 2vw 5vw;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .cart-top {
+        margin-top: 0px;
+    }
+
+    .round {
+        height: 30px;
+    }
+
+    .cart-lables {
+        grid-template-columns: 51% 21% 14% 12%;
+        margin-top: 12px;
+    }
+
+    .cart-list-item {
+        grid-template-columns: 48% 22% 13% 18%;
+    }
+
+    .cart-lable {
+        font-size: 5px;
+        line-height: 8px;
+    }
+
+    .cart-list-img {
+        margin-right: 7px;
+        width: 44%;
+    }
+
+    .cart-list-text-small {
+        font-size: 1.4vw;
+        line-height: 5px;
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+
+    .cart-list-text-big {
+        margin-bottom: 4px;
+        font-size: 1.7vw;
+        line-height: 7px;
+    }
+
+    .line-desc {
+        margin-bottom: 0px;
+    }
+
+    .cart-btn {
+        font-size: 8px;
+        line-height: 10px;
+        padding: 0px 4px;
+        margin: 2px;
+    }
+
+    .cart-price input {
+        max-width: 17.86px;
+        height: 15.45px;
+    }
+
+    .trash-btn {
+        width: 18px;
+        padding: unset;
+    }
+
+    .trash-btn i {
+        background-position: 6px 13px;
+        background-size: 12px;
+    }
+
+    .cart-btn-other, .cart-btn-make {
+        padding: 1.1vw 6vw;
+        font-size: 1.5vw;
+    }
+
+    .cart-buttons {
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .round {
+        height: 37px;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+    .round {
+        height: 33px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .round {
+        height: 30px;
+    }
+}

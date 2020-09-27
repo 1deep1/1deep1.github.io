@@ -26,7 +26,7 @@
 				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
 			</ul>
 
-			<a href="#" class="cart"><img src="images/src/cart-order.svg"></a>
+			<a href="cart.html" class="cart"><img src="images/src/cart-order.svg"></a>
 		</div>
 
 		<div>
@@ -112,24 +112,45 @@
 
     <!-- секция создания картины по фото -->
     <section class="section-order">
-        <!-- <img class="wave2 bottom" src="images/src/wave2.svg"> -->
         <form class="calc" method="post" action="#">
+        
+        <div class="order-wave">
+            <img src="images/src/wave2.svg"><h3>Создание картины<br>по фото</h3>
+        </div>
 
-        <h3>Создание картины<br>по фото</h3>
+        <div class="order-top">
+            <ul class="order-ul">
+                <li>Вы загружаете нам любое изображение,включая фотографию.</li>
+                <li>Наши дизайнеры изготавливают бесплатный эскиз Вашей картины и согласовывают его с Вами.</li>
+                <li>Изготавливаем набор для рисования, в который входит: 3 кисти, картина по номерам на натуральном холсте с подрамником, инструкция и все необходимые краски.</li>
+                <li>Отправляем Вам (доставка по всей России).</li>
+                <li>Рисуете индивидуальную картину по Вашей фотографии или любому изображению!</li>
+            </ul>
 
-        <ul>
-            <li>Вы загружаете нам любое изображение,<br>включая фотографию.</li>
-            <li>Наши дизайнеры изготавливают бесплатный эскиз<br>Вашей картины и согласовывают его с Вами.</li>
-            <li>Изготавливаем набор для рисования, в который входит:<br>3 кисти, картина по номерам на натуральном холсте с подрамником, инструкция и все необходимые краски.</li>
-            <li>Отправляем Вам (доставка по всей России).</li>
-            <li>Рисуете индивидуальную картину по Вашей фотографии или любому изображению!</li>
-        </ul>
+            <div class="order-upload">
+                <div class="order-upload-box">
+                    <img src="images/src/upload-pic.png">
+                    <p>перетащите картинку сюда или</p>
+                    <button class="page-shopbtn">загрузите файл</button>
+                </div>
+                <p class="order-upload-text">
+                    <b>Требования к фото:</b>
+                    Расширение файла: bmp, gif, jpeg, jpg, pdf, png, tif, tiff
+                    <br>Размер: от 100 кб до 30 мб
+                    <br>Минимальная ширина и высота: 1000px
+                </p>
+            </div>
+
+            <!-- <div class="oreder-slider">
+                
+            </div> -->
+        </div>
 
         <h3>Калькулятор стоимости картины:</h3>
 
         <div class="calc-container">
             <div class="сalc-block">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Ориентация и размеры:</legend>
                 <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
                 <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
@@ -152,38 +173,38 @@
                 <select name="ackril-lak" id="sel-lak">
                     <option>Без лака</option>
                 </select>
-            </fieldset>
-            <fieldset>
+            </fieldset> -->
+            <fieldset class="index-filedset">
                 <legend>Количество цветов:</legend>
                 <input type="radio" name="num-color" value="to30" id="30"><span>До 30</span>
                 <br>
                 <input type="radio" name="num-color" value="to50" id="50"><span>До 50</span>
             </fieldset>
-            <fieldset>
+            <fieldset class="index-filedset">
                 <legend>Рамка:</legend>
                 <input type="radio" name="border" value="without" id="without"><span>Без ленты</span>
                 <br>
                 <input type="radio" name="border" value="colorful" id="colorful"><span>Цветная лента</span>
             </fieldset>
-            <fieldset>
+            <fieldset class="index-filedset">
                 <legend>Упаковка:</legend>
                 <input type="radio" name="box" value="classic-box" id="classic"><span>Классическая</span>
                 <br>
                 <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
             </fieldset>
-            <fieldset>
+            <fieldset class="index-filedset">
                 <legend>Количество цветов:</legend>
                 <input type="radio" name="" value="" id=""><span>До 30</span>
                 <br>
                 <input type="radio" name="" value="" id=""><span>До 50</span>
             </fieldset>
-            <fieldset>
+            <fieldset class="index-filedset">
                 <legend>Рамка:</legend>
                 <input type="radio" name="" value="" id=""><span>Без ленты</span>
                 <br>
                 <input type="radio" name="" value="" id=""><span>Цветная лента</span>
             </fieldset>
-            <fieldset>
+            <fieldset class="index-filedset">
                 <legend>Упаковка:</legend>
                 <input type="radio" name="" value="" id=""><span>Классическая</span>
                 <br>
@@ -191,6 +212,19 @@
             </fieldset>
             </div>
         </div>
+
+        <p class="order-lower-price-t">Итог: <span><b>1990 р.</b></span></p>
+
+        <div class="order-lower">
+            <div class="order-lower-price">
+                <p class="order-lower-p1">Итог:</p>
+                <p class="order-lower-p2">1990 р.</p>
+            </div>
+
+            <button class="order-lower-btn">Добавить еще</button>
+            <button type="submit" class="order-lower-btn">заказать картину</button>
+        </div>
+
         </form>
     </section>
 </main>
@@ -223,7 +257,7 @@
                 <div>
                     <ul class="footer-secondnav">
                         <li class="first-item"><a href="add-products.html">Доп товары</a></li>
-                        <li><a href="#">Корзина</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
                         <li><a href="discounts.html">Акции</a></li>
                         <li><a href="service.html">Сервис</a></li>
                         <li><a href="masters.html">Мастер-классы</a></li>
@@ -236,8 +270,8 @@
                         <li class="first-item"><a href="contacts.html">Контакты</a></li>
                         <li><a href="commments.html">Отзывы</a></li>
                         <li><a href="pay-del.html">Доставка и оплата</a></li>
-                        <li><a href="#">Галерея готовых работ</a></li>
-                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a href="gallery.html">Галерея готовых работ</a></li>
+                        <li><a href="loyalty.html">Программа лояльности</a></li>
                         <li><a href="benefits.html">Наши преимущества</a></li>
                     </ul>
                </div>

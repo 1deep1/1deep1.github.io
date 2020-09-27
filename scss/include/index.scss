@@ -381,3 +381,258 @@ h3 {
 .bottom {
     top: 73%;
 }
+
+.section-order {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-wave {
+    display: flex;
+}
+
+.order-wave img {
+    padding-right: 67px;
+}
+
+.order-ul {
+    list-style: none;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    max-width: 545px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.order-ul li {
+    padding-bottom: 25px;
+}
+
+.order-ul li::before {
+    content: "\2022";
+    color: #F28484;
+    width: 1em;
+    margin-left: -1em;
+    display: inline-block;
+}
+
+.calc-container{
+    padding: 0 50px;
+}
+
+.сalc-block {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.index-filedset {
+    border: none;
+    margin-bottom: 45px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.index-filedset span {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: rgba(48, 48, 48, 0.6);
+}
+
+.index-filedset legend {
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    margin-bottom: 30px;
+}
+
+.index-filedset input {
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 3px solid #F28484;
+    box-sizing: border-box;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+
+    margin-right: 19px;
+  }
+  
+.index-filedset input:checked {
+    border: 6px solid #F28484;
+}
+
+.order-top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.order-upload {
+    display: flex;
+
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 525px;
+    //justify-content: center;
+}
+
+.order-upload-box {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    //justify-content: center;
+
+    background: rgba(242, 132, 132, 0.05);
+    border: 3px dashed #F95050;
+    box-sizing: border-box;
+
+    padding: 66px 61px;
+    margin-bottom: 40px;
+    max-width: 525px;
+}
+
+.order-upload-box img {
+    padding-bottom: 25px;
+}
+
+.order-upload-box p {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: rgba(242, 132, 132, 0.6);
+
+    padding-bottom: 38px;
+}
+
+.order-upload-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 138%;
+    max-width: 396px;
+
+    letter-spacing: 0.05em;
+
+    color: rgba(48, 48, 48, 0.6);
+}
+
+.oreder-slider {
+    background: #826B62;
+    box-shadow: 0px 0px 10px rgba(130, 107, 98, 0.2);
+
+    width: 720px;
+    height: 210px;
+}
+
+.order-lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    background: rgba(217, 179, 138, 0.2);
+}
+
+.order-lower-price {
+    display: flex;
+    align-items: baseline;
+}
+
+.order-lower-price-t {
+    display: none;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    margin-left: 27px;
+}
+
+.order-lower-price-t span {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+
+    color: #303030
+}
+
+.order-lower-p1 {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    padding-right: 46px;
+}
+
+.order-lower-p2 {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.1em;
+
+    color: #303030
+}
+
+.order-lower-btn {
+    padding: 25px 77px;
+}
+

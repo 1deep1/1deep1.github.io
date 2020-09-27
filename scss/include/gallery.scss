@@ -1,0 +1,241 @@
+.gal-top {
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gal-h1 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.gal-btn {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: 0.1em;
+
+    padding: 13px 16px;
+}
+
+.gal-nav {
+    background: rgba(217, 179, 138, 0.2);
+    min-height: 65px;
+    width: 100%;
+    display: flex;
+}
+
+.gal-nav-container {
+    max-width: 1310px;
+    margin: auto;
+}
+
+.gal-nav-container ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+}
+
+.gal-nav-container ul li {
+}
+
+.gal-a {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #303030;
+
+    padding: 11px 13px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.gal-a:hover {
+    padding: 11px 13px;
+    border: 1px solid #F95050;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(376px,3fr));
+    grid-auto-flow: dense;
+    column-gap: 76px;
+    row-gap: 33px;
+
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    max-width: 376px;
+}
+
+.gal-fast {
+    display: none;
+
+    background: rgba(159, 133, 122, 0.87);
+    width: 100%;
+    max-width: 375px;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.gal-fast img {
+    margin: 15px 0;
+}
+
+.gallery-item-img {
+    display: grid;
+    //grid-template-columns: repeat(auto-fit,minmax(134px,2fr));
+    grid-auto-flow: dense;
+
+    grid-template-columns: 37% 63%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img3"
+    "img2 img3";
+}
+
+.gallery-top {
+    display: flex;
+    align-items: center;
+}
+
+.gallery-top:hover .gal-fast {
+    display: flex;
+}
+
+.gallery-item-img img {
+    position: relative;
+}
+
+.gal-img1 {
+    border-radius: 10px;
+}
+
+.gal-big-img {
+    grid-area: img3;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.gal-img2 {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.gallery-text {
+    background: #9F857A;
+    border-radius: 0px 0px 10px 10px;
+    color: #000000;
+    padding: 11px 20px;
+    line-height: 10px;
+}
+
+.gallery-text-small {
+    font-family:'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+}
+
+.gallery-text-main a {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+.gallery-text-main a:hover {
+    text-decoration: underline;
+}
+
+.gallery-text-name {
+    font-family:'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.05em;
+
+    color: #434343;
+}
+
+
+@media only screen and (max-width : 1295px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit,minmax(267px,3fr));
+        margin: 23px 26px;
+    }
+}
+
+@media only screen and (max-width : 1164px) {
+    .gal-nav-container ul {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width : 850px) {
+    .gal-h1 {
+        font-size: 3.2vw;
+        line-height: 3.8vw;
+    }
+
+    .gal-btn {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .gal-a {
+        font-size: 8px;
+    }
+
+    .gal-top {
+        margin: 6px 7px 9px 7px;
+    }
+
+    .gal-btn {
+        font-size: 1.7vw;
+        padding: 1px 12px;
+    }
+}

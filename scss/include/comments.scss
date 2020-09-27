@@ -145,7 +145,7 @@
 .com-likes {
     display: flex;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     padding-left: 25px;
 }
@@ -196,6 +196,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.comments-main {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.comments-reply {
+    max-width: 398px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
