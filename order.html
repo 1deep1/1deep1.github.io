@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Картины по номерам</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="upper-header">
+			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
+			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
+			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
+			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
+			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
+			<button type="button">ЗАКАЗАТЬ ЗВОНОК</button>
+			<p class="phone-number-black">+234 (76) 343 58 78</p>
+
+			<ul class="nav-social">
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg" alt="whatsapp link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/telegram.svg" alt="telegram link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/vk.svg" alt="vk link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
+			</ul>
+
+			<a href="cart.html" class="cart"><img src="images/src/cart-order.svg"></a>
+		</div>
+
+		<div>
+			<nav>
+				<div class="navigation">
+				<ul class="main-nav">
+					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
+					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
+					<li class="main-nav-item more-ico3"><a href="pic-straz.html">КАРТИНЫ ПО СТРАЗАМ</a></li>
+					<li class="main-nav-item"><a href="#">ВЫШИВКА</a></li>
+					<li class="main-nav-item"><a href="#">ПАЗЛЫ</a></li>
+					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
+					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a>
+						<ul>
+							<li><a href="add-products.html">ДОП ТОВАРЫ</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+<main>
+    <div class="cart-container">
+        <div class="cart-top">
+            <h2 class="cart-h2">корзина</h2>
+            <h1 class="cart-h1">Оформление заказа и оплата</h1>
+        </div>
+        <div class="cart-top2">
+            <div class="round round-dis">1</div>
+            <img class="cart-line" src="images/src/line-grad2.svg">
+            <div class="round">2</div>
+        </div>
+        <form class="order" method="post" action="#">
+            <div class="order-mainform">
+                <div class="order-mainform-left">
+                    <h3 class="cart-h1 interest-text">Заполните данные получателя:</h3>
+                    <div class="order-mainform-form">
+                        <p>
+                            <label class="form-lable order-lable" for="user-name">Ф.И.О. <span>*</span></label><br>
+                            <input class="form-input order-input" id="user-name" type="text" name="user-name">
+                        </p>
+                        <p>
+                            <label class="form-lable order-lable" for="user-email">E-mail <span>*</span></label><br>
+                            <input class="form-input order-input" id="user-email" type="email" name="user-email">
+                        </p>
+                        <p>
+                            <label class="form-lable order-lable" for="user-phone">Телефон <span>*</span></label><br>
+                            <input class="form-input order-input" id="user-phone" type="tel" name="user-phone">
+                        </p>
+                    </div>
+                </div>
+                <div class="order-mainform-right">
+                    <h3 class="cart-h1 interest-text">Адрес доставки:</h3>
+                    <div class="order-mainform-form">
+                        <p>
+                            <label class="form-lable order-lable" for="user-street">Город, улица</label><br>
+                            <input class="form-input order-input" id="user-street" type="text" name="user-street">
+                        </p>
+                        <div class="order-form-adres">
+                            <p>
+                                <label class="form-lable order-lable" for="user-home">Дом</label><br>
+                                <input class="form-input order-input" id="user-home" type="text" name="user-home">
+                            </p>
+                            <p>
+                                <label class="form-lable order-lable" for="user-apart">Квартира</label><br>
+                                <input class="form-input order-input" id="user-apart" type="text" name="user-apart">
+                            </p>
+                            <p>
+                                <label class="form-lable order-lable" for="user-ent">Подъезд</label><br>
+                                <input class="form-input order-input" id="user-ent" type="text" name="user-ent">
+                            </p>
+                            <p>
+                                <label class="form-lable order-lable" for="user-floor">Этаж</label><br>
+                                <input class="form-input order-input" id="user-floor" type="text" name="user-floor">
+                            </p>
+                        </div>
+                        <p>
+                            <label class="form-lable order-lable" for="user-code">Код домофона</label><br>
+                            <input class="form-input order-input domophone" id="user-code" type="text" name="user-code">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-comform">
+                <h3 class="cart-h1 interest-text">Комментарии к заказу:</h3><br>
+                <p>
+                    <label class="form-lable order-lable" for="user-message">Дополнительная информация (необязательно)</label><br>
+                    <textarea class="order-message" id="user-message" name="comment"></textarea>
+                </p>
+            </div>
+            <div class="order-make-lower">
+                <div class="order-lower-left">
+                    <h3 class="cart-h1 interest-text order-h1">Выберите способ доставки:</h3>
+                    <br><br>
+                    <h3 class="cart-h3">По Москве:</h3>
+                    <div class="order-del-list">
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="inMKAD" id="inMKAD"><span>Доставка внутри МКАД</span></div>
+                            <p>500 руб.</p>
+                        </div>
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="outMKAD" id="outMKAD"><span>Доставка за пределы МКАД до 3-х км</span></div>
+                            <p>700 руб.</p>
+                        </div>
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="out3MKAD" id="out3MKAD"><span>Доставка от МКАД далее 3-х км</span></div>
+                            <p>1 000 руб.</p>
+                        </div>
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="samo" id="samo"><span>Самовывоз</span></div>
+                            <p>Бесплатно</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="cart-h3">Доставка в регионы:</h3>
+                    <div class="order-del-list">
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="mail" id="mail"><span>1 класс (Почта России)</span></div>
+                            <p>700 руб.</p>
+                        </div>
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="mailEMS" id="mailEMS"><span>Курьером EMS (Почта России)</span></div>
+                            <span class="order-del-ind">Рассчитывается индивидуально</span>
+                        </div>
+                    </div>
+                    <div class="order-del-list-red">
+                        <div class="order-del-item">
+                            <div><input type="radio" name="delivery" value="fast" id="fast"><span><b>Срочный заказ</b></span></div>
+                            <p>1 000 руб.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-lower-right">
+                    <h3 class="cart-h1 interest-text">Выберете способ оплаты:</h3>
+                    <div class="order-del-list">
+                        <div class="order-del-item">
+                            <div><input type="radio" name="pay" value="cash" id="cash"><span>Наличными курьеру</span></div>
+                        </div>
+                        <div class="order-del-item">
+                            <div><input type="radio" name="pay" value="card" id="card"><span>Оплата по ссылке (7,5% комиссия)</span></div>
+                        </div>
+                    </div>
+                    <div class="order-sum">
+                        <p class="order-sum-text">Товар: 2 шт.</p>
+                        <p class="order-sum-text">Скидка: 0 руб.</p>
+                        <p class="order-sum-text">Доставка: 500 руб.</p>
+
+                        <p class="order-sum-sumtext">итого: 3 380 руб.</p>
+                        <p class="order-sum-promotext">Промокод:</p>
+
+                        <div class="promo-form">
+                            <input class="form-input order-input promo-input" id="user-promocode" type="text" name="user-promocode">
+                            <button class="promo-form-btn"><i></i></button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="cart-btn-div">
+                <div class="order-make-order">
+                    <button class="cart-btn-other">Вернуться в корзину</button>
+                </div>
+                <div class="order-make-order">
+                    <div><button class="order-make-btn">Оформить заказ</button></div>
+                    <p class="agreement-text">
+                        Все Ваши данные защищены. Нажимая на кнопку, Вы соглашаетесь с <a href="#">политикой конфиденциальности.</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <!-- нижнее меню-->
+    <div class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="images/src/logo.svg" width="107px" id="logo-footer">
+                <img src="images/src/logo-text-white.svg" id="logo-footer2">
+                <img src="images/src/logo-text-smallwhite.svg" id="logo-footer3">
+            </div>
+
+            <div class="footer-nav">
+                <div>
+                    <ul class="footer-firstnav">
+					    <li><a href="/">Главная</a></li>
+					    <li><a href="art-therapy.html">Арт-терапия</a></li>
+					    <li><a href="#">Картины по фото</a></li>
+					    <li><a href="pic-straz.html">Картины стразами</a></li>
+					    <li><a href="#">Пазлы по фото</a></li>
+					    <li><a href="#">Картины по дереву</a></li>
+                        <li><a href="#">Мандалы</a></li>
+                        <li><a href="#">Вышивка</a></li>
+                        <li><a href="#">Алмазная мозайка</a></li>
+				    </ul>
+                </div>
+
+                <div>
+                    <ul class="footer-secondnav">
+                        <li class="first-item"><a href="add-products.html">Доп товары</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li><a href="discounts.html">Акции</a></li>
+                        <li><a href="service.html">Сервис</a></li>
+                        <li><a href="masters.html">Мастер-классы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="footer-secondnav">
+                        <li class="first-item"><a href="contacts.html">Контакты</a></li>
+                        <li><a href="commments.html">Отзывы</a></li>
+                        <li><a href="pay-del.html">Доставка и оплата</a></li>
+                        <li><a href="gallery.html">Галерея готовых работ</a></li>
+                        <li><a href="loyalty.html">Программа лояльности</a></li>
+                        <li><a href="benefits.html">Наши преимущества</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- нижнее меню с информацие-->
+    <div class="footer-lowersection">
+        <div class="footer-container footer-container2">
+            <p class="phone-number-white">+234 (76) 343 58 78</p>
+
+            <ul class="nav-social-footer">
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/whatsapp.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/telegram.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/vk.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/insta.svg"></a></li>
+            </ul>
+
+            <a href="#" class="confid-text"><u>Политика конфиденциальности</u></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
