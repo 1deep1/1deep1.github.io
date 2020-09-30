@@ -80,13 +80,14 @@
 
 .straz-list {
     list-style: none;
+    font-size: 16px;
 }
 
 .straz-list li::before {
     content: "⬤";
-    color: #F28484;
+    color: #F95050;
     display: inline-block;
-    width: 2em;
+    width: 2.1em;
     margin-left: 0;
 }
 
@@ -124,12 +125,18 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 138%;
+    line-height: 19px;
     max-width: 630px;
 
     letter-spacing: 0.05em;
 
     color: #303030;
+}
+
+.straz-ul-head {
+    margin-top: 31px;
+    margin-bottom: 13px;
+    font-size: 16px;
 }
 
 .straz-upload-text {
@@ -200,6 +207,14 @@
         margin: 3vw 0;
     }
 
+    .straz-ul-head {
+        font-size: 1.7vw;
+    }
+
+    .straz-list {
+        font-size: 1.7vw;
+    }
+
     .straz-promo span {
         font-size: 1vw;
     }
@@ -211,6 +226,7 @@
 
     .straz-lower-right {
         font-size: 1.4vw;
+        line-height: 14px;
     }
 
 }
@@ -245,9 +261,15 @@
     .straz-lower-right {
         margin-top: -15px;
         font-size: 1.9vw;
+        line-height: 6px;
     }
 
     .straz-h3 {
         font-size: 12px;
+    }
+
+    .straz-ul-head {
+        margin-top: 13px;
+        margin-bottom: 4px;
     }
 }

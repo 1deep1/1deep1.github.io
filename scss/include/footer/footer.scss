@@ -10,7 +10,7 @@
 
     margin-left: auto;
     margin-right: auto;
-    padding: 0 40px;
+    padding: 0 90px;
 }
 .footer-container2 {
     min-height: 90px;
@@ -19,7 +19,7 @@
     flex-grow: 4;
 }
 .footer-nav ul {
-    padding-right: 5vh;
+    //padding-right: 5vh;
 }
 .footer-container a {
     text-decoration: none;
@@ -41,6 +41,7 @@
 
 .footer-firstnav {
     list-style: none;
+    line-height: 30px;
 }
 .footer-firstnav a{
     font-family: "Museo Sans Cyrl-500";
@@ -50,6 +51,8 @@
 
 .footer-secondnav {
     list-style: none;
+    line-height: 40px;
+    padding-left: 86px;
 }
 .first-item a{
     font-family: "Museo Sans Cyrl-500";
