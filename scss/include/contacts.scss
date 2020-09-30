@@ -188,9 +188,30 @@ textarea {
     margin-right: 10px;
 }
 
+.contacts-container2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.contacts-item-left {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-item-right {
+    max-width: 695px;
+    width: 100%;
+}
+
 @media only screen and (max-width : 890px) {
     .contacts-container {
         grid-template-columns: repeat(auto-fit,minmax(50px,320px));
+        justify-content: center;
+    }
+
+    .contacts-container2 {
+        flex-flow: row wrap;
         justify-content: center;
     }
 }

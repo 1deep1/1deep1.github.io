@@ -57,7 +57,7 @@ h1 {
 .page-headertext {
     position: absolute;
     top: 26%;
-    left: 6%;
+    left: 15%;
 }
 
 .pagebg-image {
@@ -162,6 +162,12 @@ h1 {
     letter-spacing: 0.05em;
 
     color: #000000;
+}
+
+@media only screen and (max-width : 1440px) {
+    .page-headertext {
+        left: 4%;
+    }
 }
 
 @media only screen and (max-width : 930px) {
@@ -277,6 +283,11 @@ h1 {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.search-form p {
+    display: flex;
+    align-items: center;
 }
 
 .search-form input {

@@ -230,15 +230,21 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .discounts-blocks {
         padding: 10px 3px;
-        margin-top: 16px;
+        margin-top: 13px;
+        margin-bottom: 22px;
     }
 
     .discounts-item {
-        margin-left: -16px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
 
     .disc-pic {
-        width: 56%;
+        margin-bottom: 6px;
+        margin-top: unset;
+        width: 75%;
     }
 
     .disc-right {
@@ -247,35 +253,49 @@
     }
 
     .disc-bg {
-        right: 2%;
-        width: 88%;
+        right: 7%;
+        width: 89%;
+        margin-bottom: 12px;
+    }
+
+    .disc-text {
+        max-width: 212px;
+    }
+
+    .disc-bg2 {
+        left: 5%;
+    }
+
+    .disc-second-text {
+        text-align: left;
     }
 
     .disc-h2 {
         line-height: 9px;
-        font-size: 1.8vw;
+        font-size: 2.4vw;
     }
 
     .disc-red-text {
         line-height: 4px;
-        font-size: 1.2vw;
+        font-size: 1.6vw;
     }
 
     .disc-main-text {
         line-height: 9px;
-        font-size: 1.6vw;
+        font-size: 2vw;
     }
 
     .disc-ul {
-        font-size: 1.4vw;
+        font-size: 1.7vw;
     }
 
     .disc-pic {
-        margin-top: 16px;
+        margin-top: -14px;
     }
 
     .disc-pic2 {
-        margin-right: -31px;
+        margin-right: 14px;
+        margin-top: 9px;
     }
 
     .disc-first-block {
