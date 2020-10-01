@@ -3,24 +3,34 @@
 <main class="product-main">
     <div class="top-search">
         <h2 class="page-h2">ДОПОЛНИТЕЛЬНЫЕ ТОВАРЫ</h2>
-        <div><input type="search" class="search-field" id="site-search" name="q" placeholder="Пазлы..." aria-label="Search through site content"></div>
+        <div class="search-top-form">
+            <input type="search" class="search-field" id="site-search" name="q" placeholder="Пазлы..." aria-label="Поиск">
+            <i></i>
+        </div>
         <!-- <i class="search-ico"></i> -->
     </div>
 
     <div class="search-bar-container">
         <div class="search-bar">
             <form class="search-form" method="post" action="#" id="search-form">
-                <p>
+
+                <div class="search-price-filter">
                     <label class="search-lable" for="search-price-from">Цена</label>
-                    <input class="search-input" id="search-price-from" type="number" name="price-from" placeholder="500">
-                    <input class="search-input" id="search-price-to" type="number" name="price-to" placeholder="10000">
-                </p>
-                <p>
+                    <div class="search-price-filter">
+                        <input class="search-input" id="search-price-from" type="number" name="price-from" placeholder="500">
+                        <i>от</i>
+                    </div>
+                    <div class="search-price-filter">
+                        <input class="search-input" id="search-price-to" type="number" name="price-to" placeholder="10000">
+                        <i>до</i>
+                    </div>
+                </div>
+                
                     <label class="search-labe" for="search-sort">Сортировать по</label>
                     <select name="sort" id="search-sort">
                         <option>цене</option>
                     </select>
-                </p>
+                
                 <p>
                     <input class="search-check" type="checkbox" id="discounts" name="discounts">
                     <label class="search-lable" for="discounts">Акции</label>

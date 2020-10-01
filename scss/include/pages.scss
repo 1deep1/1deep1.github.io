@@ -275,6 +275,21 @@ h1 {
     margin-right: auto;
 }
 
+.search-top-form {
+    display: flex;
+}
+
+.search-top-form i {
+    position: relative;
+    right: 8%;
+    background-image: url(../images/src/find.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    border: none;
+    padding: 14px;
+}
+
 .search-form {
     min-height: 60px;
     height: 100%;
@@ -298,6 +313,8 @@ h1 {
 
     min-width: 100px;
     min-height: 30px;
+
+    padding: 5px 23px;
 }
 
 .search-form input[type="checkbox" i] {
@@ -308,6 +325,8 @@ h1 {
 
     min-height: 30px;
     min-width: 30px;
+
+    margin-right: 13px;
 }
 
 .search-form label {
@@ -320,6 +339,8 @@ h1 {
     letter-spacing: 0.05em;
 
     color: #000000;
+
+    margin-right: 16px;
 }
 
 .product-container {
@@ -336,6 +357,52 @@ h1 {
     column-gap: 75px;
     row-gap: 30px;
     justify-content: center;
+}
+
+#search-sort {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 7px 14px;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    max-width: 175px;
+    width: 100%;
+    font-family: 'Museo Sans Cyrl-500';
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+#search-price-from, #search-price-to {
+    width: 100%;
+    width: 112px;
+}
+
+.search-price-filter {
+    display: flex;
+    align-items: center;
+}
+
+.search-price-filter i {
+    position: relative;
+    font-family: Museo Sans Cyrl-500;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    left: -84%;
 }
 
 .product-item {
@@ -500,6 +567,12 @@ h1 {
     color: white;
 }
 
+@media only screen and (max-width : 1065px) {
+    .search-top-form i {
+        right: 11%;
+    }
+}
+
 @media only screen and (max-width : 930px) {
     .page-h2 {
         font-size: 17px;
@@ -552,4 +625,16 @@ h1 {
         min-height: 22px;
         min-width: 22px;
     }
+
+    .search-price-filter {
+        margin-bottom: 2px;
+    }
+}
+
+// sitemap
+
+.sitemap-container {
+    max-width: 1360px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
