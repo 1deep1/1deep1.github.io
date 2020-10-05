@@ -12,7 +12,7 @@
 	<header class="main-header">
 		<div class="upper-header">
 			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
-			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
+			<div class="menu-btn" onclick="openMenu()"><a class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
 			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
@@ -31,7 +31,7 @@
 
 		<div>
 			<nav>
-				<div class="navigation">
+				<div class="navigation" id="navMob">
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
 					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
@@ -48,6 +48,13 @@
 				</div>
 			</nav>
 		</div>
+
+		<script>
+			function openMenu() {
+				//document.getElementsByClassName("navigation").classList.toggle('active');
+				document.getElementById("navMob").classList.toggle("active");
+			}
+		</script>
 	</header>
 
 <main class="masters">

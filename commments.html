@@ -12,7 +12,7 @@
 	<header class="main-header">
 		<div class="upper-header">
 			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
-			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
+			<div class="menu-btn" onclick="openMenu()"><a class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
 			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
@@ -31,7 +31,7 @@
 
 		<div>
 			<nav>
-				<div class="navigation">
+				<div class="navigation" id="navMob">
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
 					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
@@ -48,6 +48,13 @@
 				</div>
 			</nav>
 		</div>
+
+		<script>
+			function openMenu() {
+				//document.getElementsByClassName("navigation").classList.toggle('active');
+				document.getElementById("navMob").classList.toggle("active");
+			}
+		</script>
 	</header>
 
 <main>
@@ -57,6 +64,13 @@
         <div class="com-top">
             <div class="com-top-left">
                 <h2 class="com-h2"><b>Рейтинг наших покупателей</b></h2>
+                <div class="com-stars">
+                    <img src="images/src/star-1.svg">
+                    <img src="images/src/star-1.svg">
+                    <img src="images/src/star-1.svg">
+                    <img src="images/src/star-1.svg">
+                    <img src="images/src/star-2.svg">
+                </div>
                 <p class="com-text lower">На основе 500 оценок покупателей</p>
                 <p class="com-text">Разместите отзыв на нашем сайте и получите скидку 5% на ваш следующий заказ</p>
                 <button class="page-shopbtn send-btn">Оставить свой отзыв</button>
@@ -64,7 +78,31 @@
             <div class="com-rating">
                 <p class="com-rating-text">4,8</p>
                 <div class="com-stars-list">
-                    dddd
+                    <div class="com-stars-list-item">
+                        <img src="images/src/comments/star5.svg">
+                        <input type="range" id="vol" name="vol" value="400" min="0" max="500">
+                        <p>400</p>
+                    </div>
+                    <div class="com-stars-list-item">
+                        <img src="images/src/comments/star4.svg">
+                        <input type="range" id="vol" name="vol" value="65" min="0" max="500">
+                        <p>65</p>
+                    </div>
+                    <div class="com-stars-list-item">
+                        <img src="images/src/comments/star3.svg">
+                        <input type="range" id="vol" name="vol" value="20" min="0" max="500">
+                        <p>20</p>
+                    </div>
+                    <div class="com-stars-list-item">
+                        <img src="images/src/comments/star2.svg">
+                        <input type="range" id="vol" name="vol" value="10" min="0" max="500">
+                        <p>10</p>
+                    </div>
+                    <div class="com-stars-list-item">
+                        <img src="images/src/comments/star1.svg">
+                        <input type="range" id="vol" name="vol" value="5" min="0" max="500">
+                        <p>5</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,6 +112,13 @@
                 <div class="comments-item-block">
                     <div class="comments-item-left">
                         <h3 class="com-h3"><b>Наталья Еремина</b></h3>
+                        <div class="com-stars min-stars">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-2.svg">
+                        </div>
                         <p class="com-date">28.08.2020</p>
                     </div>
 
@@ -83,7 +128,13 @@
                 </div>
 
                 <div class="comments-item-block second-block">
-                    <p class="comments-text">Спасибо большое! Я и не знала раньше, что можно по своей фотографии получить картину. С большим удовольствием рисовала, и теперь буду наслаждаться любимым видом. Теперь буду делать фото понравившихся видов и рисовать, рисовать, рисовать. Спасибо большое ребятам. Все просто супер! Красок много, даже остались, холст отличный. А упаковка, просто шикарная, прям готовый подарок.</p>
+                    <div class="comments-main">
+                        <p class="comments-text">Заказывала картину в подарок и осталась довольна. Хочу сказать большое спасибо! Очень красиво смотрится и сама картина и как она упакована!</p>
+                        <div class="comments-reply">
+                            <p class="com-more"><a href="#">Подробнее</a></p>
+                        </div>
+                        <p class="com-more more-mob"><a href="#">Подробнее</a></p>
+                    </div>
                     <div class="com-likes">
                         <div class="com-like">
                             <img src="images/src/comments/like.svg"><p class="like-num"><b>5</b></p>
@@ -99,6 +150,13 @@
                 <div class="comments-item-block">
                     <div class="comments-item-left">
                         <h3 class="com-h3"><b>Ирина Павлова</b></h3>
+                        <div class="com-stars min-stars">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-1.svg">
+                            <img src="images/src/star-2.svg">
+                            <img src="images/src/star-2.svg">
+                        </div>
                         <p class="com-date">28.08.2020</p>
                     </div>
 
@@ -111,13 +169,14 @@
                     <div class="comments-main">
                         <p class="comments-text">Заказывала картину в подарок и осталась довольна. Хочу сказать большое спасибо! Очень красиво смотрится и сама картина и как она упакована!</p>
                         <div class="comments-reply">
-                            <img src="images/src/comments/reply.svg">
+                            <p class="com-more"><a href="#">Подробнее</a></p>
+                            <img class="reply-img" src="images/src/comments/reply.svg">
                             <div class="comments-reply-block">
                                 <img src="images/src/comments/logo.svg">
-                                <p>Мария Луканова, спасибо большое за Ваш отзыв! Всегда рады выполнять Ваши заказы. Будем рады видеть фото Ваших готовых работ.</p>
+                                <p class="comments-text">Мария Луканова, спасибо большое за Ваш отзыв! Всегда рады выполнять Ваши заказы. Будем рады видеть фото Ваших готовых работ.</p>
                             </div>
                         </div>
-                        <p class="com-more"><a href="#">Подробнее</a></p>
+                        <p class="com-more more-mob"><a href="#">Подробнее</a></p>
                     </div>
                     
 

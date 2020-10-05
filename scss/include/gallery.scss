@@ -99,18 +99,20 @@
 
 .gallery-item {
     max-width: 376px;
+    position: relative;
 }
 
 .gal-fast {
     display: none;
 
     background: rgba(159, 133, 122, 0.87);
-    width: 100%;
-    max-width: 375px;
+    position: absolute;
     justify-content: center;
     align-items: center;
-
-    position: absolute;
+    text-align: center;
+    height: 16%;
+    top: 32%;
+    width: 98.4%;
     z-index: 1;
 }
 
@@ -133,6 +135,7 @@
 .gallery-top {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .gallery-top:hover .gal-fast {
@@ -200,6 +203,40 @@
     color: #434343;
 }
 
+.com-lower-numbers {
+    
+}
+
+.com-lower-numbers a {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 4px 9px;
+}
+
+.com-lower-numbers a:first-child {
+    color: white;
+
+    border-radius: 100%;        
+    background: #F95050;
+    display: inline-block;
+    //line-height: 100px;
+}
+
+.com-arrow {
+    margin: 0 27px;
+}
+
 
 @media only screen and (max-width : 1295px) {
     .gallery {
@@ -237,5 +274,14 @@
     .gal-btn {
         font-size: 1.7vw;
         padding: 1px 12px;
+    }
+
+    .com-arrow {
+        margin: 0 17px;
+    }
+
+    .com-lower-numbers a {
+        font-size: 8px;
+        padding: 1px 7px;
     }
 }

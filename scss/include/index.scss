@@ -434,12 +434,64 @@ h3 {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    max-width: 1001px;
+}
+
+.calc-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-bottom: 65px;
+}
+
+.calc-top-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 38px 31px;
+    max-width: 490px;
+    width: 100%;
+}
+
+.with-border {
+    border: 3px solid rgba(242, 132, 132, 0.2);
+    box-sizing: border-box;
+}
+
+.calc-top-item p {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.calc-top-item select {
+    border: none;
+    border-bottom-color: #F28484;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: rgba(48, 48, 48, 0.6);
 }
 
 .index-filedset {
     border: none;
     margin-bottom: 45px;
-    max-width: 400px;
+    max-width: 247px;
     width: 100%;
 }
 

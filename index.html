@@ -12,7 +12,7 @@
 	<header class="main-header">
 		<div class="upper-header">
 			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
-			<div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
+			<div class="menu-btn" onclick="openMenu()"><a class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
 			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
@@ -31,7 +31,7 @@
 
 		<div>
 			<nav>
-				<div class="navigation">
+				<div class="navigation" id="navMob">
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
 					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
@@ -48,6 +48,13 @@
 				</div>
 			</nav>
 		</div>
+
+		<script>
+			function openMenu() {
+				//document.getElementsByClassName("navigation").classList.toggle('active');
+				document.getElementById("navMob").classList.toggle("active");
+			}
+		</script>
 	</header>
 <main>
     <!-- секция слайд-шоу -->
@@ -150,30 +157,34 @@
 
         <div class="calc-container">
             <div class="сalc-block">
-            <!-- <fieldset>
-                <legend>Ориентация и размеры:</legend>
-                <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
-                <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
-                <br>
-                <select name="size" id="sel-size">
-                    <option>30x30 см</option>
-                    <option>Пункт 2</option>
-                    <option>Пункт 3</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <span>Мольберт</span>
-                <br>
-                <select name="molbert" id="sel-molbert">
-                    <option>Без мольберта</option>
-                </select>
-                <br>
-                <span>Акриловый лак</span>
-                <br>
-                <select name="ackril-lak" id="sel-lak">
-                    <option>Без лака</option>
-                </select>
-            </fieldset> -->
+            <div class="calc-top">
+                <div class="calc-top-item with-border">
+                    <p>Ориентация и размеры:</p>
+                    <div class="calc-top-btns">
+                        <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
+                        <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
+                    </div>
+                    <select name="size" id="sel-size">
+                        <option>30x30 см</option>
+                        <option>Пункт 2</option>
+                        <option>Пункт 3</option>
+                    </select>
+                </div>
+                <div class="calc-top-item">
+                    <div class="calc-top-child">
+                        <p>Мольберт</p>
+                        <select name="molbert" id="sel-molbert">
+                            <option>Без мольберта</option>
+                        </select>
+                    </div>
+                    <div class="calc-top-child">
+                        <p>Акриловый лак</p>
+                        <select name="ackril-lak" id="sel-lak">
+                            <option>Без лака</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <fieldset class="index-filedset">
                 <legend>Количество цветов:</legend>
                 <input type="radio" name="num-color" value="to30" id="30"><span>До 30</span>
@@ -210,6 +221,10 @@
                 <br>
                 <input type="radio" name="" value="" id=""><span>В подарок</span>
             </fieldset>
+            </div>
+
+            <div class="calc-block-mob">
+                
             </div>
         </div>
 

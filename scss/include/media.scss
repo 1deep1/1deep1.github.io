@@ -180,10 +180,20 @@
     .nav-social {
         display: none;
     }
-    .navigation {
-        display: none;
+
+    #navMob {
+        position: absolute;
+        background-color: #f7f0e8;
+        z-index: 3;
+        top: -83px;
+        transition: all 200ms;
     }
+    #navMob.active {
+        top: 31px;
+    }
+
     .menu-btn {
+        z-index: 1;
         display: inherit;
         width: 60px;
         height: 25px;
@@ -249,21 +259,45 @@
         display: none;
         width: 199px;
     }
+
+    .main-header {
+        width: 100%;
+        background-color: #fff;
+    }
+
     .main-header a {
-        color: #fff;
-        font-size: 7px;
+        font-size: 8px;
         padding-left: 0;
     }
     .menu-btn a {
+        color: white;
         top: 35%;
         right: 10%;
         font-size: 7px;
     }
+    .menu-btn a:hover {
+        text-decoration: none;
+    }
+
     .menu-btn img {
         z-index: -1;
         top: 22px;
         width: 60px;
     }
+
+    .more-ico1 {
+        background: url(../images/src/hamburger.svg) no-repeat 23px 10px;
+        background-size: 11px;
+    }
+    .more-ico2 {
+        background: url(../images/src/menu_more.svg) no-repeat 63px 11px;
+        background-size: 9px;
+    }
+    .more-ico3 {
+        background: url(../images/src/menu_more.svg) no-repeat 104px 11px;
+        background-size: 9px;
+    }
+
     .cart {
         padding-left: 10px;
     }
