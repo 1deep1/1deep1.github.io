@@ -856,3 +856,83 @@ h1 {
     margin: 20px auto;
     padding: 0 20px;
 }
+
+.map-main {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    list-style: none;
+}
+
+.main-li {
+    font-family: 'Museo Sans Cyrl-500';
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+}
+
+.sub-ul li a{
+    font-family: 'Museo Sans Cyrl-500';
+    font-size: 14px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    text-decoration: none;
+    
+    margin-left: 20px;
+}
+
+.sub-ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-li a {
+    all: unset;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.main-li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .sitemap-container {
+        max-width: 1360px;
+        margin: 0px auto;
+        padding: 0 12px;
+    }
+
+    .map-main {
+        margin-left: 20px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+        line-height: 7px;
+    }
+
+    .main-li {
+        font-size: 11px;
+    }
+
+    .main-li a {
+        font-size: 11px;
+    }
+
+    .sub-ul li a {
+        font-size: 8px;
+    }
+}
