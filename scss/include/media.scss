@@ -126,6 +126,11 @@
     .order-lower-p2 {
         font-size: 3vw;
     }
+
+    .calc-top {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width : 750px) {
@@ -413,5 +418,122 @@
     .footer-logos {
         justify-content: center;
         align-items: center;
+    }
+
+
+    //calculator
+
+    .calc-container {
+        padding: 0 13px;
+        margin-bottom: 14px;
+    }
+
+    .calc-block-mob {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .calc-mob-item {
+        display: flex;
+        flex-flow: column;
+
+        padding: 19px 16px;
+    }
+
+    .mob-with-border {
+        border: 3px solid rgba(242, 132, 132, 0.2);
+        box-sizing: border-box;
+    }
+
+    .calc-mob-item p {
+        font-family: 'Days';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 138%;
+
+        letter-spacing: 0.05em;
+
+        color: #303030;
+    }
+
+    .calc-mob-btns {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: center;
+    }
+
+    .calc-btn {
+        background-color: white;
+        border: 1px solid #F28484;
+        box-sizing: border-box;
+
+        font-family: 'Days';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 138%;
+
+
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: #303030;
+    }
+
+    .calc-btn-active {
+        margin-left: -2px;
+        background-color: #F95050;
+        border: 1px solid #F95050;
+        box-sizing: border-box;
+    }
+
+    .calc-mob-text-h {
+        margin-bottom: 21px;
+    }
+
+    .calc-mob-list {
+        max-width: 68px;
+    }
+
+    .mob-main-sel {
+        border: none;
+        border-bottom: 1px solid #F28484;
+        height: 25px;
+
+        font-family: 'Museo Sans Cyrl-500';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 138%;
+
+        letter-spacing: 0.05em;
+
+        color: rgba(48, 48, 48, 0.6);
+
+        margin-top: 25px;
+    }
+
+    .mob-lower-item {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .calc-mob-sel {
+        border: 0.5px solid #F28484;
+        box-sizing: border-box;
+        width: 70px;
+        height: 15px;
+
+        font-family: 'Museo Sans Cyrl-500';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6px;
+        line-height: 138%;
+
+        letter-spacing: 0.05em;
+
+        color: rgba(0, 0, 0, 0.8);
     }
 }

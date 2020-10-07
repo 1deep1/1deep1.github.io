@@ -437,6 +437,10 @@ h3 {
     max-width: 1001px;
 }
 
+.calc-block-mob {
+    display: none;
+}
+
 .calc-top {
     display: flex;
     justify-content: space-between;
@@ -459,6 +463,52 @@ h3 {
     box-sizing: border-box;
 }
 
+.calc-top-btns {
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin-bottom: 70px;
+}
+
+.calc-btn {
+    background-color: white;
+    border: 1px solid #F28484;
+    box-sizing: border-box;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+    text-transform: none;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.calc-btn:hover {
+    border: 1px solid #F28484;
+    box-sizing: border-box;
+}
+
+.calc-btn-active {
+    border: 1px solid #F95050;
+    background-color: #F95050;
+
+    color: white;
+
+    margin-left: -2px;
+}
+
+.calc-top-h {
+    margin-bottom: 64px;
+}
+
+.calc-top-h2 {
+    margin-bottom: 30px;
+}
+
 .calc-top-item p {
     font-family: 'Days';
     font-style: normal;
@@ -476,6 +526,8 @@ h3 {
     border-bottom-color: #F28484;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    height: 43px;
+    width: 100%;
 
     font-family: 'Museo Sans Cyrl-500';
     font-style: normal;

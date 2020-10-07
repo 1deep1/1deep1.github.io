@@ -24,7 +24,7 @@
 
         <!-- здесь блоки категорий -->
         <ul class="block-nav-container">
-            <li class="block-nav-item"><img src="images/src/menu/menu1.png"><a href="#">Картины<br>по номерам</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu1.png"><a href="pic-num.html">Картины<br>по номерам</a></li>
             <li class="block-nav-item block-nav-item-big1"><img src="images/src/menu/menu2_big.png">
                 <a href="art-therapy.html">Арт-терапия</a>
                 <p class="block-nav-desctext">Индивидуальный сет для:</p>
@@ -35,13 +35,14 @@
                 </ul>
             </li>
             <li class="block-nav-item"><img src="images/src/menu/menu3.png"><a href="pic-straz.html">Картины<br>по стразам</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu4.png"><a href="#">Вышивка<br>по фото</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu5.png"><a href="#">Картины<br>по фото<br>по дереву</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu6.png"><a href="#">Пазлы по<br>фотографии</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu7.png"><a href="#">Картины<br>по номерам<br>по фото</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu8.png"><a href="#">Мандалы</a></li>
-            <li class="block-nav-item"><img src="images/src/menu/menu9.png"><a href="#">Мастер<br>классы</a></li>
-            <li class="block-nav-item block-nav-item-big2"><img src="images/src/menu/menu10_big.png"><a href="#">Алмазная мозайка</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu4.png"><a href="vishivka.html">Вышивка<br>по фото</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu5.png"><a href="pic-derevo.html">Картины<br>по фото<br>по дереву</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu6.png"><a href="pic-pazl.html">Пазлы по<br>фотографии</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu7.png"><a href="pic-num-photo.html">Картины<br>по номерам<br>по фото</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu8.png"><a href="mandaly.html">Мандалы</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu9.png"><a href="masters.html">Мастер<br>классы</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu9.png"><a href="pic-epoxid.html">Картины из<br>эпоксидной<br>смолы</a></li>
+            <li class="block-nav-item"><img src="images/src/menu/menu10.png"><a href="al-moz.html">Алмазная<br>мозайка</a></li>
         </ul>
 
         <div class="btn-make-order-div"><a href="#" class="btn-make-order">ОФОРМИТЬ ЗАКАЗ</a></div>
@@ -102,10 +103,10 @@
             <div class="сalc-block">
             <div class="calc-top">
                 <div class="calc-top-item with-border">
-                    <p>Ориентация и размеры:</p>
+                    <p class="calc-top-h">Ориентация и размеры:</p>
                     <div class="calc-top-btns">
-                        <input type="radio" name="ver-hor" value="vertical" id="ver"><span>Вертикальная</span>
-                        <input type="radio" name="ver-hor" value="horizontal" id="hor"><span>Горизонтальная</span>
+                        <button class="calc-btn">Вертикальная</button>
+                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
                     </div>
                     <select name="size" id="sel-size">
                         <option>30x30 см</option>
@@ -115,13 +116,13 @@
                 </div>
                 <div class="calc-top-item">
                     <div class="calc-top-child">
-                        <p>Мольберт</p>
+                        <p class="calc-top-h2">Мольберт</p>
                         <select name="molbert" id="sel-molbert">
                             <option>Без мольберта</option>
                         </select>
                     </div>
                     <div class="calc-top-child">
-                        <p>Акриловый лак</p>
+                        <p class="calc-top-h2">Акриловый лак</p>
                         <select name="ackril-lak" id="sel-lak">
                             <option>Без лака</option>
                         </select>
@@ -167,7 +168,51 @@
             </div>
 
             <div class="calc-block-mob">
-                
+                <div class="calc-mob-item mob-with-border">
+                    <p class="calc-mob-text-h">Ориентация и размеры:</p>
+                    <div class="calc-mob-btns">
+                        <button class="calc-btn">Вертикальная</button>
+                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
+                    </div>
+                    <select class="mob-main-sel" name="size" id="sel-size">
+                        <option>30x30 см</option>
+                        <option>Пункт 2</option>
+                        <option>Пункт 3</option>
+                    </select>
+                </div>
+                <div class="calc-mob-item">
+                    <p class="calc-mob-text-h">Мольберт</p>
+                    <select class="mob-main-sel" name="molbert" id="sel-molbert">
+                        <option>Без мольберта</option>
+                    </select>
+                </div>
+                <div class="calc-mob-item">
+                    <p class="calc-mob-text-h">Акриловый лак</p>
+                    <select class="mob-main-sel" name="ackril-lak" id="sel-lak">
+                        <option>Без лака</option>
+                    </select>
+                </div>
+                <div class="calc-mob-item mob-lower-item">
+                    <div class="calc-mob-list">
+                        <p>Количество цветов:</p>
+                        <select class="calc-mob-sel" name="colors" id="sel-colors">
+                            <option>До 30</option>
+                            <option>До 40</option>
+                        </select>
+                    </div>
+                    <div class="calc-mob-list">
+                        <p>Рамка:</p>
+                        <select class="calc-mob-sel" name="border" id="sel-border">
+                            <option>Без ленты</option>
+                        </select>
+                    </div>
+                    <div class="calc-mob-list">
+                        <p>Упаковка:</p>
+                        <select class="calc-mob-sel" name="box" id="sel-box">
+                            <option>Классическая</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
 

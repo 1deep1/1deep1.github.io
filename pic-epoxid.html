@@ -1,10 +1,67 @@
-<%- include('include/header.ejs') %>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Картины по номерам</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="upper-header">
+			<!-- <div class="menu-btn"><a href="#" class="menu-text">МЕНЮ</a></div> -->
+			<div class="menu-btn" onclick="openMenu()"><a class="menu-text">МЕНЮ</a><img class="btn-image" src="images/src/menu-btn2.svg"></div>
+			<a class="head-link" href="/"><img src="images/src/logo.svg" id="logo"></a>
+			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
+			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
+			<button type="button">ЗАКАЗАТЬ ЗВОНОК</button>
+			<p class="phone-number-black">+234 (76) 343 58 78</p>
+
+			<ul class="nav-social">
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg" alt="whatsapp link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/telegram.svg" alt="telegram link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/vk.svg" alt="vk link"></a></li>
+				<li class="nav-social-item"><a href="#"><img src="images/src/social/insta.svg" alt="instagram link"></a></li>
+			</ul>
+
+			<a href="cart.html" class="cart"><img src="images/src/cart-order.svg"></a>
+		</div>
+
+		<div>
+			<nav>
+				<div class="navigation" id="navMob">
+				<ul class="main-nav">
+					<li class="main-nav-item"><a href="#">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
+					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
+					<li class="main-nav-item more-ico3"><a href="pic-straz.html">КАРТИНЫ ПО СТРАЗАМ</a></li>
+					<li class="main-nav-item"><a href="#">ВЫШИВКА</a></li>
+					<li class="main-nav-item"><a href="#">ПАЗЛЫ</a></li>
+					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
+					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a>
+						<ul>
+							<li><a href="add-products.html">ДОП ТОВАРЫ</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div>
+			</nav>
+		</div>
+
+		<script>
+			function openMenu() {
+				//document.getElementsByClassName("navigation").classList.toggle('active');
+				document.getElementById("navMob").classList.toggle("active");
+			}
+		</script>
+	</header>
 
 <main>
     <div class="straz-container">
         <div class="straz-top">
             <div class="straz-top-left">
-                <h1 class="straz-h1">Картины по стразам</h1>
+                <h1 class="straz-h1">Картины из эпоксидной смолы</h1>
                 <p class="straz-text">
                     Трудно поверить, но техника создания картин по стразам появилась еще в Древней Греции до нашей эры! Все началось с украшения одежды. Драгоценными камнями и жемчугом девушки выкладывали узоры на рукавах и воротниках, закрепляя их самодельным клеем или воском. Однако тогда это считалось роскошью.
                 </p>
@@ -22,7 +79,7 @@
                 </div>
             </div>
             <div class="straz-top-right">
-                <img src="images/src/site-images/straz-pic.png">
+                <img src="images/src/menu/menu9.png">
             </div>
         </div>
 
@@ -205,4 +262,75 @@
     </div>
 </main>
 
-<%- include('include/footer.ejs') %>
+<footer>
+    <!-- нижнее меню-->
+    <div class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="images/src/logo.svg" width="107px" id="logo-footer">
+                <img src="images/src/logo-text-white.svg" id="logo-footer2">
+                <img src="images/src/logo-text-smallwhite.svg" id="logo-footer3">
+            </div>
+
+            <div class="footer-nav">
+                <div>
+                    <ul class="footer-firstnav">
+					    <li><a href="/">Главная</a></li>
+					    <li><a href="art-therapy.html">Арт-терапия</a></li>
+					    <li><a href="#">Картины по фото</a></li>
+					    <li><a href="pic-straz.html">Картины стразами</a></li>
+					    <li><a href="#">Пазлы по фото</a></li>
+					    <li><a href="#">Картины по дереву</a></li>
+                        <li><a href="#">Мандалы</a></li>
+                        <li><a href="#">Вышивка</a></li>
+                        <li><a href="#">Алмазная мозайка</a></li>
+				    </ul>
+                </div>
+
+                <div>
+                    <ul class="footer-secondnav">
+                        <li class="first-item"><a href="add-products.html">Доп товары</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li><a href="discounts.html">Акции</a></li>
+                        <li><a href="service.html">Сервис</a></li>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                        <li><a href="masters.html">Мастер-классы</a></li>
+                        <li><a href="masters.html">Вышивка</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="footer-secondnav">
+                        <li class="first-item"><a href="contacts.html">Контакты</a></li>
+                        <li><a href="commments.html">Отзывы</a></li>
+                        <li><a href="pay-del.html">Доставка и оплата</a></li>
+                        <li><a href="gallery.html">Галерея готовых работ</a></li>
+                        <li><a href="loyalty.html">Программа лояльности</a></li>
+                        <li><a href="benefits.html">Наши преимущества</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- нижнее меню с информацие-->
+    <div class="footer-lowersection">
+        <div class="footer-container footer-container2">
+            <p class="phone-number-white">+234 (76) 343 58 78</p>
+
+            <ul class="nav-social-footer">
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/whatsapp.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/telegram.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/vk.svg"></a></li>
+                <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/insta.svg"></a></li>
+            </ul>
+
+            <a href="#" class="confid-text"><u>Политика конфиденциальности</u></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

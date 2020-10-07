@@ -164,6 +164,130 @@ h1 {
     color: #000000;
 }
 
+//pop
+
+.page-pop {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0%;
+    position: fixed;
+    opacity: 0;
+    display: none;
+}
+
+.page-pop:target {
+    opacity: 1;
+    display: block;
+}
+
+.page-pop-container {
+    background: #FFFFFF;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+    top: 15%;
+
+    max-width: 1158px;
+
+    padding: 70px 65px;
+    margin: auto;
+}
+
+.pop-close {
+    position: absolute;
+    right: 2%;
+    top: 4%;
+}
+
+.pop-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-main-img {
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 405px;
+    margin-right: 20px;
+}
+
+.pop-main-content {
+    max-width: 520px;
+}
+
+.pop-h1 {
+    all: unset;
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+
+.pop-main-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+    margin: 42px 0 30px 0;
+}
+
+.pop-desc-text {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 360px;
+    width: 100%;
+}
+
+.pop-desc-text-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 11px;
+}
+
+.pop-lil-text {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 30px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.pop-lower {
+    display: flex;
+    flex-flow: row wrap;
+    
+    max-width: 520px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-top: 50px;
+}
+
+.pop-lower-btns {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 @media only screen and (max-width : 1440px) {
     .page-headertext {
         left: 4%;
@@ -205,6 +329,100 @@ h1 {
     .page-shopbtn {
         font-size: 8px;
         padding: 3.5px 12px;
+    }
+}
+
+@media only screen and (max-width : 1188px) {
+    .page-pop-container {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width : 1114px) {
+    .pop-main {
+        justify-content: center;
+    }
+
+    .page-pop-container {
+        padding: 35px 40px;
+    }
+}
+
+@media only screen and (max-width : 1064px) {
+    .pop-lower {
+        margin-top: 24px;
+    }
+
+    .pop-main-text {
+        margin: 26px 0 17px 0;
+    }
+
+    .pop-main-img {
+        max-width: 354px;
+    }
+
+    .pop-main-content {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .page-pop-container {
+        margin: auto;
+        top: 6%;
+        max-width: 533px;
+    }
+
+    .pop-main-img {
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 13px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .page-pop-container {
+        margin: 0px 15px;
+        padding: 15px 15px;
+    }
+
+    .pop-main-img {
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 13px;
+    }
+
+    .pop-main {
+        align-items: center;
+    }
+
+    .pop-h1 {
+        font-size: 6.3vw;
+    }
+
+    .pop-main-text {
+        font-size: 2.5vw;
+        line-height: 9px;
+        margin: 10px 0 10px 0;
+    }
+
+    .pop-lil-text {
+        font-size: 2.2vw;
+        line-height: 1px;
+    }
+
+    .pop-lower {
+        margin-top: 18px;
+    }
+
+    .page-pop-container {
+        margin: 0px 10px;
+    }
+
+    .page-pop-container {
+        top: 8%;
     }
 }
 
