@@ -224,20 +224,22 @@ h3 {
     background-image: url('../images/src/slider/prev.svg');
     background-color: transparent;
     background-repeat: no-repeat;
-    background-position: 40px 72px;
+    background-position: 40px 25px;
     border: none;
-    padding: 50px;
     vertical-align: middle;
+    padding-left: 100px;
+    padding-bottom: 58px;
 }
 
 .slider-next i {
     background-image: url('../images/src/slider/next.svg');
     background-color: transparent;
     background-repeat: no-repeat;
-    background-position: 40px 72px;
+    background-position: 40px 25px;
     border: none;
-    padding: 50px;
     vertical-align: middle;
+    padding-left: 100px;
+    padding-bottom: 58px;
 }
 
 .slider-dots {

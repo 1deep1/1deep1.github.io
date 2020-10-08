@@ -295,6 +295,10 @@
               _transform = 0, // значение транфсофрмации .slider_wrapper
               _step = _itemWidth / _wrapperWidth * 120, // величина шага (для трансформации)
               _items = []; // массив элементов
+
+            if (window.screen.width <= 480) {
+                _step = _itemWidth / _wrapperWidth * 100;
+            } 
     
             // наполнение массива _items
             _sliderItems.forEach(function (item, index) {
@@ -335,7 +339,12 @@
                 if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
                   nextItem = position.getItemMin();
                   _items[nextItem].position = position.getMax() + 1;
-                  _items[nextItem].transform += _items.length * 118.8;
+                  
+                  if (window.screen.width <= 480) {
+                    _items[nextItem].transform += _items.length * 100;
+                  } else {
+                    _items[nextItem].transform += _items.length * 118.8;
+                  }
                   _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
                 }
                 _transform -= _step;
@@ -345,7 +354,12 @@
                 if (_positionLeftItem < position.getMin()) {
                   nextItem = position.getItemMax();
                   _items[nextItem].position = position.getMin() - 1;
-                  _items[nextItem].transform -= _items.length * 118.8;
+                  
+                  if (window.screen.width <= 480) {
+                    _items[nextItem].transform -= _items.length * 100;
+                  } else {
+                    _items[nextItem].transform -= _items.length * 118.8;
+                  }
                   _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
                 }
                 _transform += _step;

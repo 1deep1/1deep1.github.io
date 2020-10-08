@@ -633,7 +633,8 @@
     }
 
     .product-shopimg img {
-        max-width: 100%;
+        max-width: 110px;
+        width: 100%;
     }
 
     .product-desctext {
@@ -666,6 +667,16 @@
         padding: 1px 17px;
         max-width: unset;
         height: 19px;
+    }
+
+    .price img {
+        max-width: 67%;
+    }
+
+    .price p {
+        top: 4%;
+        left: 8%;
+        font-size: 10px;
     }
 
     .fast-view2 a {
