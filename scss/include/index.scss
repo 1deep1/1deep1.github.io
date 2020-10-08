@@ -149,6 +149,8 @@ h3 {
     position: absolute;
     top: 15%;
     left: 8%;
+
+    z-index: 1;
 }
 
 .index-headertext p {
@@ -178,8 +180,6 @@ h3 {
 .index-slideblock {
     position: absolute;
 
-    z-index: -1;
-
     top: 0%;
     right: 0%;
 
@@ -187,6 +187,93 @@ h3 {
     min-height: 624px;
 
     background-color: #826B62;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.slider-container {
+    max-width: 587px;
+    width: 100%;
+
+    margin-bottom: -8px;
+}
+
+.slider-btns {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+
+    display: flex;
+    width: 100%;
+}
+
+.slider-prev, .slider-next {
+    background-color: #F7F0E8;
+    cursor: pointer;
+    max-width: 100px;
+    width: 100%;
+    height: 82px;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    background-color: #E7DFD6;
+}
+
+.slider-prev i {
+    background-image: url('../images/src/slider/prev.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 40px 72px;
+    border: none;
+    padding: 50px;
+    vertical-align: middle;
+}
+
+.slider-next i {
+    background-image: url('../images/src/slider/next.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 40px 72px;
+    border: none;
+    padding: 50px;
+    vertical-align: middle;
+}
+
+.slider-dots {
+    //display: inline;
+    position: absolute;
+    bottom: 3%;
+    right: 22%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(242, 132, 132, 0.5);
+
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+
+    transition: background-color 0.4s ease;
+}
+
+.dot-active, .dot:hover {
+    background-color: #F95050;
+}
+
+.fade {
+    //-webkit-animation-name: fade;
+    //-webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from{opacity: 0.4;}
+    to{opacity: 1;}
 }
 
 .index-promoblock {
@@ -200,6 +287,8 @@ h3 {
     padding: 30px 0 30px 70px;
 
     background-color: #826B62;
+
+    z-index: 1;
 }
 
 .index-promoblock span {

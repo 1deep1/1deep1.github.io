@@ -70,7 +70,40 @@
             <img src="images/src/wave.svg"><span>Красивая упаковка</span><br>
             <span>Отличное соотношение цена\качетво</span><img src="images/src/wave.svg">
         </div>
-        <div class="index-slideblock"></div>
+        <div class="index-slideblock">
+            <div class="slider-container">
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-slide fade">
+                    <img src="images/src/slider/1.jpg">
+                </div>
+                <div class="slider-btns">
+                    <a class="slider-prev" onclick="plusSlide(-1)"><i></i></a>
+                    <a class="slider-next" onclick="plusSlide(1)"><i></i></a>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- секция категорий -->
@@ -287,6 +320,51 @@
 
         </form>
     </section>
+    <script>
+        var sliderIndex = 1;
+        var k = 3;
+        showSlides(sliderIndex);
+
+        function plusSlide(n) {
+            showSlides(sliderIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(sliderIndex = n);
+        }
+
+        function sec() {
+            sliderIndex += 1;
+            showSlides(sliderIndex);
+        }
+
+        setInterval(sec, 3500)
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slider-slide");
+            var dot = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                sliderIndex = 1;
+            }
+
+            if (n < 1) {
+                sliderIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dot.length; i++) {
+                dot[i].className = dot[i].className.replace("dot-active", "");
+            }
+
+            slides[sliderIndex-1].style.display = "block";
+            dot[sliderIndex-1].className += " dot-active";
+        }
+    </script>
 </main>
 
 <footer>
