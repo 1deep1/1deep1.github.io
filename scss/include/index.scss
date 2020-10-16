@@ -37,9 +37,9 @@ h3 {
     position: relative;
     grid-column: span 2;
 }
-.block-nav-item-big1 a {
+.block-nav-a-big {
     position: absolute;
-	top: 90px;
+	top: 50px;
 	left: 45px;
     width: 100%;
     
@@ -65,7 +65,11 @@ h3 {
     font-size: 36px;
     text-decoration: none;
 }
-.block-nav-item a {
+.block-nav-img-a {
+    all: unset;
+    cursor: pointer;
+}
+.block-nav-a {
     position: absolute;
 	top: 45px;
 	left: 45px;
@@ -164,6 +168,10 @@ h3 {
     color: #303030;
     
     margin-top: 20px;
+}
+
+.index-headertext p b {
+    color: #F95050;
 }
 
 .index-headertext p span {
