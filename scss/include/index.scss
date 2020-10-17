@@ -32,6 +32,7 @@ h3 {
     position: relative;
     width: 100%;
     height: 100%;
+    max-height: 328px;
 }
 .block-nav-item-big1 {
     position: relative;
@@ -53,18 +54,7 @@ h3 {
     position: relative;
     grid-column: span 2;
 }
-.block-nav-item-big2 a {
-    position: absolute;
-	top: 90px;
-	left: 45px;
-    width: 100%;
-    
-    font-family: "Days";
-    font-weight: normal;
-    color: #303030;
-    font-size: 36px;
-    text-decoration: none;
-}
+
 .block-nav-img-a {
     all: unset;
     cursor: pointer;
@@ -415,8 +405,8 @@ h3 {
 
 .promo-text {
     position: absolute;
-    right: 15%;
-    top: 4%;
+    right: 11%;
+    top: -1%;
 }
 
 .promo-headtext {
@@ -513,16 +503,71 @@ h3 {
     margin-bottom: auto;
 }
 
-.order-ul li {
+.order-ul-li {
     padding-bottom: 25px;
 }
 
-.order-ul li::before {
+.order-ul-li-main {
+    padding-bottom: 1px;
+}
+
+.order-ul-li::before {
     content: "\2022";
     color: #F28484;
     width: 1em;
     margin-left: -1em;
     display: inline-block;
+}
+
+.order-sub-ul {
+    list-style: none;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    max-width: 545px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+
+.order-sub-ul li {
+    padding-bottom: 3px;
+}
+
+.order-sub-ul li::before {
+    content: "\2022";
+    color: #F28484;
+    width: 1em;
+    margin-left: -1em;
+    display: inline-block;
+}
+
+.order-top-subtext {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    margin-bottom: 15px;
+}
+
+.order-top-div {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 
 .calc-container{

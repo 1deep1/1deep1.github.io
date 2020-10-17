@@ -46,7 +46,19 @@ h1 {
     line-height: 36px;
     letter-spacing: 0.05em;
     text-align: left;
+    padding-bottom: 15px;
+}
+
+.page-desctext2 {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
     padding-bottom: 8%;
+    max-width: 600px;
 }
 
 .page-headcontainer {
@@ -297,6 +309,10 @@ h1 {
 @media only screen and (max-width : 930px) {
     .pagebg-image {
         height: 561px;
+    }
+
+    .page-desctext2 {
+        display: none;
     }
 }
 
