@@ -206,7 +206,7 @@ h1 {
     padding: 70px 65px;
     margin: auto;
 
-    max-height: 115vh;
+    max-height: calc(120vh - 131px);
     overflow-y: auto;
 }
 
