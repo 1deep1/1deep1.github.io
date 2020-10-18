@@ -205,6 +205,9 @@ h1 {
 
     padding: 70px 65px;
     margin: auto;
+
+    max-height: 115vh;
+    overflow-y: auto;
 }
 
 .pop-close {
@@ -443,7 +446,7 @@ h1 {
     }
 
     .page-pop-container {
-        top: 8%;
+        top: 1%;
     }
 }
 
@@ -746,7 +749,7 @@ h1 {
     font-family: 'Days';
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 23px;
 
     letter-spacing: 0.05em;
