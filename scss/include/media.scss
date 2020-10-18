@@ -406,7 +406,7 @@
     }
 
     .order-upload-box img {
-        max-width: 30%;
+        width: 54px;
     }
 
     .order-upload-box p {
@@ -543,6 +543,19 @@
         color: rgba(48, 48, 48, 0.6);
 
         margin-top: 25px;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    .mob-main-sel i {
+        background-image: url(../images/src/c.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 2px 5px;
+        border: none;
+        cursor: pointer;
+        padding: 18px;
+        vertical-align: middle;
     }
 
     .mob-lower-item {
@@ -566,6 +579,9 @@
         letter-spacing: 0.05em;
 
         color: rgba(0, 0, 0, 0.8);
+
+        border-radius: 0;
+        -webkit-appearance: none;
     }
 }
 

@@ -822,6 +822,10 @@ h1 {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .search-form input[type=checkbox i] {
+        margin-right: unset;
+    }
+
     .page-h2 {
         font-size: 17px;
     }
@@ -860,7 +864,7 @@ h1 {
 
     .search-form input {
         min-height: 26px;
-        max-width: 30px;
+        max-width: 106px;
     }
 
     .search-form input[type=checkbox i] {
