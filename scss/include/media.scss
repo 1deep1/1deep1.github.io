@@ -16,6 +16,24 @@
     }
 }
 
+@media only screen and (max-width: 1263px) {
+    .promo-foottext {
+        font-size: 16px;
+        line-height: 24px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .promo-text {
+        right: 1%;
+    }
+
+    .promo-foottext {
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+
 @media only screen and (max-width : 1215px) {
     #logo {
         display: none;
