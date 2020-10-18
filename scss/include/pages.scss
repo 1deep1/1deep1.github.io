@@ -311,8 +311,9 @@ h1 {
         height: 561px;
     }
 
-    .page-desctext2 {
-        display: none;
+    .page-headertext {
+        position: absolute;
+        top: 13%;
     }
 }
 
@@ -321,11 +322,15 @@ h1 {
         grid-template-columns: repeat(auto-fit,minmax(100px,194px));
     }
     .pagebg-image {
-        height: 210px;
+        height: 336px;
     }
     .page-desctext {
         font-size: 10px;
         line-height: 15px;
+    }
+    .page-desctext2 {
+        font-size: 11px;
+        line-height: 16px;
     }
     h1 {
         font-size: 18px;
