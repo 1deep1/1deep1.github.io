@@ -43,6 +43,13 @@
         grid-column: span 2;
         grid-row: 1;
     }
+    .block-nav-item-big2 {
+        grid-column: span 2;
+    }
+    
+    .block-nav-item-big3 {
+        grid-column: span 2;
+    }
     .block-nav-container {
         margin: 0 10%;
     }
@@ -202,6 +209,10 @@
     }
     .nav-social {
         display: none;
+    }
+
+    .block-nav-item {
+        max-height: 135px;
     }
 
     #navMob {

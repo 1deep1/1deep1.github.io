@@ -52,6 +52,11 @@ h3 {
 }
 .block-nav-item-big2 {
     position: relative;
+    grid-column: span 3;
+}
+
+.block-nav-item-big3 {
+    position: relative;
     grid-column: span 2;
 }
 
