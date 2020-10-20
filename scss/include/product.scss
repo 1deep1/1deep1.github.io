@@ -1,0 +1,143 @@
+.product-item-main {
+    max-width: 1340px;
+    width: 100%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.product-h1 {
+    all: unset;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.product-h2 {
+    all: unset;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 17px;
+
+    letter-spacing: 0.05em;
+}
+
+.product-line {
+    margin: 20px 0;
+}
+
+.product-img-mainimg {
+    max-width: 600px;
+    width: 100%;
+}
+
+.product-img-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: 600px;
+    width: 100%;
+}
+
+.product-img-bottom div {
+    max-width: 190px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.product-text-block {
+    margin-left: 50px;
+}
+
+.product-main-block {
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin: 0 10px;
+}
+
+.product-headtext {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+.product-main-desc {
+    max-width: 600px;
+}
+
+.product-pricetext {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+.product-main-btns {
+    margin: 10px 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .product-item-main {
+        margin-top: 0px;
+    }
+
+    .product-main-block {
+        flex-flow: row wrap;
+    }
+
+    .product-h1 {
+        font-size: 17px;
+    }
+
+    .product-h2 {
+        font-size: 13px;
+    }
+
+    .product-headtext {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .product-pricetext {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .product-text-block {
+        margin-left: 0px;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-desc-text-line {
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+
+    .product-header {
+        line-height: 0px;
+    }
+}

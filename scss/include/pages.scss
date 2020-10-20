@@ -322,7 +322,16 @@ h1 {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .page-shopcontainer {
-        grid-template-columns: repeat(auto-fit,minmax(100px,194px));
+        grid-template-columns: repeat(auto-fit,minmax(150px,150px));
+    }
+    .page-shopitem {
+        max-width: 150px;
+    }
+    .fast-view {
+        top: 28%;
+    }
+    .fast-view a {
+        font-size: 12px;
     }
     .pagebg-image {
         height: 336px;
@@ -344,8 +353,12 @@ h1 {
         padding: 3px 20px;
         font-size: 7px;
     }
+    .page-shoptitle {
+        line-height: 10px;
+    }
     .page-shoptitle a {
-        font-size: 16px;
+        font-size: 9px;
+        line-height: 10px;
     }
     .page-shopprice {
         font-size: 16px;
