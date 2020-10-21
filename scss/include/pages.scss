@@ -68,13 +68,13 @@ h1 {
 
 .page-headertext {
     position: absolute;
-    top: 26%;
+    top: 12%;
     left: 15%;
 }
 
 .pagebg-image {
     width: 100%;
-    height: 861px;
+    height: 600px;
     z-index: -1;
 }
 
@@ -825,6 +825,22 @@ h1 {
     color: white;
 }
 
+.com-circles {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(242,132,132,.5);
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color .4s ease;
+    -o-transition: background-color .4s ease;
+    transition: background-color .4s ease;
+}
+
+.com-circle-check, .com-circles:hover {
+    background-color: #f95050;
+}
+
 @media only screen and (max-width : 1065px) {
     .search-top-form i {
         right: 11%;
@@ -840,6 +856,11 @@ h1 {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .search-form input[type=checkbox i] {
         margin-right: unset;
+    }
+
+    .com-circles {
+        height: 10px;
+        width: 10px;
     }
 
     .page-h2 {
