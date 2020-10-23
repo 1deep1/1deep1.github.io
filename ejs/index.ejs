@@ -97,7 +97,7 @@
 
     <!-- секция создания картины по фото -->
     <section class="section-order">
-        <form class="calc" method="post" action="#">
+        <form class="calc" method="post" action="" enctype="multipart/form-data">
         
         <div class="order-wave">
             <img src="images/src/wave2.svg"><h3>Как выбрать<br>наилучшее фото?</h3>
@@ -126,10 +126,11 @@
             </div>
 
             <div class="order-upload">
+                <input id="default-btn" type="file" id="file" name="image" accept="image/*" hidden>
                 <div class="order-upload-box">
                     <img src="images/src/upload-pic.png">
                     <p>перетащите картинку сюда или</p>
-                    <button class="page-shopbtn">загрузите файл</button>
+                    <a onclick="defaultBtnActive()" class="upload-btn">загрузите файл</a>
                 </div>
                 <p class="order-upload-text">
                     <b>Требования к фото:</b>
@@ -138,6 +139,15 @@
                     <br>Минимальная ширина и высота: 1000px
                 </p>
             </div>
+
+            <script>
+                const defaultBtn = document.querySelector("#default-btn");
+                const uploadBtn = document.querySelector("#upload-btn");
+
+                function defaultBtnActive() {
+                    defaultBtn.click();
+                }
+            </script>
 
             <!-- <div class="oreder-slider">
                 

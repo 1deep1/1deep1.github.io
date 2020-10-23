@@ -793,6 +793,33 @@ h3 {
     padding-bottom: 38px;
 }
 
+.order-upload input[type="file"] {
+    //display: none;
+    //position: absolute;
+}
+
+.upload-btn {
+    background-color: #F95050;
+    padding: 17px 20px;
+
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #D24343;
+}
+
 .order-upload-text {
     font-family: 'Museo Sans Cyrl-500';
     font-style: normal;
@@ -887,3 +914,306 @@ h3 {
     padding: 25px 77px;
 }
 
+.call-pop {
+    display: none;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.call-pop:target {
+    display: block;
+}
+
+.call-pop-container {
+    position: relative;
+
+    max-width: 620px;
+    width: 100%;
+
+    background: white;
+
+    margin: auto;
+    top: 20%;
+    padding: 35px 50px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    max-height: 590px;
+    overflow-y: auto;
+
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25)
+}
+
+.call-pop-text1 {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+    margin-bottom: 27px;
+}
+
+.call-pop-text1 span {
+    color: #F95050;
+}
+
+.call-pop-text2 {
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+    margin-bottom: 42px;
+}
+
+.call-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.call-form-div {
+    margin-bottom: 23px;
+}
+
+.call-form-div label {
+    font-family: 'Museo Sans Cyrl-700';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.call-form-div input {
+    border: 1px solid #979494;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    padding: 9px 18px;
+    margin-top: 1px;
+    max-width: 300px;
+    width: 100%;
+
+    font-family: 'Museo Sans Cyrl-500';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.call-form-div input::placeholder {
+    color: #C4C4C4;
+}
+
+.call-btn {
+    margin-top: 17px;
+}
+
+.call-pop-img1, .call-pop-img2 {
+    position: absolute;
+    z-index: 4;
+}
+
+.call-pop-img1 {
+    top: 0%;
+    left: 0%;
+}
+
+.call-pop-img2 {
+    bottom: 0%;
+    right: 0%;
+}
+
+.call-pop-text1, .call-pop-text2, .call-form {
+    z-index: 5;
+}
+
+.call-date {
+    max-width: 260px !important;
+}
+
+.masters-pop-container {
+    top: 17%;
+    max-height: 750px;
+}
+
+.gal-pop-container {
+    top: 10%;
+    max-height: 850px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.pop-upload {
+    background: #FFFFFF;
+    border: 3px dashed #F95050;
+    box-sizing: border-box;
+
+    max-width: 300px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    padding: 30px 36px;
+    margin-top: 20px;
+}
+
+.pop-upload img {
+    max-width: 55px;
+    margin-bottom: 15px;
+}
+
+.pop-upload p {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+    color: rgba(242, 132, 132, 0.6);
+}
+
+.pop-upload-btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1024px) {
+    .gal-pop-container {
+        top: 4%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .call-pop-container {
+        max-width: 390px;
+        padding: 45px 25px;
+        max-height: 590px;
+    }
+
+    .call-pop-text1 {
+        font-size: 15px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+
+    .call-pop-text2 {
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+
+    .call-form-div {
+        margin-bottom: 15px;
+    }
+
+    .call-form-div input {
+        padding: 6px 14px;
+        margin-top: 5px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .call-btn {
+        margin-top: 17px;
+    }
+
+    .masters-pop-container {
+        max-height: 680px;
+    }
+
+    .gal-pop-container {
+        max-height: 800px;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+    .call-pop-container {
+        max-width: 340px;
+        padding: 43px 20px;
+        max-height: 590px;
+    }
+
+    .call-btn button {
+        font-size: 10px;
+    }
+
+    .masters-pop-container {
+        max-height: 680px;
+    }
+
+    .gal-pop-container {
+        max-height: 800px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .call-pop-container {
+        max-width: 290px;
+        padding: 43px 10px;
+        max-height: 590px;
+    }
+
+    .call-pop-text1 {
+        font-size: 13px;
+    }
+
+    .call-pop-text2 {
+        font-size: 10px;
+    }
+
+    .call-form-div {
+        margin-bottom: 5px;
+    }
+
+    .masters-pop-container {
+        max-height: 630px;
+    }
+
+    .gal-pop-container {
+        max-height: 745px;
+    }
+}
