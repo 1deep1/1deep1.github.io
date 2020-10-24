@@ -16,7 +16,7 @@
                 </div>
                 <p class="com-text lower">На основе 500 оценок покупателей</p>
                 <p class="com-text">Разместите отзыв на нашем сайте и получите скидку 5% на ваш следующий заказ</p>
-                <button class="page-shopbtn send-btn">Оставить свой отзыв</button>
+                <a href="#com-pop"><button class="page-shopbtn send-btn">Оставить свой отзыв</button></a>
             </div>
             <div class="com-rating">
                 <p class="com-rating-text">4,8</p>
@@ -145,6 +145,66 @@
             <a href="#" class="com-arrow"><img src="images/src/comments/arrow2.svg"></a>
         </div>
     </div>
+
+    <section class="com-pop" id="com-pop">
+        <div class="com-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <p class="com-pop-head">Отзыв о магазине Brushes paints</p>
+            <form class="com-form" method="post" action="" enctype="multipart/form-data">
+                <div class="com-form-div">
+                    <label>Поставьте оценку магазину</label><br>
+                    <div class="com-pop-stars">
+                        <img src="images/src/pop-star.svg">
+                        <img src="images/src/pop-star.svg">
+                        <img src="images/src/pop-star.svg">
+                        <img src="images/src/pop-star.svg">
+                        <img src="images/src/pop-star.svg">
+                    </div>
+                </div>
+                <div class="com-form-div">
+                    <label for="user-message">Отзыв <span>*</span></label>
+                    <textarea class="com-textarea" id="user-message" placeholder="Ваши впечатления" name="comment" form="feedback"></textarea>
+                </div>
+                <div class="com-form-div">
+                    <label for="default-btn">Фотографии</label><br>
+                    <div class="com-pop-pic">
+                        <input id="default-btn" type="file" id="file" name="image" accept="image/*" hidden>
+                        <a onclick="defaultBtnActive()" class="com-pop-pic-a"><div class="com-pop-pic-border">
+                            <p>Перетащите сюда файлы или нажмите для выбора</p>
+                        </div></a>
+                        <p class="com-pop-pic-desc">Максимальный размер загружаемого файла 10M в формате jpg, gif, bmp, png, jpeg. Максимальное количество фотографий - 8 шт.</p>
+                    </div>
+                </div>
+                <div class="com-form-div">
+                    <label for="com-name">Ваше имя и фамилия:</label><br>
+                    <input type="text" name="com-name" id="call-name" placeholder="Дарья Кусина">
+                </div>
+                <div class="com-form-div">
+                    <label for="com-tel">Номер Вашего телефона:</label><br>
+                    <input type="tel" name="com-tel" id="call-tel" placeholder="+7 999 000 09 90">
+                </div>
+                <div class="com-form-div">
+                    <label for="com-email">Ваш E-mail:</label><br>
+                    <input type="email" name="com-email" id="call-email" placeholder="email@email.ru">
+                    <p class="com-form-small">
+                        Адрес не будет виден другим посетителям
+                    </p>
+                </div>
+                <div class="com-btn">
+                    <button type="submit">Оставить отзыв</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            const defaultBtn = document.querySelector("#default-btn");
+            const uploadBtn = document.querySelector("#com-pop-pic-a");
+
+            function defaultBtnActive() {
+                defaultBtn.click();
+            }
+        </script>
+    </section>
 </main>
 
 <%- include('include/footer.ejs') %>
