@@ -11,6 +11,8 @@
     margin-bottom: 2%;
 
     padding: 0 20px;
+
+    max-width: 1330px;
 }
 
 .contacts-h1 {
@@ -45,7 +47,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 420px));
     grid-auto-flow: dense;
-    column-gap: 45px;
+    column-gap: 15px;
     row-gap: 60px;
     justify-content: start;
 

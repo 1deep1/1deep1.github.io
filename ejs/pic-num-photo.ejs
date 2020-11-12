@@ -4,15 +4,15 @@
     <div class="straz-container">
         <div class="straz-top">
             <div class="straz-top-left">
-                <h1 class="straz-h1">Картины по номерам по фото</h1>
+                <h1 class="straz-h1">Картины по номерам</h1>
                 <p class="straz-text">
                     Есть такие красивые лица, что их так и хочется
-нарисовать. Например, ваши! Предоставьте всю работу нам и
-мы вас не разочаруем: ваши прекрасные черты будут
-профессионально перенесены на эскиз, посылка будет собрана
-по всем правилам и доставлена в срок в нужное место. Вам
-остается только распаковать все принадлежности для живописи
-и приготовиться к созданию шедевра.
+                    нарисовать. Например, ваши! Предоставьте всю работу нам и
+                    мы вас не разочаруем: ваши прекрасные черты будут
+                    профессионально перенесены на эскиз, посылка будет собрана
+                    по всем правилам и доставлена в срок в нужное место. Вам
+                    остается только распаковать все принадлежности для живописи
+                    и приготовиться к созданию шедевра.
                 </p>
                 <p class="straz-text2">
                     <b>В нашем магазине Вы можете приобрести картину любого формата и по самым доступным ценам!</b>
@@ -30,21 +30,29 @@
 
         <form class="calc" method="post" action="#">
             <div class="straz-lower">
-                <div class="order-upload straz-upload">
+            <div class="order-upload straz-upload">
+                    <input id="default-btn" type="file" id="file" name="image" accept="image/*" hidden>
                     <div class="order-upload-box straz-upload-box">
                         <img src="images/src/upload-pic.png">
                         <p>перетащите картинку сюда или</p>
-                        <button class="page-shopbtn">загрузите файл</button>
+                        <a onclick="defaultBtnActive()" class="upload-btn">загрузите файл</a>
                     </div>
                     <p class="order-upload-text straz-upload-text">
                         <b>Требования к фото:</b>
-                        <br>
-                        <br>
                         Расширение файла: bmp, gif, jpeg, jpg, pdf, png, tif, tiff
                         <br>Размер: от 100 кб до 30 мб
                         <br>Минимальная ширина и высота: 1000px
                     </p>
                 </div>
+
+                <script>
+                    const defaultBtn = document.querySelector("#default-btn");
+                    const uploadBtn = document.querySelector("#upload-btn");
+
+                    function defaultBtnActive() {
+                        defaultBtn.click();
+                    }
+                </script>
                 <div class="straz-lower-right">
                     <p>
                         Вы загружаете нам любое изображение, включая фотографию.<br><br>
@@ -75,28 +83,51 @@
                 <div class="calc-top-item with-border">
                     <p class="calc-top-h">Ориентация и размеры:</p>
                     <div class="calc-top-btns">
-                        <button class="calc-btn">Вертикальная</button>
-                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
+                        <input type="radio" name="ver-hor" value="vertical" id="ver" hidden>
+                        <input type="radio" name="ver-hor" value="horizontal" id="hor" hidden>
+                        <a onclick="calcBtnActive1()" class="calc-btn">Вертикальная</a>
+                        <a onclick="calcBtnActive2()" class="calc-btn">Горизонтальная</a>
                     </div>
                     <select name="size" id="sel-size">
-                        <option>30x30 см</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
+                        <option id="sel-size-option1">30x30 см</option>
+                        <option id="sel-size-option2">30х40 см</option>
+                        <option id="sel-size-option3">40х50 см</option>
+                        <option id="sel-size-option4">40х60 см</option>
+                        <option id="sel-size-option5">50х50 см</option>
+                        <option id="sel-size-option6">50x60 см</option>
+                        <option id="sel-size-option7">50x70 см</option>
                     </select>
                 </div>
                 <div class="calc-top-item">
                     <div class="calc-top-child">
                         <p class="calc-top-h2">Мольберт</p>
                         <select name="molbert" id="sel-molbert">
-                            <option>Без мольберта</option>
+                            <option id="sel-molbert1">Без мольберта</option>
+                            <option id="sel-molbert2">Мольберт Настольный</option>
+                            <option id="sel-molbert3">Мольберт Напольный</option>
+                            <option id="sel-molbert4">Подставка для руки</option>
                         </select>
                     </div>
                     <div class="calc-top-child">
                         <p class="calc-top-h2">Акриловый лак</p>
                         <select name="ackril-lak" id="sel-lak">
-                            <option>Без лака</option>
+                            <option id="sel-lak1">Без лака</option>
+                            <option id="sel-lak2">Матовый 15мл</option>
+                            <option id="sel-lak3">Глянцевый 15мл</option>
+                            <option id="sel-lak4">Сатиновый спрей (защитный) 300мл США</option>
+                            <option id="sel-lak5">Сатиновый кристальный спрей (против выцветания, не желтит, быстросохнущий) 300мл США</option>
                         </select>
                     </div>
+                </div>
+            </div>
+            <div class="calc-top-wide">
+                <p>Сложность:</p>
+                <div class="calc-complex">
+                    <input onclick="calcHard(5)" type="radio" id="complex5" name="complex"><label for="complex5"></label>
+                    <input onclick="calcHard(4)" type="radio" id="complex4" name="complex"><label for="complex4"></label>
+                    <input onclick="calcHard(3)" type="radio" id="complex3" name="complex"><label for="complex3"></label>
+                    <input onclick="calcHard(2)" type="radio" id="complex2" name="complex"><label for="complex2"></label>
+                    <input onclick="calcHard(1)" type="radio" id="complex1" name="complex"><label for="complex1"></label>
                 </div>
             </div>
             <fieldset class="index-filedset">
@@ -107,9 +138,9 @@
             </fieldset>
             <fieldset class="index-filedset">
                 <legend>Рамка:</legend>
-                <input type="radio" name="border" value="without" id="without"><span>Без ленты</span>
+                <input type="radio" name="border" value="with-broder" id="with-broder"><span>С рамкой</span>
                 <br>
-                <input type="radio" name="border" value="colorful" id="colorful"><span>Цветная лента</span>
+                <input type="radio" name="border" value="no-broder" id="no-broder"><span>Без рамки</span>
             </fieldset>
             <fieldset class="index-filedset">
                 <legend>Упаковка:</legend>
@@ -118,84 +149,204 @@
                 <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
             </fieldset>
             <fieldset class="index-filedset">
-                <legend>Количество цветов:</legend>
-                <input type="radio" name="" value="" id=""><span>До 30</span>
+                <legend>Подставка:</legend>
+                <input type="radio" name="stand" value="with-stand" id="with-stand"><span>С подставкой</span>
                 <br>
-                <input type="radio" name="" value="" id=""><span>До 50</span>
+                <input type="radio" name="stand" value="no-stand" id="no-stand"><span>Без подставки</span>
             </fieldset>
             <fieldset class="index-filedset">
-                <legend>Рамка:</legend>
-                <input type="radio" name="" value="" id=""><span>Без ленты</span>
+                <legend>Открытка:</legend>
+                <input type="radio" name="card" value="with-card" id="with-card"><span>С открыткой</span>
                 <br>
-                <input type="radio" name="" value="" id=""><span>Цветная лента</span>
+                <input type="radio" name="card" value="no-card" id="no-card"><span>Без открытки</span>
             </fieldset>
             <fieldset class="index-filedset">
-                <legend>Упаковка:</legend>
-                <input type="radio" name="" value="" id=""><span>Классическая</span>
+                <legend>Ленточка:</legend>
+                <input type="radio" name="ribbon" value="with-ribbon" id="with-ribbon"><span>C ленточкой</span>
                 <br>
-                <input type="radio" name="" value="" id=""><span>В подарок</span>
+                <input type="radio" name="ribbon" value="no-ribbon" id="no-ribbon"><span>Без ленточки</span>
             </fieldset>
+            </div>
+            <div class="calc-check-block">
+                <div>
+                    <input type="checkbox" name="fux" id="fux1">
+                    <label for="fux">Использовать цвета фуксии</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="photoshop" id="photoshop1">
+                    <label for="photoshop">Нужен фотошоп</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="consult" id="consult1">
+                    <label for="consult">Нужна консультация</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="dop-brush" id="dop-brush1">
+                    <label for="dop-brush">Дополнительный набор кистей</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="dop-paint" id="dop-paint1">
+                    <label for="dop-paint">Дополнительный набор красок</label>
+                </div>
+                <a onclick="calc()" class="btn-make-order btn-calc-order">РАССЧИТАТЬ СТОИМОСТЬ</a>
             </div>
 
             <div class="calc-block-mob">
                 <div class="calc-mob-item mob-with-border">
                     <p class="calc-mob-text-h">Ориентация и размеры:</p>
                     <div class="calc-mob-btns">
-                        <button class="calc-btn">Вертикальная</button>
-                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
+                        <a onclick="calcBtnActive1()" class="calc-btn">Вертикальная</a>
+                        <a onclick="calcBtnActive2()" class="calc-btn">Горизонтальная</a>
+                        <script>
+                            var BtnActive = document.getElementsByClassName("calc-btn");
+                            var BtnRadioVer = document.getElementById("ver");
+                            var BtnRadioHor = document.getElementById("hor");
+
+                            BtnActive[0].className = "calc-btn calc-btn-active";
+                            BtnActive[1].className = "calc-btn";
+                            BtnActive[2].className = "calc-btn calc-btn-active";
+                            BtnActive[3].className = "calc-btn";
+                            BtnRadioVer.click();
+
+                            function calcBtnActive1() {
+                                BtnActive[0].className = "calc-btn calc-btn-active";
+                                BtnActive[1].className = "calc-btn";
+                                BtnActive[2].className = "calc-btn calc-btn-active";
+                                BtnActive[3].className = "calc-btn";
+
+                                BtnRadioVer.click();
+                                calcVerHor(1);
+                            }
+                            function calcBtnActive2() {
+                                BtnActive[0].className = "calc-btn";
+                                BtnActive[1].className = "calc-btn calc-btn-active";
+                                BtnActive[2].className = "calc-btn";
+                                BtnActive[3].className = "calc-btn calc-btn-active";
+
+                                BtnRadioHor.click();
+                                calcVerHor(2);
+                            }
+                        </script>
                     </div>
                     <select class="mob-main-sel" name="size" id="sel-size">
-                        <option>30x30 см</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
+                        <option id="sel-mob-size-option1">30x30 см</option>
+                        <option id="sel-mob-size-option2">30х40 см</option>
+                        <option id="sel-mob-size-option3">40х50 см</option>
+                        <option id="sel-mob-size-option4">40х60 см</option>
+                        <option id="sel-mob-size-option5">50х50 см</option>
+                        <option id="sel-mob-size-option6">50x60 см</option>
+                        <option id="sel-mob-size-option7">50x70 см</option>
                     </select>
                 </div>
                 <div class="calc-mob-item">
                     <p class="calc-mob-text-h">Мольберт</p>
                     <select class="mob-main-sel" name="molbert" id="sel-molbert">
-                        <option>Без мольберта</option>
+                        <option id="sel-mob-mol-option1">Без мольберта</option>
+                        <option id="sel-mob-mol-option2">Мольберт Настольный</option>
+                        <option id="sel-mob-mol-option3">Мольберт Напольный</option>
+                        <option id="sel-mob-mol-option4">Подставка для руки</option>
                     </select>
                 </div>
                 <div class="calc-mob-item">
                     <p class="calc-mob-text-h">Акриловый лак</p>
                     <select class="mob-main-sel" name="ackril-lak" id="sel-lak">
-                        <option>Без лака</option>
+                        <option id="sel-mob-lak-option1">Без лака</option>
+                        <option id="sel-mob-lak-option2">Матовый 15мл</option>
+                        <option id="sel-mob-lak-option3">Глянцевый 15мл</option>
+                        <option id="sel-mob-lak-option4">Сатиновый спрей (защитный) 300мл США</option>
+                        <option id="sel-mob-lak-option5">Сатиновый кристальный спрей (против выцветания, не желтит, быстросохнущий) 300мл США</option>
                     </select>
+                </div>
+                <div class="calc-top-wide">
+                    <p>Сложность:</p>
+                    <div class="calc-complex">
+                        <input type="radio" id="complex5" name="complex"><label for="complex5"></label>
+                        <input type="radio" id="complex4" name="complex"><label for="complex4"></label>
+                        <input type="radio" id="complex3" name="complex"><label for="complex3"></label>
+                        <input type="radio" id="complex2" name="complex"><label for="complex2"></label>
+                        <input type="radio" id="complex1" name="complex"><label for="complex1"></label>
+                    </div>
                 </div>
                 <div class="calc-mob-item mob-lower-item">
                     <div class="calc-mob-list">
                         <p>Количество цветов:</p>
                         <select class="calc-mob-sel" name="colors" id="sel-colors">
-                            <option>До 30</option>
-                            <option>До 40</option>
+                            <option id="calc-mob-sel-colors-1">До 30</option>
+                            <option id="calc-mob-sel-colors-2">До 50</option>
                         </select>
                     </div>
                     <div class="calc-mob-list">
                         <p>Рамка:</p>
                         <select class="calc-mob-sel" name="border" id="sel-border">
-                            <option>Без ленты</option>
+                            <option id="calc-mob-sel-border-1">Без ленты</option>
+                            <option id="calc-mob-sel-border-2">Цветная лента</option>
                         </select>
                     </div>
                     <div class="calc-mob-list">
                         <p>Упаковка:</p>
                         <select class="calc-mob-sel" name="box" id="sel-box">
-                            <option>Классическая</option>
+                            <option id="calc-mob-sel-box-1">Классическая</option>
+                            <option id="calc-mob-sel-box-2">В подарок</option>
                         </select>
                     </div>
+                    <div class="calc-mob-list">
+                        <p>Подставка:</p>
+                        <select class="calc-mob-sel" name="stand" id="sel-stand">
+                            <option id="calc-mob-sel-stand-1">С подставкой</option>
+                            <option id="calc-mob-sel-stand-2">Без подставки</option>
+                        </select>
+                    </div>
+                    <div class="calc-mob-list">
+                        <p>Открытка:</p>
+                        <select class="calc-mob-sel" name="card" id="sel-card">
+                            <option id="calc-mob-sel-card-1">С открыткой</option>
+                            <option id="calc-mob-sel-card-2">Без открытки</option>
+                        </select>
+                    </div>
+                    <div class="calc-mob-list">
+                        <p>Ленточка:</p>
+                        <select class="calc-mob-sel" name="ribbon" id="sel-ribbon">
+                            <option id="calc-mob-sel-ribbon-1">C ленточкой</option>
+                            <option id="calc-mob-sel-ribbon-2">Без ленточки</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-check-block-mob">
+                    <div>
+                        <input type="checkbox" name="fux" id="fux2">
+                        <label for="fux">Использовать цвета фуксии</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="photoshop" id="photoshop2">
+                        <label for="photoshop">Нужен фотошоп</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="consult" id="consult2">
+                        <label for="consult">Нужна консультация</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dop-brush" id="dop-brush2">
+                        <label for="dop-brush">Дополнительный набор кистей</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dop-paint" id="dop-paint2">
+                        <label for="dop-paint">Дополнительный набор красок</label>
+                    </div>
+                    <a onclick="calcMob()" class="btn-make-order btn-calc-order">РАССЧИТАТЬ СТОИМОСТЬ</a>
                 </div>
             </div>
         </div>
 
-        <p class="order-lower-price-t">Итог: <span><b>1990 р.</b></span></p>
+        <p class="order-lower-price-t" id="calc-price-1">Итог: <span><b>1990 р.</b></span></p>
 
         <div class="order-lower">
             <div class="order-lower-price">
                 <p class="order-lower-p1">Итог:</p>
-                <p class="order-lower-p2">1990 р.</p>
+                <p class="order-lower-p2" id="calc-price-2">1990 р.</p>
             </div>
 
             <button class="order-lower-btn">Добавить еще</button>
-            <button type="submit" class="order-lower-btn">заказать картину</button>
+            <button class="order-lower-btn">заказать картину</button>
         </div>
 
         </form>

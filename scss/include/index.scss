@@ -364,6 +364,11 @@ h3 {
     margin-top: 5%;
 }
 
+.btn-calc-order {
+    padding: 11px 38px;
+    max-width: 394px;
+}
+
 .section-promo {
     width: 100%;
     min-height: 620px;
@@ -450,13 +455,24 @@ h3 {
     display: none;
     position: absolute;
     min-width: 100px;
-    background-color: #f7f0e8;
+    background-color: #5C473F;
+    //background-color: #e2dbd3;
+    margin-right: 20px;
     z-index: 2;
 }
 
 .main-nav-item ul li {
-    padding-bottom: 4px;
-    border: 0.4px solid black;
+    padding: 8px 11px;
+}
+
+.main-nav-item ul li a {
+    color: white !important;
+    padding: 5px;
+}
+
+.main-nav-item ul li a:hover {
+    background-color: #F95050 !important;
+    text-decoration: none !important;
 }
 
 .section-order {
@@ -589,6 +605,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-basis: 100%;
 
     margin-bottom: 65px;
 }
@@ -600,6 +617,113 @@ h3 {
     padding: 38px 31px;
     max-width: 490px;
     width: 100%;
+}
+
+.calc-top-wide {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.calc-top-wide p {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    margin-bottom: 30px;
+}
+
+.calc-top-wide input {
+    width: 50%;
+}
+
+.calc-complex {
+    display: inline-flex;
+    transform: rotateY(180deg);
+}
+
+.calc-complex input {
+    display: none;
+}
+
+.calc-complex label {
+    display: block;
+    cursor: pointer;
+    width: 64px;
+    height: 43px;
+    background: url(../images/src/cart/diff_b.png) no-repeat 0px 0px;
+}
+
+.calc-complex label:hover,
+.calc-complex label:hover ~ label,
+.calc-complex input:checked ~ label {
+    background: url(../images/src/cart/diff.png) no-repeat 0px 0px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .calc-complex label {
+        display: block;
+        cursor: pointer;
+        width: 43px;
+        height: 28px;
+        background: url(../images/src/cart/diff2_b.png) no-repeat 0px 0px;
+    }
+    
+    .calc-complex label:hover,
+    .calc-complex label:hover ~ label,
+    .calc-complex input:checked ~ label {
+        background: url(../images/src/cart/diff2.png) no-repeat 0px 0px;
+    }
+}
+
+.calc-check-block-mob {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.calc-check-block-mob label {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 138%;
+    letter-spacing: .05em;
+    color: #303030;
+}
+
+.calc-check-block {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.calc-check-block div {
+    margin-right: 20px;
+}
+
+.calc-check-block label {
+    font-family: 'Days';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 138%;
+
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.calc-check-block input {
+    width: 1.2vw;
+    height: 1.2vw;
 }
 
 .with-border {
@@ -629,6 +753,12 @@ h3 {
     letter-spacing: 0.05em;
 
     color: #303030;
+
+    display: flex;
+    align-items: center;
+    padding: 17px 20px;
+
+    cursor: pointer;
 }
 
 .calc-btn:hover {
@@ -807,6 +937,7 @@ h3 {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
+    text-align: center;
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -914,6 +1045,44 @@ h3 {
     padding: 25px 77px;
 }
 
+.call-pop-done {
+    display: none;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.call-pop-done:target {
+    display: block;
+}
+
+.done-pop-container {
+    position: relative;
+
+    max-width: 620px;
+    width: 100%;
+
+    background: white;
+
+    margin: auto;
+    top: 20%;
+    padding: 35px 50px;
+
+    display: flex;
+    flex-flow: column;
+    //justify-content: center;
+
+    max-height: 490px;
+    overflow-y: auto;
+
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25)
+}
+
 .call-pop {
     display: none;
     position: fixed;
@@ -944,7 +1113,7 @@ h3 {
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    //justify-content: center;
 
     max-height: 590px;
     overflow-y: auto;
@@ -1030,6 +1199,29 @@ h3 {
 
 .call-btn {
     margin-top: 17px;
+}
+
+.call-btn a {
+    font-family: "Days";
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    border: 0px;
+
+    padding: 12.5px 16px;
+    background-color: #F95050;
+}
+
+.call-btn a:hover {
+    color: #E5E5E5;
+    background-color: #D24343;
+    border: 0px;
+    cursor: pointer;
 }
 
 .call-pop-img1, .call-pop-img2 {
@@ -1121,6 +1313,10 @@ input[type=number] {
     text-transform: uppercase;
 }
 
+.conf-pop-container {
+    top: 10%;
+}
+
 @media only screen and (max-width : 1024px) {
     .gal-pop-container {
         top: 4%;
@@ -1131,7 +1327,8 @@ input[type=number] {
     .call-pop-container {
         max-width: 390px;
         padding: 45px 25px;
-        max-height: 590px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 
     .call-pop-text1 {
@@ -1144,6 +1341,13 @@ input[type=number] {
         font-size: 11px;
         line-height: 14px;
         margin-bottom: 20px;
+    }
+
+    .calc-block-mob {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: unset;
+        margin-bottom: unset;
     }
 
     .call-form-div {
@@ -1161,12 +1365,29 @@ input[type=number] {
         margin-top: 17px;
     }
 
+    .call-pop-img2 {
+        display: none;
+    }
+
     .masters-pop-container {
         max-height: 680px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 
     .gal-pop-container {
-        max-height: 800px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
+    }
+
+    .main-nav-item ul li {
+        padding: 2px 9px;
+    }
+
+    .upload-btn {
+        padding: 6px 13px;
+        font-size: 8px;
+        line-height: 11px;
     }
 }
 
@@ -1182,11 +1403,13 @@ input[type=number] {
     }
 
     .masters-pop-container {
-        max-height: 680px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 
     .gal-pop-container {
-        max-height: 800px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 }
 
@@ -1194,7 +1417,8 @@ input[type=number] {
     .call-pop-container {
         max-width: 290px;
         padding: 43px 10px;
-        max-height: 590px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 
     .call-pop-text1 {
@@ -1210,10 +1434,12 @@ input[type=number] {
     }
 
     .masters-pop-container {
-        max-height: 630px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 
     .gal-pop-container {
-        max-height: 745px;
+        top: 6%;
+        max-height: calc(199vw - 286px);
     }
 }

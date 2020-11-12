@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Картины по номерам</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/app.min.css">
+<meta charset="utf-8">
+<title>Brushes-Paints</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/app.min.css">
+	
 </head>
 <body>
 	<header class="main-header">
@@ -16,7 +19,7 @@
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
 			<a href="#call-pop"><button type="button">ЗАКАЗАТЬ ЗВОНОК</button></a>
-			<p class="phone-number-black">+234 (76) 343 58 78</p>
+			<p class="phone-number-black">+7 (977) 887-79-18</p>
 
 			<ul class="nav-social">
 				<li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg" alt="whatsapp link"></a></li>
@@ -34,22 +37,28 @@
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="pic-num-photo.html">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
 					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
-					<li class="main-nav-item more-ico3"><a href="pic-straz.html">КАРТИНЫ ПО СТРАЗАМ</a></li>
-					<li class="main-nav-item"><a href="vishivka.html">ВЫШИВКА</a></li>
-					<li class="main-nav-item"><a href="pic-pazl.html">ПАЗЛЫ</a></li>
-					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
-					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a>
+					<li class="main-nav-item"><a href="#">ДРУГИЕ КАРТИНЫ</a>
+						<i class="more-ico0"></i>
 						<ul>
-							<li><a href="add-products.html">Доп товары</a></li>
+							<li><a href="pic-straz.html">Картины по стразам</a></li>
 							<li><a href="pic-derevo.html">Картины по дереву</a></li>
+							<li><a href="pic-num.html">Картины по номерам</a></li>
 							<li><a href="pic-epoxid.html">Картины из эпоксидной смолы</a></li>
-							<li><a href="mandaly.html">Мандалы</a></li>
+							<li><a href="mandaly.html">Мандала</a></li>
+							<li><a href="vishivka.html">Вышивка</a></li>
+							<li><a href="pic-pazl.html">Пазлы</a></li>
 							<li><a href="al-moz.html">Алмазная мозайка</a></li>
+						</ul>
+					</li>
+					<li class="main-nav-item"><a href="add-products.html">ДОП ТОВАРЫ</a></li>
+					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
+					<li class="main-nav-item"><a href="contacts.html">КОНТАКТЫ</a></li>
+					<li class="main-nav-item"><a href="#">ЕЩЁ</a>
+						<i class="more-ico0"></i>
+						<ul>
 							<li><a href="gallery.html">Галерея готовых работ</a></li>
-							<li><a href="commments.html">Отзывы</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="comments.html">Отзывы</a></li>
 							<li><a href="service.html">Сервис</a></li>
-							<li><a href="masters.html">Мастер-классы</a></li>
 							<li><a href="discounts.html">Акции</a></li>
 							<li><a href="benefits.html">Наши преимущества</a></li>
 							<li><a href="loyalty.html">Программа лояльности</a></li>
@@ -67,14 +76,12 @@
 				document.getElementById("navMob").classList.toggle("active");
 			}
 		</script>
-	</header>
-
-	<section class="call-pop" id="call-pop">
+		<section class="call-pop" id="call-pop">
         <div class="call-pop-container">
             <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
             <img class="call-pop-img1" src="images/src/pop-vec1.png">
-            <p class="call-pop-text1">Подберем программу для вашего праздника и рассчитаем стоимость, <span>с учетом ваших пожеланий</span></p>
-            <p class="call-pop-text2">Ответьте на несколько вопросов и наш менеджер перезвонит вам в течение 15 минут, уточнит детали заказа и поможет определиться в выборе картины</p>
+            <p class="call-pop-text1">Закажите звонок и наш менеджер, <span>перезвонит вам в течение 15 минут</span></p>
+            <p class="call-pop-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <form class="call-form" method="post" action="#">
                 <div class="call-form-div">
                     <label for="call-name">Как Вас зовут?</label><br>
@@ -89,12 +96,21 @@
                     <input type="email" name="call-email" id="call-email" placeholder="email@email.ru">
                 </div>
                 <div class="call-btn">
-                    <button type="submit">Отправить</button>
+                    <a href="#call-pop-done">Отправить</a>
                 </div>
             </form>
             <img class="call-pop-img2" src="images/src/pop-vec2.png">
         </div>
-    </section>
+	</section>
+	
+	<section class="call-pop-done" id="call-pop-done">
+        <div class="done-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <p class="call-pop-text1"><br>Спасибо, что оставили заявку.<br><span>Наш менеджер перезвонит вам в течение 15 минут.</span></p>
+        </div>
+	</section>
+	
+	</header>
 
 <main>
     <div class="straz-container">
@@ -120,27 +136,35 @@
                 </div>
             </div>
             <div class="straz-top-right">
-                <img src="images/src/menu/menu3.png">
+                <img src="images/src/site-images/straz-pic.png">
             </div>
         </div>
 
         <form class="calc" method="post" action="#">
             <div class="straz-lower">
-                <div class="order-upload straz-upload">
+            <div class="order-upload straz-upload">
+                    <input id="default-btn" type="file" id="file" name="image" accept="image/*" hidden>
                     <div class="order-upload-box straz-upload-box">
                         <img src="images/src/upload-pic.png">
                         <p>перетащите картинку сюда или</p>
-                        <button class="page-shopbtn">загрузите файл</button>
+                        <a onclick="defaultBtnActive()" class="upload-btn">загрузите файл</a>
                     </div>
                     <p class="order-upload-text straz-upload-text">
                         <b>Требования к фото:</b>
-                        <br>
-                        <br>
                         Расширение файла: bmp, gif, jpeg, jpg, pdf, png, tif, tiff
                         <br>Размер: от 100 кб до 30 мб
                         <br>Минимальная ширина и высота: 1000px
                     </p>
                 </div>
+
+                <script>
+                    const defaultBtn = document.querySelector("#default-btn");
+                    const uploadBtn = document.querySelector("#upload-btn");
+
+                    function defaultBtnActive() {
+                        defaultBtn.click();
+                    }
+                </script>
                 <div class="straz-lower-right">
                     <p>
                         Вы загружаете нам любое изображение, включая фотографию.<br><br>
@@ -152,13 +176,10 @@
                         В изготавливаемый набор входит:
                     </p>
                     <ul class="straz-list">
-                        <li>полотно-схема с клеевым слоем и условным обозначением</li>
-                        <li>набор соответствующих страз</li>
-                        <li>пинцет (если в комплекте квадратные стразы)</li>
-                        <li>стилус</li>
-                        <li>сухой клей для стилуса</li>
-                        <li>поддон для страз</li>
-                        <li>инструкция</li>
+                        <li>3 шт. пластмассовых лотков для камней</li>
+                        <li>Пластмассовый стилус для камней</li>
+                        <li>Сухой клей для стилуса</li>
+                        <li>Металлический пинцет</li>
                     </ul>
                 </div>
             </div>
@@ -171,113 +192,84 @@
                 <div class="calc-top-item with-border">
                     <p class="calc-top-h">Ориентация и размеры:</p>
                     <div class="calc-top-btns">
-                        <button class="calc-btn">Вертикальная</button>
-                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
+                        <input type="radio" name="ver-hor" value="vertical" id="ver" hidden>
+                        <input type="radio" name="ver-hor" value="horizontal" id="hor" hidden>
+                        <a onclick="calcBtnActive1()" class="calc-btn">Вертикальная</a>
+                        <a onclick="calcBtnActive2()" class="calc-btn">Горизонтальная</a>
                     </div>
                     <select name="size" id="sel-size">
                         <option>30x30 см</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
+                        <option>30х40 см</option>
+                        <option>40х50 см</option>
+                        <option>40х60 см</option>
+                        <option>50х50 см</option>
+                        <option>50x60 см</option>
+                        <option>50x70 см</option>
                     </select>
                 </div>
                 <div class="calc-top-item">
-                    <div class="calc-top-child">
-                        <p class="calc-top-h2">Мольберт</p>
-                        <select name="molbert" id="sel-molbert">
-                            <option>Без мольберта</option>
-                        </select>
-                    </div>
-                    <div class="calc-top-child">
-                        <p class="calc-top-h2">Акриловый лак</p>
-                        <select name="ackril-lak" id="sel-lak">
-                            <option>Без лака</option>
-                        </select>
-                    </div>
-                </div>
+                <fieldset class="index-filedset">
+                    <legend>Упаковка:</legend>
+                    <input type="radio" name="box" value="classic-box" id="classic"><span>Классическая</span>
+                    <br>
+                    <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
+                </fieldset>
             </div>
-            <fieldset class="index-filedset">
-                <legend>Количество цветов:</legend>
-                <input type="radio" name="num-color" value="to30" id="30"><span>До 30</span>
-                <br>
-                <input type="radio" name="num-color" value="to50" id="50"><span>До 50</span>
-            </fieldset>
-            <fieldset class="index-filedset">
-                <legend>Рамка:</legend>
-                <input type="radio" name="border" value="without" id="without"><span>Без ленты</span>
-                <br>
-                <input type="radio" name="border" value="colorful" id="colorful"><span>Цветная лента</span>
-            </fieldset>
-            <fieldset class="index-filedset">
-                <legend>Упаковка:</legend>
-                <input type="radio" name="box" value="classic-box" id="classic"><span>Классическая</span>
-                <br>
-                <input type="radio" name="box" value="present-box" id="present"><span>В подарок</span>
-            </fieldset>
-            <fieldset class="index-filedset">
-                <legend>Количество цветов:</legend>
-                <input type="radio" name="" value="" id=""><span>До 30</span>
-                <br>
-                <input type="radio" name="" value="" id=""><span>До 50</span>
-            </fieldset>
-            <fieldset class="index-filedset">
-                <legend>Рамка:</legend>
-                <input type="radio" name="" value="" id=""><span>Без ленты</span>
-                <br>
-                <input type="radio" name="" value="" id=""><span>Цветная лента</span>
-            </fieldset>
-            <fieldset class="index-filedset">
-                <legend>Упаковка:</legend>
-                <input type="radio" name="" value="" id=""><span>Классическая</span>
-                <br>
-                <input type="radio" name="" value="" id=""><span>В подарок</span>
-            </fieldset>
+            </div>
+            
             </div>
 
             <div class="calc-block-mob">
                 <div class="calc-mob-item mob-with-border">
                     <p class="calc-mob-text-h">Ориентация и размеры:</p>
                     <div class="calc-mob-btns">
-                        <button class="calc-btn">Вертикальная</button>
-                        <button class="calc-btn calc-btn-active">Горизонтальная</button>
+                        <a onclick="calcBtnActive1()" class="calc-btn">Вертикальная</a>
+                        <a onclick="calcBtnActive2()" class="calc-btn">Горизонтальная</a>
+                        <script>
+                            var BtnActive = document.getElementsByClassName("calc-btn");
+                            var BtnRadioVer = document.getElementById("ver");
+                            var BtnRadioHor = document.getElementById("hor");
+
+                            BtnActive[0].className = "calc-btn calc-btn-active";
+                            BtnActive[1].className = "calc-btn";
+                            BtnActive[2].className = "calc-btn calc-btn-active";
+                            BtnActive[3].className = "calc-btn";
+                            BtnRadioVer.click();
+
+                            function calcBtnActive1() {
+                                BtnActive[0].className = "calc-btn calc-btn-active";
+                                BtnActive[1].className = "calc-btn";
+                                BtnActive[2].className = "calc-btn calc-btn-active";
+                                BtnActive[3].className = "calc-btn";
+
+                                BtnRadioVer.click();
+                            }
+                            function calcBtnActive2() {
+                                BtnActive[0].className = "calc-btn";
+                                BtnActive[1].className = "calc-btn calc-btn-active";
+                                BtnActive[2].className = "calc-btn";
+                                BtnActive[3].className = "calc-btn calc-btn-active";
+
+                                BtnRadioHor.click();
+                            }
+                        </script>
                     </div>
                     <select class="mob-main-sel" name="size" id="sel-size">
                         <option>30x30 см</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
+                        <option>30х40 см</option>
+                        <option>40х50 см</option>
+                        <option>40х60 см</option>
+                        <option>50х50 см</option>
+                        <option>50x60 см</option>
+                        <option>50x70 см</option>
                     </select>
                 </div>
                 <div class="calc-mob-item">
-                    <p class="calc-mob-text-h">Мольберт</p>
-                    <select class="mob-main-sel" name="molbert" id="sel-molbert">
-                        <option>Без мольберта</option>
+                    <p class="calc-mob-text-h">Упаковка:</p>
+                    <select class="mob-main-sel mob-little-sel" name="box" id="sel-box">
+                        <option>Классическая</option>
+                        <option>В подарок</option>
                     </select>
-                </div>
-                <div class="calc-mob-item">
-                    <p class="calc-mob-text-h">Акриловый лак</p>
-                    <select class="mob-main-sel" name="ackril-lak" id="sel-lak">
-                        <option>Без лака</option>
-                    </select>
-                </div>
-                <div class="calc-mob-item mob-lower-item">
-                    <div class="calc-mob-list">
-                        <p>Количество цветов:</p>
-                        <select class="calc-mob-sel" name="colors" id="sel-colors">
-                            <option>До 30</option>
-                            <option>До 40</option>
-                        </select>
-                    </div>
-                    <div class="calc-mob-list">
-                        <p>Рамка:</p>
-                        <select class="calc-mob-sel" name="border" id="sel-border">
-                            <option>Без ленты</option>
-                        </select>
-                    </div>
-                    <div class="calc-mob-list">
-                        <p>Упаковка:</p>
-                        <select class="calc-mob-sel" name="box" id="sel-box">
-                            <option>Классическая</option>
-                        </select>
-                    </div>
                 </div>
             </div>
         </div>
@@ -343,7 +335,7 @@
                 <div>
                     <ul class="footer-secondnav">
                         <li class="first-item"><a href="contacts.html">Контакты</a></li>
-                        <li><a href="commments.html">Отзывы</a></li>
+                        <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="pay-del.html">Доставка и оплата</a></li>
                         <li><a href="gallery.html">Галерея готовых работ</a></li>
                         <li><a href="loyalty.html">Программа лояльности</a></li>
@@ -357,7 +349,7 @@
     <!-- нижнее меню с информацие-->
     <div class="footer-lowersection">
         <div class="footer-container footer-container2">
-            <p class="phone-number-white">+234 (76) 343 58 78</p>
+            <p class="phone-number-white">+7 (977) 887-79-18</p>
 
             <ul class="nav-social-footer">
                 <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/whatsapp.svg"></a></li>
@@ -366,9 +358,18 @@
                 <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/insta.svg"></a></li>
             </ul>
 
-            <a href="#" class="confid-text"><u>Политика конфиденциальности</u></a>
+            <a href="#conf" class="confid-text"><u>Политика конфиденциальности</u></a>
         </div>
     </div>
+
+    <section class="call-pop" id="conf">
+        <div class="call-pop-container conf-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <img class="call-pop-img1" src="images/src/pop-vec1.png">
+            <p class="call-pop-text1">Политика конфиденциальности</span></p>
+            <p class="call-pop-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
 </footer>
 
 <script src="js/app.min.js"></script>

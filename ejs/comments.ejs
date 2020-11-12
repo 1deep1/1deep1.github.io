@@ -2,7 +2,7 @@
 
 <main>
     <div class="service-container">
-        <h1 class="service-h1"><b>Отызвы</b></h1>
+        <h1 class="service-h1"><b>Отзывы</b></h1>
         
         <div class="com-top">
             <div class="com-top-left">
@@ -78,14 +78,14 @@
                         </div>
                         <p class="com-more more-mob"><a href="#">Подробнее</a></p>
                     </div>
-                    <div class="com-likes">
+                    <!-- <div class="com-likes">
                         <div class="com-like">
                             <img src="images/src/comments/like.svg"><p class="like-num"><b>5</b></p>
                         </div>
                         <div class="com-like">
                             <img src="images/src/comments/dislike.svg"><p><b>2</b></p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="com-line"></div>
@@ -123,26 +123,26 @@
                     </div>
                     
 
-                    <div class="com-likes">
+                    <!-- <div class="com-likes">
                         <div class="com-like">
                             <img src="images/src/comments/like.svg"><p class="like-num"><b>2</b></p>
                         </div>
                         <div class="com-like">
                             <img src="images/src/comments/dislike.svg"><p><b>0</b></p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="com-line"></div>
         </div>
         <div class="com-lower">
-            <a href="#" class="com-arrow"><img src="images/src/comments/arrow1.svg"></a>
+            <!-- <a href="#" class="com-arrow"><img src="images/src/comments/arrow1.svg"></a> -->
                 <div class="com-lower-numbers">
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                 </div>
-            <a href="#" class="com-arrow"><img src="images/src/comments/arrow2.svg"></a>
+            <!-- <a href="#" class="com-arrow"><img src="images/src/comments/arrow2.svg"></a> -->
         </div>
     </div>
 
@@ -190,21 +190,19 @@
                         Адрес не будет виден другим посетителям
                     </p>
                 </div>
-                <div class="com-btn">
-                    <button type="submit">Оставить отзыв</button>
+                <div class="call-btn com-btn">
+                    <a href="#com-pop-done">Оставить отзыв</a>
                 </div>
             </form>
         </div>
+</section>
 
-        <script>
-            const defaultBtn = document.querySelector("#default-btn");
-            const uploadBtn = document.querySelector("#com-pop-pic-a");
-
-            function defaultBtnActive() {
-                defaultBtn.click();
-            }
-        </script>
-    </section>
+        <section class="call-pop-done" id="com-pop-done">
+        <div class="done-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <p class="call-pop-text1"><br>Спасибо за ваш отзыв.</p>
+        </div>
+	</section>
 </main>
 
 <%- include('include/footer.ejs') %>

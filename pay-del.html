@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Картины по номерам</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/app.min.css">
+<meta charset="utf-8">
+<title>Brushes-Paints</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/app.min.css">
+	
 </head>
 <body>
 	<header class="main-header">
@@ -16,7 +19,7 @@
 			<a class="head-link" href="/"><img src="images/src/logo-text.svg" id="logo-text"></a>
 			<a href="/"><img src="images/src/logo-small.svg" id="logo-small"></a>
 			<a href="#call-pop"><button type="button">ЗАКАЗАТЬ ЗВОНОК</button></a>
-			<p class="phone-number-black">+234 (76) 343 58 78</p>
+			<p class="phone-number-black">+7 (977) 887-79-18</p>
 
 			<ul class="nav-social">
 				<li class="nav-social-item"><a href="#"><img src="images/src/social/whatsapp.svg" alt="whatsapp link"></a></li>
@@ -34,22 +37,28 @@
 				<ul class="main-nav">
 					<li class="main-nav-item"><a href="pic-num-photo.html">КАРТИНЫ ПО НОМЕРАМ ПО ФОТО</a></li>
 					<li class="main-nav-item more-ico2"><a href="art-therapy.html">АРТ-ТЕРАПИЯ</a></li>
-					<li class="main-nav-item more-ico3"><a href="pic-straz.html">КАРТИНЫ ПО СТРАЗАМ</a></li>
-					<li class="main-nav-item"><a href="vishivka.html">ВЫШИВКА</a></li>
-					<li class="main-nav-item"><a href="pic-pazl.html">ПАЗЛЫ</a></li>
-					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
-					<li class="main-nav-item more-ico1"><a href="#">ЕЩЁ</a>
+					<li class="main-nav-item"><a href="#">ДРУГИЕ КАРТИНЫ</a>
+						<i class="more-ico0"></i>
 						<ul>
-							<li><a href="add-products.html">Доп товары</a></li>
+							<li><a href="pic-straz.html">Картины по стразам</a></li>
 							<li><a href="pic-derevo.html">Картины по дереву</a></li>
+							<li><a href="pic-num.html">Картины по номерам</a></li>
 							<li><a href="pic-epoxid.html">Картины из эпоксидной смолы</a></li>
-							<li><a href="mandaly.html">Мандалы</a></li>
+							<li><a href="mandaly.html">Мандала</a></li>
+							<li><a href="vishivka.html">Вышивка</a></li>
+							<li><a href="pic-pazl.html">Пазлы</a></li>
 							<li><a href="al-moz.html">Алмазная мозайка</a></li>
+						</ul>
+					</li>
+					<li class="main-nav-item"><a href="add-products.html">ДОП ТОВАРЫ</a></li>
+					<li class="main-nav-item"><a href="masters.html">МАСТЕР-КЛАССЫ</a></li>
+					<li class="main-nav-item"><a href="contacts.html">КОНТАКТЫ</a></li>
+					<li class="main-nav-item"><a href="#">ЕЩЁ</a>
+						<i class="more-ico0"></i>
+						<ul>
 							<li><a href="gallery.html">Галерея готовых работ</a></li>
-							<li><a href="commments.html">Отзывы</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="comments.html">Отзывы</a></li>
 							<li><a href="service.html">Сервис</a></li>
-							<li><a href="masters.html">Мастер-классы</a></li>
 							<li><a href="discounts.html">Акции</a></li>
 							<li><a href="benefits.html">Наши преимущества</a></li>
 							<li><a href="loyalty.html">Программа лояльности</a></li>
@@ -67,14 +76,12 @@
 				document.getElementById("navMob").classList.toggle("active");
 			}
 		</script>
-	</header>
-
-	<section class="call-pop" id="call-pop">
+		<section class="call-pop" id="call-pop">
         <div class="call-pop-container">
             <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
             <img class="call-pop-img1" src="images/src/pop-vec1.png">
-            <p class="call-pop-text1">Подберем программу для вашего праздника и рассчитаем стоимость, <span>с учетом ваших пожеланий</span></p>
-            <p class="call-pop-text2">Ответьте на несколько вопросов и наш менеджер перезвонит вам в течение 15 минут, уточнит детали заказа и поможет определиться в выборе картины</p>
+            <p class="call-pop-text1">Закажите звонок и наш менеджер, <span>перезвонит вам в течение 15 минут</span></p>
+            <p class="call-pop-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <form class="call-form" method="post" action="#">
                 <div class="call-form-div">
                     <label for="call-name">Как Вас зовут?</label><br>
@@ -89,12 +96,21 @@
                     <input type="email" name="call-email" id="call-email" placeholder="email@email.ru">
                 </div>
                 <div class="call-btn">
-                    <button type="submit">Отправить</button>
+                    <a href="#call-pop-done">Отправить</a>
                 </div>
             </form>
             <img class="call-pop-img2" src="images/src/pop-vec2.png">
         </div>
-    </section>
+	</section>
+	
+	<section class="call-pop-done" id="call-pop-done">
+        <div class="done-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <p class="call-pop-text1"><br>Спасибо, что оставили заявку.<br><span>Наш менеджер перезвонит вам в течение 15 минут.</span></p>
+        </div>
+	</section>
+	
+	</header>
 
 <main>
     <!-- <img class="pay-bg" src='images/src/site-images/paybg.png'> -->
@@ -184,7 +200,7 @@
                 <div>
                     <ul class="footer-secondnav">
                         <li class="first-item"><a href="contacts.html">Контакты</a></li>
-                        <li><a href="commments.html">Отзывы</a></li>
+                        <li><a href="comments.html">Отзывы</a></li>
                         <li><a href="pay-del.html">Доставка и оплата</a></li>
                         <li><a href="gallery.html">Галерея готовых работ</a></li>
                         <li><a href="loyalty.html">Программа лояльности</a></li>
@@ -198,7 +214,7 @@
     <!-- нижнее меню с информацие-->
     <div class="footer-lowersection">
         <div class="footer-container footer-container2">
-            <p class="phone-number-white">+234 (76) 343 58 78</p>
+            <p class="phone-number-white">+7 (977) 887-79-18</p>
 
             <ul class="nav-social-footer">
                 <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/whatsapp.svg"></a></li>
@@ -207,9 +223,18 @@
                 <li class="nav-social-footer-item"><a href="#"><img class="soc-img" src="images/src/social/insta.svg"></a></li>
             </ul>
 
-            <a href="#" class="confid-text"><u>Политика конфиденциальности</u></a>
+            <a href="#conf" class="confid-text"><u>Политика конфиденциальности</u></a>
         </div>
     </div>
+
+    <section class="call-pop" id="conf">
+        <div class="call-pop-container conf-pop-container">
+            <a class="pop-close" href="#"><img src="images/src/close.svg"></a>
+            <img class="call-pop-img1" src="images/src/pop-vec1.png">
+            <p class="call-pop-text1">Политика конфиденциальности</span></p>
+            <p class="call-pop-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
 </footer>
 
 <script src="js/app.min.js"></script>
